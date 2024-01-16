@@ -15,6 +15,14 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'brand-blue100': '#0EA5E9',
+        'brand-background': '#F5F5F5',
+      }, 
+      dropShadow: {
+        'brandShadow': '0 5px 5px rgba(14, 165, 233, 0.25)',
+
+      }
     },
   },
   plugins: [
