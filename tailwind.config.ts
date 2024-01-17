@@ -17,6 +17,7 @@ const config: Config = {
       },
       colors: {
         'brand-blue100': '#0EA5E9',
+        'brand-blueTitle': '#00008B',
         'brand-background': '#F5F5F5',
       }, 
       dropShadow: {
