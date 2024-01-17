@@ -12,24 +12,32 @@ export default function Home() {
             Hey, I'm a<p className="text-brand-blue100">Front-End</p>
             <p>Developer</p>
           </h1>
-          <p className="ml-36 pt-4 p-2 text-xl w-5/12">
+          <p className="ml-36 pt-4 pl-2 text-xl">
+            My name is{' '}
+            <strong className="text-brand-blueTitle hover:text">
+              {' '}
+              Anderson Carvalho.
+            </strong>
+          </p>
+          <p className="ml-36 pl-2 text-xl w-5/12">
             Former Special Infantry soldier shifting to programming in Portugal.
-            Committed to growth, eager to contribute to dynamic teams.
+            Committed to growth, eager to contribute and enhance my skills with
+            a new team.
           </p>
           <div className="ml-36 flex gap-9 p-2">
             <button
-              className="mt-6 text-white font-bold bg-brand-blue100 py-2 px-11 rounded-lg 
+              className="mt-6 text-white font-bold bg-brand-blue100 w-36 py-2 rounded-lg 
                      hover:drop-shadow-brandShadow hover:text-white hover:bg-brand-blue200"
             >
               Here Me!
             </button>
             <button
-              className="mt-6 text-brand-blue100 font-bold bg-white py-2 px-4 rounded-lg 
-                     hover:drop-shadow-brandShadow hover:text-brand-blue100 flex gap-1 items-center"
+              className="mt-6 text-brand-blue100 font-bold bg-white w-36 py-2 rounded-lg 
+                     hover:drop-shadow-brandShadow hover:text-sky-400 flex gap-1 justify-center items-center"
             >
               <PiChatsTeardropDuotone
                 width={10}
-                className="text-brand-blue100 hover:text-brand-blue200"
+                className="text-brand-blue100 "
               />
               Let's Chat
             </button>
