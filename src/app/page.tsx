@@ -2,6 +2,7 @@ import About from '@/components/About';
 import Home from '@/components/Home';
 
 // Adjust in navbar -sticky
+// Adjust in About background
 
 export default function Page() {
    return (
