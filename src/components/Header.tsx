@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import menu from '../assets/image/menu.svg';
-import logo from '../assets/image/logo.svg';
+import Menu from '../assets/image/headerMenu.svg';
+import Logo from '../assets/image/headerLogo.svg';
 
 import {
    Navbar,
@@ -26,7 +26,7 @@ export default function Header() {
          <Navbar className="container m-auto ">
             <NavbarBrand>
                <div className="">
-                  <Image src={logo} width={120} alt="" />
+                  <Image src={Logo} width={120} alt="" />
                </div>
                {/* <AcmeLogo />
             <p className="font-bold text-inherit">ACME</p> */}
@@ -76,7 +76,7 @@ export default function Header() {
                            variant="flat"
                            className="bg-white"
                         >
-                           <Image src={menu} width={20} height={20} alt="" />
+                           <Image src={Menu} width={20} height={20} alt="" />
                         </Button>
                      </DropdownTrigger>
                      <DropdownMenu aria-label="Static Actions">

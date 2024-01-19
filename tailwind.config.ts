@@ -19,7 +19,11 @@ const config: Config = {
         'brand-blue100': '#0EA5E9',
         'brand-blue200': '#38BDF8',
         'brand-blueTitle': '#00008B',
-        'brand-background': '#F5F5F5',
+
+        'brand-gray100': '#E8EBEC',
+        'brand-gray200': '#D9D9D9',
+
+        'brand-patternBG': '#F5F5F5',
       },
       dropShadow: {
         brandShadow: '0 5px 5px rgba(14, 165, 233, 0.25)',
