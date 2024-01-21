@@ -1,98 +1,93 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import Menu from '../assets/image/headerMenu.svg';
-import Logo from '../assets/image/headerLogo.svg';
+import Menu from '../assets/image/header/headerMenu.svg';
+import Logo from '../assets/image/header/headerLogo.svg';
 
 import {
-   Navbar,
-   NavbarBrand,
-   NavbarContent,
-   NavbarItem,
-   Link,
-   Button,
-   Dropdown,
-   DropdownTrigger,
-   DropdownItem,
-   DropdownMenu,
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button,
+  Dropdown,
+  DropdownTrigger,
+  DropdownItem,
+  DropdownMenu,
 } from '@nextui-org/react';
 import { NextUIProvider } from '@nextui-org/react';
 
 // import { AcmeLogo } from './AcmeLogo.jsx';
 
 export default function Header() {
-   return (
-      <NextUIProvider>
-         <Navbar className="container m-auto ">
-            <NavbarBrand>
-               <div className="">
-                  <Image src={Logo} width={120} alt="" />
-               </div>
-               {/* <AcmeLogo />
+  return (
+    <NextUIProvider>
+      <Navbar className="container m-auto transition-all ease-in-out">
+        <NavbarBrand>
+          <div className="">
+            <Image src={Logo} width={120} alt="" />
+          </div>
+          {/* <AcmeLogo />
             <p className="font-bold text-inherit">ACME</p> */}
-            </NavbarBrand>
+        </NavbarBrand>
 
-            <NavbarContent className="hidden sm:flex " justify="center">
-               <NavbarItem>
-                  <Link
-                     href="#"
-                     className="flex justify-center items-center
+        <NavbarContent className="hidden sm:flex " justify="center">
+          <NavbarItem>
+            <Link
+              href="/"
+              className="flex justify-center items-center
+                   text-brand-blue100 font-bold bg-white py-2 w-32 rounded-lg 
+                     hover:drop-shadow-brandShadow hover:text-brand-blue100 opacity-100"
+            >
+              Home
+            </Link>
+          </NavbarItem>
+          <NavbarItem isActive>
+            <Link
+              href="/about"
+              aria-current="page"
+              className="flex justify-center items-center
                    text-brand-blue100 font-bold bg-white py-2 w-32 rounded-lg 
                      hover:drop-shadow-brandShadow hover:text-brand-blue100"
-                  >
-                     Home
-                  </Link>
-               </NavbarItem>
-               <NavbarItem isActive>
-                  <Link
-                     href="#"
-                     aria-current="page"
-                     className="flex justify-center items-center
+            >
+              About
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              href="/projects"
+              className="flex justify-center items-center
                    text-brand-blue100 font-bold bg-white py-2 w-32 rounded-lg 
                      hover:drop-shadow-brandShadow hover:text-brand-blue100"
-                  >
-                     About
-                  </Link>
-               </NavbarItem>
-               <NavbarItem>
-                  <Link
-                     href="#"
-                     className="flex justify-center items-center
-                   text-brand-blue100 font-bold bg-white py-2 w-32 rounded-lg 
-                     hover:drop-shadow-brandShadow hover:text-brand-blue100"
-                  >
-                     Projects
-                  </Link>
-               </NavbarItem>
-            </NavbarContent>
+            >
+              Projects
+            </Link>
+          </NavbarItem>
+        </NavbarContent>
 
-            <NavbarContent justify="end" className="sm:hidden">
-               <NavbarItem>
-                  <Dropdown>
-                     <DropdownTrigger>
-                        <Button
-                           as={Link}
-                           href="#"
-                           variant="flat"
-                           className="bg-white"
-                        >
-                           <Image src={Menu} width={20} height={20} alt="" />
-                        </Button>
-                     </DropdownTrigger>
-                     <DropdownMenu aria-label="Static Actions">
-                        <DropdownItem
-                           key="new"
-                           className="text-brand-blue100 active:bg-red-200"
-                        >
-                           Home
-                        </DropdownItem>
-                        <DropdownItem key="copy">About</DropdownItem>
-                        <DropdownItem key="edit">Projects</DropdownItem>
-                     </DropdownMenu>
-                  </Dropdown>
-               </NavbarItem>
-            </NavbarContent>
-         </Navbar>
-      </NextUIProvider>
-   );
+        <NavbarContent justify="end" className="sm:hidden">
+          <NavbarItem>
+            <Dropdown>
+              <DropdownTrigger>
+                <Button as={Link} href="#" variant="flat" className="bg-white">
+                  <Image src={Menu} width={20} height={20} alt="" />
+                </Button>
+              </DropdownTrigger>
+              <DropdownMenu aria-label="Static Actions">
+                <DropdownItem
+                  key="new"
+                  className="text-brand-blue100 active:bg-red-200"
+                >
+                  Home
+                </DropdownItem>
+                <DropdownItem key="copy">About</DropdownItem>
+                <DropdownItem key="edit">Projects</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+          </NavbarItem>
+        </NavbarContent>
+      </Navbar>
+    </NextUIProvider>
+  );
 }
