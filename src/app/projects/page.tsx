@@ -5,8 +5,6 @@ import Image from 'next/image';
 
 import { FaRegEye } from 'react-icons/fa';
 import { IoCodeSlash } from 'react-icons/io5';
-import Header from '@/components/Header';
-
 export default function Projects() {
   return (
     <>

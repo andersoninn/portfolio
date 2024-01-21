@@ -12,7 +12,7 @@ import AboutMePolygons from '@/assets/image/aboutMe/aboutMePolygons.svg';
 export default function About() {
   return (
     <>
-      <section className="bg-gray-200 h-screen bg-right-bottom bg-no-repeat pb-10">
+      <section className="bg-gray-200 h-screen">
         <section className="pt-10 container m-auto flex gap-12 max-w-[1180px] px-24">
           <article className="relative w-full flex">
             <Image
