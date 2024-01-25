@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { PiChatsTeardropDuotone } from 'react-icons/pi';
 import HomePicture from '@/assets/image/home/homePicture.svg';
-import HomeElipeses from '@/assets/image/home/homeElipeses.svg';
+
 import HomePolygons from '@/assets/image/home/homePolygons.svg';
-import About from './about/page';
-import Projects from './projects/page';
+import About from '@/components/About';
+import Projects from '@/components/Projects';
 
 // Adjust in navbar -sticky
 // Adjust in gradiente bg (Home to About/ About to Projects)
@@ -12,7 +12,10 @@ import Projects from './projects/page';
 export default function Page() {
    return (
       <>
-         <section className="bg-[url('../assets/image/home/homeBg.svg')] bg-no-repeat bg-left-bottom min-h-screen pt-16 relative" id='home'>
+         <section
+            className="bg-[url('../assets/image/home/homeBg.svg')] bg-no-repeat bg-left-bottom min-h-screen pt-16 relative"
+            id="home"
+         >
             <section className="container m-auto pt-20 max-w-[1180px]  ">
                <section className="container m-auto flex px-24">
                   <article>

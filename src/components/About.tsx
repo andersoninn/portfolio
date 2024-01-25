@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import AboutMePicture from '@/assets/image/aboutMe/aboutMePicture.svg';
-import Elipses from '@/assets/image/aboutMe/aboutMeElipses.svg';
+import AboutPicture from '@/assets/image/about/aboutPicture.svg';
+import Elipses from '@/assets/image/about/aboutElipses.svg';
 import DownloadCV from '@/assets/image/contacts/downloadCV.svg';
 import Linkedin from '@/assets/image/contacts/linkedin.svg';
 import Github from '@/assets/image/contacts/gitHub.svg';
 import Gmail from '@/assets/image/contacts/gmail.svg';
 import Instagran from '@/assets/image/contacts/instagran.svg';
-import AboutMePolygons from '@/assets/image/aboutMe/aboutMePolygons.svg';
+import AboutPolygons from '@/assets/image/about/aboutPolygons.svg';
 
 export default function About() {
    return (
@@ -25,7 +25,7 @@ export default function About() {
                   className=" -translate-x-1/2 absolute "
                />
                <Image
-                  src={AboutMePicture}
+                  src={AboutPicture}
                   width={450}
                   alt=""
                   className="rounded-md z-10 relative"
@@ -51,7 +51,7 @@ export default function About() {
                </p>
                <div className="absolute">
                   <Image
-                     src={AboutMePolygons}
+                     src={AboutPolygons}
                      alt=""
                      className="translate-x-[450px] -translate-y-20"
                   />
