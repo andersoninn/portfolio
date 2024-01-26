@@ -1,6 +1,6 @@
 <svg width="617" height="638" viewBox="0 0 617 638" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_334_1705)">
-<rect width="617" height="638" fill="white"/>
+<rect width="617" height="638" />
 <circle cx="72.999" cy="603" r="15" fill="#0EA5E9"/>
 <mask id="mask0_334_1705" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="416" y="528" width="93" height="26">
 <circle cx="500.499" cy="549" r="5" transform="rotate(-180 500.499 549)" fill="#D9D9D9"/>

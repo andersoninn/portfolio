@@ -21,27 +21,16 @@ import {
 export default function App() {
    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-   const menuItems = [
-      'Profile',
-      'Dashboard',
-      'Activity',
-      'Analytics',
-      'System',
-      'Deployments',
-      'My Settings',
-      'Team Settings',
-      'Help & Feedback',
-      'Log Out',
-   ];
+   const menuItems = ['home', 'about', 'projects'];
 
    return (
       <Navbar
          isBordered
          isMenuOpen={isMenuOpen}
          onMenuOpenChange={setIsMenuOpen}
-         className='!fixed'
+         className="!fixed border-none w-full max-w-[412px] md:max-w-full"
       >
-         <NavbarContent className="sm:hidden pr-3 border-none" justify="center">
+         <NavbarContent className="sm:hidden pr-3 " justify="center">
             <NavbarBrand>
                <div className="">
                   <Image src={Logo} width={120} alt="" />
@@ -50,12 +39,13 @@ export default function App() {
          </NavbarContent>
 
          <NavbarContent className="sm:hidden" justify="end">
-            <NavbarMenuToggle className=''
+            <NavbarMenuToggle
+               className=""
                aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             />
          </NavbarContent>
 
-         <NavbarContent className="hidden sm:flex gap-4 justify-between ">
+         <NavbarContent className="hidden sm:flex gap-4 justify-between">
             <NavbarBrand>
                <div>
                   <Image src={Logo} width={120} alt="" />
@@ -75,7 +65,8 @@ export default function App() {
                <Link
                   href="#about"
                   aria-current="page"
-                  className="flex justify-center items-center
+                  className="
+                  flex justify-center items-center
                   text-brand-blue100 font-bold bg-transparent py-2 w-32 rounded-lg
                   hover:bg-white hover:drop-shadow-brandShadow hover:text-brand-blue100 "
                >
@@ -87,18 +78,20 @@ export default function App() {
                   href="#projects"
                   className="flex justify-center items-center
                   text-brand-blue100 font-bold bg-transparent py-2 w-32 rounded-lg
-                  hover:bg-white hover:drop-shadow-brandShadow hover:text-brand-blue100 "
+                  hover:bg-white hover:drop-shadow-brandShadow hover:text-brand-blue100"
                >
                   Projects
                </Link>
             </NavbarItem>
          </NavbarContent>
 
-         <NavbarMenu>
+         <NavbarMenu className=" max-h-[915px]">
             {menuItems.map((item, index) => (
                <NavbarMenuItem key={`${item}-${index}`}>
                   <Link
-                     className="w-full"
+                     className="w-full mt-4 justify-end text-xl
+                     text-brand-blue100 font-bold bg-transparent py-2 px-2 mx-2 rounded-lg hover:bg-white
+                      hover:drop-shadow-brandShadow hover:text-brand-blue100 capitalize"
                      color={
                         index === 2
                            ? 'warning'
@@ -106,8 +99,9 @@ export default function App() {
                            ? 'danger'
                            : 'foreground'
                      }
-                     href="#"
+                     href={'#' + item}
                      size="lg"
+                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                   >
                      {item}
                   </Link>
@@ -117,70 +111,3 @@ export default function App() {
       </Navbar>
    );
 }
-
-// import {
-//    Navbar,
-//    NavbarBrand,
-//    NavbarContent,
-//    NavbarItem,
-//    Link,
-//    Button,
-//    Dropdown,
-//    DropdownTrigger,
-//    DropdownItem,
-//    DropdownMenu,
-// } from '@nextui-org/react';
-//
-
-// // import { AcmeLogo } from './AcmeLogo.jsx';
-
-// export default function Header() {
-//    return (
-//       <NextUIProvider>
-//          <section className="!sticky !top-0 ">
-//             <Navbar className="container m-auto transition-all ease-in-out ">
-//                <NavbarBrand>
-//                   <div className="">
-//                      <Image src={Logo} width={120} alt="" />
-//                   </div>
-//                   {/* <AcmeLogo />
-//             <p className="font-bold text-inherit">ACME</p> */}
-//                </NavbarBrand>
-
-//                <NavbarContent className="hidden sm:flex  " justify="center">
-//
-//
-//
-//                </NavbarContent>
-
-//                <NavbarContent justify="end" className="sm:hidden">
-//                   <NavbarItem>
-//                      <Dropdown>
-//                         <DropdownTrigger>
-//                            <Button
-//                               as={Link}
-//                               href="#"
-//                               variant="flat"
-//                               className="bg-white"
-//                            >
-//                               <Image src={Menu} width={20} height={20} alt="" />
-//                            </Button>
-//                         </DropdownTrigger>
-//                         <DropdownMenu aria-label="Static Actions">
-//                            <DropdownItem
-//                               key="new"
-//                               className="text-brand-blue100 active:bg-red-200"
-//                            >
-//                               Home
-//                            </DropdownItem>
-//                            <DropdownItem key="copy">About</DropdownItem>
-//                            <DropdownItem key="edit">Projects</DropdownItem>
-//                         </DropdownMenu>
-//                      </Dropdown>
-//                   </NavbarItem>
-//                </NavbarContent>
-//             </Navbar>
-//          </section>
-//       </NextUIProvider>
-//    );
-// }
