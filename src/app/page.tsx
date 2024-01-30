@@ -15,8 +15,7 @@ export default function Page() {
          <section id="home" className="absolute top-0"></section>
          <section
             className="md:bg-left md:mt-0 md:pt-16
-            mt-36
-             bg-no-repeat min-h-screen relative overflow-hidden "
+            mt-36 bg-no-repeat min-h-screen relative overflow-hidden "
          >
             <section
                className="md:pt-20 md:max-w-[1180px]
