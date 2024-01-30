@@ -14,9 +14,9 @@ export default function Page() {
       <>
          <section id="home" className="absolute top-0"></section>
          <section
-            className="md:bg-left md:bg-[url('../assets/image/home/homeBg.svg')] md:mt-0 md:pt-16
+            className="md:bg-left md:bg-[url('../assets/image/home/homebg.svg')] md:mt-0 md:pt-16
             mt-36
-            bg-[url('../assets/image/home/homeBgMobile.svg')] bg-no-repeat min-h-screen relative overflow-hidden "
+            bg-[url('../assets/image/home/homebgmobile.svg')] bg-no-repeat min-h-screen relative overflow-hidden "
          >
             <section
                className="md:pt-20 md:max-w-[1180px]
