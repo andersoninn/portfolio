@@ -12,19 +12,10 @@ import Projects2 from '@/components/Projects2';
 export default function Page() {
    return (
       <>
-         <section id="home" className="absolute top-0"></section>
-         <section
-            className="md:bg-left md:mt-0 md:pt-16
-            mt-36 bg-no-repeat min-h-screen relative overflow-hidden "
-         >
-            <section
-               className="md:pt-20 md:max-w-[1180px]
-            container m-auto pt-44 max-w-[412px] px-6"
-            >
-               <section
-                  className="md:px-24 
-               container m-auto flex"
-               >
+         <section id="home" className="absolute top-0 "></section>
+         <section className="flex pt-80 pb-10 px-6 min-h-screen relative overflow-hidden bg-red-100">
+            <section>
+               <section className="m-auto flex">
                   <article>
                      <div>
                         <Image
@@ -35,12 +26,9 @@ export default function Page() {
                         />
                      </div>
                   </article>
-                  <article className="md:pt-16 -mt-4 ">
-                     <h1
-                        className="md:text-8xl
-                     text-brand-blueTitle text-7xl font-bold"
-                     >
-                        <span className="pr-44 md:pr-0">Hey, </span>
+                  <article className="-mt-4 ">
+                     <h1 className="text-brand-blueTitle text-6xl font-bold">
+                        <span className="pr-44">Hey, </span>
                         <span>I&apos;m a</span>
                         <span className="text-brand-blue100 block">
                            Front-End
@@ -79,12 +67,11 @@ export default function Page() {
                         </button>
                      </aside>
                   </article>
-                  <article className="md:relative">
+                  <article >
                      <Image
                         src={HomePicture}
                         alt=""
-                        className="min-[1290px]:-translate-x-[144px] md:translate-x-[144px] md:translate-y-0 md:w-[470px] md:h-[480px] md:static md:scale-150
-                        -translate-x-56 -translate-y-44 absolute w-80"
+                        className=" -translate-x-56 -translate-y-52 absolute w-80 "
                      />
                   </article>
                </section>
