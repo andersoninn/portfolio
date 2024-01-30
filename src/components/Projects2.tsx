@@ -1,6 +1,4 @@
-import ExperienceIcon from '@/assets/image/footer/experienceIcon.svg';
-import SatisfiedIcon from '@/assets/image/footer/satisfiedIcon.svg';
-import CompleteProjectsIcon from '@/assets/image/footer/completeProjectsIcon.svg';
+
 
 import CardImage from '@/assets/image/projects/iamageCard.svg';
 import Image from 'next/image';

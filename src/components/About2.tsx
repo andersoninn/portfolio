@@ -7,7 +7,6 @@ import Linkedin from '@/assets/image/contacts/linkedin.svg';
 import Github from '@/assets/image/contacts/gitHub.svg';
 import Gmail from '@/assets/image/contacts/gmail.svg';
 import Instagran from '@/assets/image/contacts/instagran.svg';
-import AboutPolygons from '@/assets/image/about/aboutPolygons.svg';
 
 import PolygonLeft from '@/assets/image/contacts/polygonsLeft.svg';
 import PolygonRight from '@/assets/image/contacts/polygonsRight.svg';
