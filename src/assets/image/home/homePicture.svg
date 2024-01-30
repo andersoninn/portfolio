@@ -1,73 +1,25 @@
-<svg width="617" height="638" viewBox="0 0 617 638" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_334_1705)">
-<rect width="617" height="638" />
-
-<mask id="mask0_334_1705" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="416" y="528" width="93" height="26">
-<circle cx="500.499" cy="549" r="5" transform="rotate(-180 500.499 549)" fill="#D9D9D9"/>
-<circle cx="484.499" cy="549" r="5" transform="rotate(-180 484.499 549)" fill="#D9D9D9"/>
-<circle cx="468.499" cy="549" r="5" transform="rotate(-180 468.499 549)" fill="#D9D9D9"/>
-<circle cx="453.999" cy="549" r="5" transform="rotate(-180 453.999 549)" fill="#D9D9D9"/>
-<circle cx="439.499" cy="549" r="5" transform="rotate(-180 439.499 549)" fill="#D9D9D9"/>
-<circle cx="500.499" cy="533" r="5" transform="rotate(-180 500.499 533)" fill="#D9D9D9"/>
-<circle cx="484.499" cy="533" r="5" transform="rotate(-180 484.499 533)" fill="#D9D9D9"/>
-<circle cx="468.499" cy="533" r="5" transform="rotate(-180 468.499 533)" fill="#D9D9D9"/>
-<circle cx="453.999" cy="533" r="5" transform="rotate(-180 453.999 533)" fill="#D9D9D9"/>
-<circle cx="439.499" cy="533" r="5" transform="rotate(-180 439.499 533)" fill="#D9D9D9"/>
+<svg width="542" height="563" viewBox="0 0 542 563" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_490_189" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="353" y="403" width="92" height="26">
+<circle cx="436.5" cy="424" r="5" transform="rotate(-180 436.5 424)" fill="#D9D9D9"/>
+<circle cx="420.5" cy="424" r="5" transform="rotate(-180 420.5 424)" fill="#D9D9D9"/>
+<circle cx="404.5" cy="424" r="5" transform="rotate(-180 404.5 424)" fill="#D9D9D9"/>
+<circle cx="390" cy="424" r="5" transform="rotate(-180 390 424)" fill="#D9D9D9"/>
+<circle cx="375.5" cy="424" r="5" transform="rotate(-180 375.5 424)" fill="#D9D9D9"/>
+<circle cx="436.5" cy="408" r="5" transform="rotate(-180 436.5 408)" fill="#D9D9D9"/>
+<circle cx="420.5" cy="408" r="5" transform="rotate(-180 420.5 408)" fill="#D9D9D9"/>
+<circle cx="404.5" cy="408" r="5" transform="rotate(-180 404.5 408)" fill="#D9D9D9"/>
+<circle cx="390" cy="408" r="5" transform="rotate(-180 390 408)" fill="#D9D9D9"/>
+<circle cx="375.5" cy="408" r="5" transform="rotate(-180 375.5 408)" fill="#D9D9D9"/>
 </mask>
-<g mask="url(#mask0_334_1705)">
-<rect x="416.999" y="528" width="92" height="26" fill="url(#paint0_linear_334_1705)"/>
+<g mask="url(#mask0_490_189)">
+<rect x="353" y="403" width="92" height="26" fill="url(#paint0_linear_490_189)"/>
 </g>
-<mask id="mask1_334_1705" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="401" y="435" width="27" height="96">
-<circle cx="406.999" cy="520.5" r="5" transform="rotate(-90 406.999 520.5)" fill="#D9D9D9"/>
-<circle cx="406.999" cy="504.5" r="5" transform="rotate(-90 406.999 504.5)" fill="#D9D9D9"/>
-<circle cx="406.999" cy="488.5" r="5" transform="rotate(-90 406.999 488.5)" fill="#D9D9D9"/>
-<circle cx="406.999" cy="474" r="5" transform="rotate(-90 406.999 474)" fill="#D9D9D9"/>
-<circle cx="406.999" cy="459.5" r="5" transform="rotate(-90 406.999 459.5)" fill="#D9D9D9"/>
-<circle cx="422.999" cy="520.5" r="5" transform="rotate(-90 422.999 520.5)" fill="#D9D9D9"/>
-<circle cx="422.999" cy="504.5" r="5" transform="rotate(-90 422.999 504.5)" fill="#D9D9D9"/>
-<circle cx="422.999" cy="488.5" r="5" transform="rotate(-90 422.999 488.5)" fill="#D9D9D9"/>
-<circle cx="422.999" cy="474" r="5" transform="rotate(-90 422.999 474)" fill="#D9D9D9"/>
-<circle cx="422.999" cy="459.5" r="5" transform="rotate(-90 422.999 459.5)" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask1_334_1705)">
-<rect x="427.999" y="431" width="96" height="26" transform="rotate(90 427.999 431)" fill="url(#paint1_linear_334_1705)"/>
-</g>
-<mask id="mask2_334_1705" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="369" y="435" width="27" height="96">
-<circle cx="374.999" cy="520.5" r="5" transform="rotate(-90 374.999 520.5)" fill="#D9D9D9"/>
-<circle cx="374.999" cy="504.5" r="5" transform="rotate(-90 374.999 504.5)" fill="#D9D9D9"/>
-<circle cx="374.999" cy="488.5" r="5" transform="rotate(-90 374.999 488.5)" fill="#D9D9D9"/>
-<circle cx="374.999" cy="474" r="5" transform="rotate(-90 374.999 474)" fill="#D9D9D9"/>
-<circle cx="374.999" cy="459.5" r="5" transform="rotate(-90 374.999 459.5)" fill="#D9D9D9"/>
-<circle cx="390.999" cy="520.5" r="5" transform="rotate(-90 390.999 520.5)" fill="#D9D9D9"/>
-<circle cx="390.999" cy="504.5" r="5" transform="rotate(-90 390.999 504.5)" fill="#D9D9D9"/>
-<circle cx="390.999" cy="488.5" r="5" transform="rotate(-90 390.999 488.5)" fill="#D9D9D9"/>
-<circle cx="390.999" cy="474" r="5" transform="rotate(-90 390.999 474)" fill="#D9D9D9"/>
-<circle cx="390.999" cy="459.5" r="5" transform="rotate(-90 390.999 459.5)" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask2_334_1705)">
-<rect x="395.999" y="431" width="96" height="26" transform="rotate(90 395.999 431)" fill="url(#paint2_linear_334_1705)"/>
-</g>
-<path d="M503.447 51.7261C500.238 49.6006 500.533 44.7984 503.978 43.0822L519.482 35.359C522.927 33.6428 526.938 36.2997 526.702 40.1414L525.639 57.4292C525.402 61.271 521.096 63.4163 517.887 61.2908L503.447 51.7261Z" fill="#41AD3F"/>
-<path d="M357.634 541.873C269.478 620.542 129.201 571.139 109.798 454.59L66.3748 193.766C47.6305 81.1755 156.507 -10.2651 264.166 27.6499L504.87 112.421C612.529 150.336 640.077 289.823 554.916 365.82L357.634 541.873Z" fill="#F54A4D"/>
-</g>
+<path d="M293.635 523.872C205.479 602.542 65.2022 553.139 45.7986 436.589L2.37574 175.765C-16.3686 63.1753 92.5081 -28.2654 200.166 9.6497L440.871 94.421C548.529 132.336 576.078 271.823 490.917 347.82L293.635 523.872Z" fill="#F54A4D"/>
 <defs>
-<linearGradient id="paint0_linear_334_1705" x1="508.999" y1="554" x2="416.483" y2="529.988" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_490_189" x1="445" y1="429" x2="352.484" y2="404.988" gradientUnits="userSpaceOnUse">
 <stop stop-color="#41AD3F"/>
 <stop offset="0.405" stop-color="#8736B9"/>
 <stop offset="0.955" stop-color="#DD1C1C"/>
 </linearGradient>
-<linearGradient id="paint1_linear_334_1705" x1="523.999" y1="457" x2="427.999" y2="431" gradientUnits="userSpaceOnUse">
-<stop stop-color="#41AD3F"/>
-<stop offset="0.405" stop-color="#8736B9"/>
-<stop offset="0.955" stop-color="#DD1C1C"/>
-</linearGradient>
-<linearGradient id="paint2_linear_334_1705" x1="491.999" y1="457" x2="395.999" y2="431" gradientUnits="userSpaceOnUse">
-<stop stop-color="#41AD3F"/>
-<stop offset="0.405" stop-color="#8736B9"/>
-<stop offset="0.955" stop-color="#DD1C1C"/>
-</linearGradient>
-<clipPath id="clip0_334_1705">
-<rect width="617" height="638" fill="white"/>
-</clipPath>
 </defs>
 </svg>

@@ -27,15 +27,27 @@ export default function Page() {
                      </div>
                   </article>
                   <article className="-mt-4 ">
-                     <h1 className="text-brand-blueTitle text-6xl font-bold">
+                     {/* <h1 className="text-brand-blueTitle text-6xl font-bold">
                         <span className="pr-44">Hey, </span>
                         <span>I&apos;m a</span>
                         <span className="text-brand-blue100 block">
                            Front-End
                         </span>
                         <span className="block">Developer</span>
-                     </h1>
-                     <p className="pt-4 pl-2 md:text-medium text-lg ">
+                     </h1> */}
+                     <section className='relative'>
+                        <h1 className="text-brand-blueTitle text-7xl font-bold flex flex-col ">
+                           Hey, <span>I&apos;m a</span>
+                           <span className="text-brand-blue100">Front-End</span>
+                           Developer
+                        </h1>
+                        <Image
+                        src={HomePicture}
+                        alt=""
+                        className="absolute w-80 -right-1/3 -top-2/3"
+                     />
+                     </section>
+                     <p className="pt-4 pl-2 md:text-medium text-lg">
                         My name is&nbsp;
                         <span className="text-brand-blueTitle hover:text font-bold md:text-medium text-lg">
                            Anderson Carvalho.
@@ -67,12 +79,8 @@ export default function Page() {
                         </button>
                      </aside>
                   </article>
-                  <article >
-                     <Image
-                        src={HomePicture}
-                        alt=""
-                        className=" -translate-x-56 -translate-y-52 absolute w-80 "
-                     />
+                  <article>
+                     
                   </article>
                </section>
             </section>
