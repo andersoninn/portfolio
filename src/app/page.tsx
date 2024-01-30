@@ -4,7 +4,7 @@ import HomePicture from '@/assets/image/home/homePicture.svg';
 
 import HomePolygons from '@/assets/image/home/homePolygons.svg';
 import About2 from '@/components/About2';
-import Projects from '@/components/Projects';
+import Projects2 from '@/components/Projects2';
 
 // Adjust in navbar -sticky our fixed
 // Adjust in gradient bg (Home to About/ About to Projects)
@@ -92,7 +92,7 @@ export default function Page() {
             </section>
          </section>
          <About2 />
-         
+         <Projects2 />
       </>
    );
 }

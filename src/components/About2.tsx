@@ -9,6 +9,9 @@ import Gmail from '@/assets/image/contacts/gmail.svg';
 import Instagran from '@/assets/image/contacts/instagran.svg';
 import AboutPolygons from '@/assets/image/about/aboutPolygons.svg';
 
+import PolygonLeft from '@/assets/image/contacts/polygonsLeft.svg';
+import PolygonRight from '@/assets/image/contacts/polygonsRight.svg';
+
 // adjust the polygons im background
 
 export default function About2() {
@@ -21,7 +24,9 @@ export default function About2() {
             <article>
                <h2 className="text-brand-blue100 font-bold">About Me</h2>
                <h1 className="text-brand-blueTitle text-4xl font-black">
-                  <span className="">&ldquo;Discipline love and courage</span>
+                  <span className="">
+                     &ldquo;Discipline love and courage&nbsp;
+                  </span>
                   are the motors of success&rdquo;
                </h1>
             </article>
@@ -75,6 +80,21 @@ export default function About2() {
                      <Image src={Instagran} width={40} alt="" />
                   </span>
                </aside>
+               <article className="flex justify-between items-center py-5">
+                  <Image
+                     src={PolygonLeft}
+                     width={90}
+                     alt=""
+                     className="-translate-x-11"
+                  />
+                  <Image
+                     src={PolygonRight}
+                     width={90}
+                     alt=""
+                     className="translate-x-2"
+                  />
+                  
+               </article>
             </article>
          </section>
          <section className="w-full h-16 absolute -top-8" id="about" />
