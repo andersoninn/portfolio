@@ -24,7 +24,7 @@ export default function Page() {
             >
                <section
                   className="md:px-24 
-               container m-auto flex  "
+               container m-auto flex"
                >
                   <article>
                      <div>
