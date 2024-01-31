@@ -22,7 +22,7 @@ export default function Page() {
                      src={HomeEllipse}
                      width={100}
                      alt=""
-                     className="-left-[10%]  absolute"
+                     className="-left-20 top-24 absolute"
                   />
                </div>
             </article>
