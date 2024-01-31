@@ -80,7 +80,7 @@ export default function About() {
                </aside>
             </article>
          </section>
-         <section className="w-full h-16 absolute -top-8" id="about" />
+         {/* <section className="w-full h-16 absolute -top-8" id="about" /> */}
       </section>
    );
 }

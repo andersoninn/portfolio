@@ -28,7 +28,7 @@ export default function App() {
          isBordered
          isMenuOpen={isMenuOpen}
          onMenuOpenChange={setIsMenuOpen}
-         className="!fixed border-none w-full max-w-[412px] md:max-w-full"
+         className="!fixed border-none w-full"
       >
          <NavbarContent className="sm:hidden pr-3 " justify="center">
             <NavbarBrand>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { PiChatsTeardropDuotone } from 'react-icons/pi';
-import HomePicture from '@/assets/image/home/homePicture.svg';
+import HomePicture from '@/assets/image/home/homePicture3.png';
 
 import HomePolygons from '@/assets/image/home/homePolygons.svg';
 import About2 from '@/components/About2';
@@ -12,78 +12,67 @@ import Projects2 from '@/components/Projects2';
 export default function Page() {
    return (
       <>
-         <section id="home" className="absolute top-0 "></section>
-         <section className="flex pt-80 pb-10 px-6 min-h-screen relative overflow-hidden bg-red-100">
-            <section>
-               <section className="m-auto flex">
-                  <article>
+         <section
+            id="home"
+            className="flex justify-center pt-80 pb-10 min-h-screen w-full overflow-x-hidden"
+         >
+            {/* <article>
                      <div>
                         <Image
                            src={HomePolygons}
                            width={130}
                            alt=""
-                           className="-translate-x-40 -translate-y-16 absolute hidden md:block"
+                           className="-translate-x-60 -translate-y-36 absolute hidden md:block"
                         />
                      </div>
-                  </article>
-                  <article className="-mt-4 ">
-                     {/* <h1 className="text-brand-blueTitle text-6xl font-bold">
-                        <span className="pr-44">Hey, </span>
-                        <span>I&apos;m a</span>
-                        <span className="text-brand-blue100 block">
-                           Front-End
-                        </span>
-                        <span className="block">Developer</span>
-                     </h1> */}
-                     <section className='relative'>
-                        <h1 className="text-brand-blueTitle text-7xl font-bold flex flex-col ">
-                           Hey, <span>I&apos;m a</span>
-                           <span className="text-brand-blue100">Front-End</span>
-                           Developer
-                        </h1>
-                        <Image
-                        src={HomePicture}
-                        alt=""
-                        className="absolute w-80 -right-1/3 -top-2/3"
-                     />
-                     </section>
-                     <p className="pt-4 pl-2 md:text-medium text-lg">
-                        My name is&nbsp;
-                        <span className="text-brand-blueTitle hover:text font-bold md:text-medium text-lg">
-                           Anderson Carvalho.
-                        </span>
-                     </p>
-                     <p className="pl-2 md:text-medium text-lg">
-                        Former Special Infantry soldier shifting to programming
-                        in Portugal. Committed to growth, eager to contribute
-                        and enhance my skills with a new team.
-                     </p>
-                     <aside className="flex justify-around p-2">
-                        <button
-                           className="md:hover:drop-shadow-brandShadow md:hover:text-white
+                  </article> */}
+            <article className="-mt-4 w-[90%]">
+               <section className="relative">
+                  <h1 className="text-brand-blueTitle text-7xl max-[360px]:text-6xl font-bold flex flex-col text-wrap ">
+                     <span className=" min-w-40 w-40">
+                        Hey, <br /> I&apos;m a
+                     </span>
+                     <span className="text-brand-blue100">Front-End</span>
+                     Developer
+                  </h1>
+                  <Image
+                     src={HomePicture}
+                     alt=""
+                     className="absolute w-80 -top-56 left-32"
+                  />
+               </section>
+               <p className="pt-4 pl-2 md:text-medium text-lg">
+                  My name is&nbsp;
+                  <span className="text-brand-blueTitle hover:text font-bold md:text-medium text-lg">
+                     Anderson Carvalho.
+                  </span>
+               </p>
+               <p className="pl-2 md:text-medium text-lg">
+                  Former Special Infantry soldier shifting to programming in
+                  Portugal. Committed to growth, eager to contribute and enhance
+                  my skills with a new team.
+               </p>
+               <aside className="flex justify-between p-2">
+                  <button
+                     className="md:hover:drop-shadow-brandShadow md:hover:text-white
                   md:hover:bg-brand-blue200
                   mt-6 text-white font-bold bg-brand-blue100 w-36 py-2 rounded-lg    drop-shadow-brandShadow"
-                        >
-                           Hire Me!
-                        </button>
-                        <button
-                           className="md:hover:text-sky-400 md:hover:drop-shadow-brandShadow
+                  >
+                     Hire Me!
+                  </button>
+                  <button
+                     className="md:hover:text-sky-400 md:hover:drop-shadow-brandShadow
                   mt-6 text-brand-blue100 font-bold bg-white w-36 py-2 rounded-lg 
                   flex gap-1 justify-center items-center drop-shadow-brandShadow"
-                        >
-                           <PiChatsTeardropDuotone
-                              width={10}
-                              className="text-brand-blue100 "
-                           />
-                           Let&apos;s Chat
-                        </button>
-                     </aside>
-                  </article>
-                  <article>
-                     
-                  </article>
-               </section>
-            </section>
+                  >
+                     <PiChatsTeardropDuotone
+                        width={10}
+                        className="text-brand-blue100 "
+                     />
+                     Let&apos;s Chat
+                  </button>
+               </aside>
+            </article>
          </section>
          <About2 />
          <Projects2 />
