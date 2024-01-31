@@ -7,40 +7,40 @@ import Linkedin from '@/assets/image/contacts/linkedin.svg';
 import Github from '@/assets/image/contacts/gitHub.svg';
 import Gmail from '@/assets/image/contacts/gmail.svg';
 import Instagran from '@/assets/image/contacts/instagran.svg';
-import AboutPolygons from '@/assets/image/about/aboutPolygons.svg';
 
-export default function About() {
+import PolygonLeft from '@/assets/image/about/aboutPolygons.svg';
+import PolygonRight from '@/assets/image/about/aboutPolygons.svg';
+
+// adjust the polygons im background
+
+export default function About2() {
    return (
-      // bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90%
-      <section
-         className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-white to-100%      
-         h-screen relative flex items-center justify-center py-16"
-      >
-         <section className="container flex gap-12 max-w-[1180px] md:px-24">
-            <article className="relative w-full flex ">
+      <section className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-white to-100% flex m-auto relative">
+         <section className="w-[90%] m-auto">
+            <article>
+               <h2 className="text-brand-blue100 font-bold">About Me</h2>
+               <h1 className="text-brand-blueTitle text-4xl font-black text-center">
+                  <span>&ldquo;Discipline love and courage&nbsp;</span>
+                  are the motors of success&rdquo;
+               </h1>
+            </article>
+            <article className="mt-3 relative">
+               <Image
+                  src={AboutPicture}
+                  width={450}
+                  alt=""
+                  className="w-2/3 m-auto z-10 relative "
+               />
                <Image
                   src={Elipses}
                   width="173"
                   height="235"
                   alt=""
-                  className=" -translate-x-1/2 absolute "
-               />
-               <Image
-                  src={AboutPicture}
-                  width={450}
-                  alt=""
-                  className="rounded-md z-10 relative"
+                  className="w-1/3 absolute top-0 left-3 z-0"
                />
             </article>
-            <article className="w-full">
-               <article className="md:translate-x-0 -translate-x-52 bg-red-300">
-                  <h2 className="text-brand-blue100 font-bold">About Me</h2>
-                  <h1 className="text-brand-blueTitle text-4xl font-black">
-                     <span className="-ml-5">“Discipline love and courage</span>{' '}
-                     are the motors of success”
-                  </h1>
-               </article>
-               <p className="pt-2 pr-8 text-balance ">
+            <article>
+               <p className="pt-3  text-justify text-lg indent-4">
                   As a former military professional, I excelled as the Secretary
                   to the Director of Aircraft, securing the second position in
                   my class. I made significant contributions in the Special
@@ -52,16 +52,12 @@ export default function About() {
                   ensure a successful career transition, showcasing my
                   commitment to promising challenges and continuous growth.
                </p>
-               <div className="absolute">
-                  <Image
-                     src={AboutPolygons}
-                     alt=""
-                     className="translate-x-[450px] -translate-y-20"
-                  />
-               </div>
+               {/* <div className="absolute">
+                  <Image src={AboutPolygons} alt="" />
+               </div> */}
 
                {/* CONTACTS */}
-               <aside className="flex justify-between items-center mt-24 mx-16 pr-6 ">
+               <aside className="flex justify-around items-center mt-4 m-auto">
                   <span className="cursor-pointer rounded-xl hover:shadow-brand-blue100/50 shadow-md shadow-black/30">
                      <Image src={DownloadCV} width={40} alt="" />
                   </span>
@@ -79,8 +75,23 @@ export default function About() {
                   </span>
                </aside>
             </article>
+            <article className="flex justify-between items-center pt-14">
+               <Image
+                  src={PolygonLeft}
+                  width={70}
+                  alt=""
+                  className="absolute bottom-0 left-0"
+               />
+               <Image
+                  src={PolygonRight}
+                  width={70}
+                  alt=""
+                  className="absolute bottom-0 right-0"
+               />
+            </article>
          </section>
-         {/* <section className="w-full h-16 absolute -top-8" id="about" /> */}
+
+         <section className="w-full h-16 absolute -top-8" id="about" />
       </section>
    );
 }
