@@ -75,7 +75,7 @@ export default function Page() {
             </article>
          </section>
          <About />
-         {/* <Projects /> */}
+         <Projects />
       </>
    );
 }

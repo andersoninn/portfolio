@@ -11,12 +11,11 @@ import Instagran from '@/assets/image/contacts/instagran.svg';
 import PolygonLeft from '@/assets/image/about/aboutPolygons.svg';
 import PolygonRight from '@/assets/image/about/aboutPolygons.svg';
 
-// adjust the polygons im background
-
 export default function About2() {
    return (
-      <section className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-white to-100% flex m-auto relative">
-         <section className="w-[90%] m-auto">
+      <section className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-white to-100% flex 
+      m-auto relative">
+         <section className="w-[90%] m-auto pt-8 pb-10">
             <article>
                <h2 className="text-brand-blue100 font-bold">About Me</h2>
                <h1 className="text-brand-blueTitle text-4xl font-black text-center">
@@ -57,7 +56,7 @@ export default function About2() {
                </div> */}
 
                {/* CONTACTS */}
-               <aside className="flex justify-around items-center mt-4 m-auto">
+               <aside className="flex justify-around items-center mt-6 m-auto">
                   <span className="cursor-pointer rounded-xl hover:shadow-brand-blue100/50 shadow-md shadow-black/30">
                      <Image src={DownloadCV} width={40} alt="" />
                   </span>
@@ -80,13 +79,13 @@ export default function About2() {
                   src={PolygonLeft}
                   width={70}
                   alt=""
-                  className="absolute bottom-0 left-0"
+                  className="absolute bottom-10 left-0"
                />
                <Image
                   src={PolygonRight}
                   width={70}
                   alt=""
-                  className="absolute bottom-0 right-0"
+                  className="absolute bottom-10 right-0"
                />
             </article>
          </section>

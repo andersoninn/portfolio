@@ -1,4 +1,6 @@
-
+import CompleteProjectsIcon from '@/assets/image/footer/completeProjectsIcon.svg';
+import ExperienceIcon from '@/assets/image/footer/experienceIcon.svg';
+import SatisfiedIcon from '@/assets/image/footer/satisfiedIcon.svg';
 
 import CardImage from '@/assets/image/projects/iamageCard.svg';
 import Image from 'next/image';
@@ -170,10 +172,10 @@ export default function Projects() {
             </section>
 
             {/* FOOTER */}
-            {/* <aside className="mt-10 flex justify-around">
-               <div className="flex gap-2 items-start">
+            <aside className="mt-10 flex justify-between bg-red-300">
+               <section className="flex gap-2 items-start">
                   <Image src={ExperienceIcon} width={48} alt="" />
-                  <div>
+                  <article>
                      <p className="text-brand-blueTitle font-bold text-2xl">
                         +1
                      </p>
@@ -181,11 +183,11 @@ export default function Projects() {
                         EXPERIENCE AS
                         <br />A FREELANCER
                      </p>
-                  </div>
-               </div>
-               <div className="flex gap-2 items-start">
+                  </article>
+               </section>
+               <section className="flex gap-2 items-start">
                   <Image src={SatisfiedIcon} width={42} alt="" />
-                  <div>
+                  <article>
                      <p className="text-brand-blueTitle font-bold text-2xl">
                         +10
                      </p>
@@ -194,11 +196,11 @@ export default function Projects() {
                         <br />
                         CUSTOMERS
                      </p>
-                  </div>
-               </div>
-               <div className="flex gap-2 items-start">
+                  </article>
+               </section>
+               <section className="flex gap-2 items-start">
                   <Image src={CompleteProjectsIcon} width={40} alt="" />
-                  <div>
+                  <article>
                      <p className="text-brand-blueTitle font-bold text-2xl">
                         +30
                      </p>
@@ -207,9 +209,9 @@ export default function Projects() {
                         <br />
                         PROJECTS
                      </p>
-                  </div>
-               </div>
-            </aside> */}
+                  </article>
+               </section>
+            </aside>
          </section>
       </section>
    );
