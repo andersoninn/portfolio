@@ -1,9 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Menu from '../assets/image/header/headerMenu.svg';
-import Logo from '../assets/image/header/headerLogo.svg';
-import { NextUIProvider } from '@nextui-org/react';
+import Logo from '@/assets/image/header/headerLogo.svg';
 
 import React from 'react';
 import {
@@ -15,7 +13,6 @@ import {
    NavbarContent,
    NavbarItem,
    Link,
-   Button,
 } from '@nextui-org/react';
 
 export default function App() {
