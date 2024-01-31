@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { PiChatsTeardropDuotone } from 'react-icons/pi';
-import HomePicture from '../assets/image/home/homePicture3.png';
+import HomePicture from '@/assets/image/home/homePicture.svg';
+import HomeEllipse from '@/assets/image/home/homeEllipse.svg';
 
 import About2 from '@/components/About2';
 import Projects2 from '@/components/Projects2';
@@ -15,16 +16,16 @@ export default function Page() {
             id="home"
             className="flex justify-center pt-80 pb-10 min-h-screen w-full overflow-x-hidden"
          >
-            {/* <article>
-                     <div>
-                        <Image
-                           src={HomePolygons}
-                           width={130}
-                           alt=""
-                           className="-translate-x-60 -translate-y-36 absolute hidden md:block"
-                        />
-                     </div>
-                  </article> */}
+            <article>
+               <div>
+                  <Image
+                     src={HomeEllipse}
+                     width={100}
+                     alt=""
+                     className="-left-[10%]  absolute"
+                  />
+               </div>
+            </article>
             <article className="-mt-4 w-[90%]">
                <section className="relative">
                   <h1 className="text-brand-blueTitle text-7xl max-[360px]:text-6xl font-bold flex flex-col text-wrap ">
