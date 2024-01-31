@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { PiChatsTeardropDuotone } from 'react-icons/pi';
 import HomePicture from '@/assets/image/home/homePicture3.png';
 
-import HomePolygons from '@/assets/image/home/homePolygons.svg';
 import About2 from '@/components/About2';
 import Projects2 from '@/components/Projects2';
 

@@ -16,8 +16,8 @@ export default function About() {
          className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-white to-100%      
          h-screen relative flex items-center justify-center py-16"
       >
-         <section className="container flex gap-12 max-w-[1180px] md:px-24 bg-red-100">
-            <article className="relative w-full flex">
+         <section className="container flex gap-12 max-w-[1180px] md:px-24">
+            <article className="relative w-full flex ">
                <Image
                   src={Elipses}
                   width="173"
