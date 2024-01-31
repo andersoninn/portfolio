@@ -29,7 +29,7 @@ export default function App() {
       >
          <NavbarContent className="sm:hidden pr-3 " justify="center">
             <NavbarBrand>
-               <div className="">
+               <div>
                   <Image src={Logo} width={120} alt="" />
                </div>
             </NavbarBrand>
@@ -37,7 +37,6 @@ export default function App() {
 
          <NavbarContent className="sm:hidden" justify="end">
             <NavbarMenuToggle
-               className=""
                aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             />
          </NavbarContent>
