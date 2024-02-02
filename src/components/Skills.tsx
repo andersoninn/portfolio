@@ -72,62 +72,96 @@ export default function Skills() {
                   </h1>
                </article>
 
-               {/* HARD SKILL - CARD 1 */}
+               {/* HARD SKILL - DESIGN */}
                <section className="p-5 bg-gray-300 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
-                  <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
+                  <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle">
                      <h2>DESIGN</h2>
 
                      <h2>UX/UI DESIGN</h2>
-                     <section className="flex justify-between gap-8">
-                        <article className="flex items-center gap-2">
-                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow"></div>
-                           <p>Photophop</p>
+                     <section className="flex justify-around w-full">
+                        <article className="w-1/2  flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>Figma</p>
                         </article>
 
-                        <article className="flex items-center gap-2">
-                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow"></div>
-                           <p>Figma</p>
+                        <article className="w-1/2 flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>Photophop</p>
+                        </article>
+                     </section>
+                  </article>
+
+                  {/* 
+                       
+                        
+                     </section> */}
+               </section>
+
+               {/* HARD SKILL - FRONT-END */}
+               <section className="p-5 bg-gray-300 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
+                  <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
+                     <h2>FRONT-END</h2>
+                     <section className="flex justify-between w-full ">
+                        <article className="w-1/2 flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>HTML</p>
+                        </article>
+                        <article className="w-1/2 flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>JavaScript</p>
+                        </article>
+                     </section>
+
+                     <section className="flex justify-between w-full ">
+                        <article className="w-1/2  flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>CSS</p>
+                        </article>
+                        <article className="w-1/2 flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>ReactJS</p>
+                        </article>
+                     </section>
+
+                     <section className="flex justify-between w-full ">
+                        <article className="w-1/2  flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>Tailwind</p>
+                        </article>
+                        <article className="w-1/2 flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>NextJS</p>
                         </article>
                      </section>
                   </article>
                </section>
 
-               {/* HARD SKILL - CARD 2 */}
+               {/* HARD SKILL - BACK-END */}
                <section className="p-5 bg-gray-300 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
                   <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
-                     <h2>FRONT-END</h2>
-
-                     <section className="flex justify-around gap-8 w-full">
-                        <article className="flex items-center gap-2 w-full">
-                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow"></div>
-                           <p>HTML</p>
-                        </article>
-
-                        <article className="flex items-center gap-2 w-full">
-                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow"></div>
-                           <p>JavaScript</p>
+                     <h2>BACK-END & MOBILE</h2>
+                     <section className="flex justify-center w-full ">
+                        <article className="w-1/2 flex items-center">
+                           <div className="min-w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>ReactNative</p>
                         </article>
                      </section>
-                     <section className="flex justify-between gap-8 w-full">
-                        <article className="flex items-center gap-2">
-                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow"></div>
-                           <p>CSS</p>
-                        </article>
 
-                        <article className="flex items-center gap-2">
-                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow"></div>
-                           <p>ReactJS</p>
+                     <section className="flex justify-between w-full ">
+                        <article className="w-1/2  flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>NodeJS</p>
+                        </article>
+                        <article className="w-1/2 flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>Express</p>
                         </article>
                      </section>
-                     <section className="flex justify-between gap-8">
-                        <article className="flex items-center gap-2">
-                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow"></div>
-                           <p>Tailwind</p>
-                        </article>
 
-                        <article className="flex items-center gap-2">
-                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow"></div>
-                           <p>NextJS</p>
+                     <section className="flex justify-center w-full ">
+                        <article className="w-1/2  flex items-center">
+                           <div className="w-14 h-14 rounded-lg bg-red-100 shadow mr-2"></div>
+                           <p>MongoDB</p>
                         </article>
                      </section>
                   </article>
