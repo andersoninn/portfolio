@@ -139,6 +139,7 @@ export default function Skills() {
                {/* HARD SKILL - BACK-END */}
                <section className="p-5 bg-gray-300 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
                   <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
+                     
                      <h2>BACK-END & MOBILE</h2>
                      <section className="flex justify-center w-full ">
                         <article className="w-1/2 flex items-center">
