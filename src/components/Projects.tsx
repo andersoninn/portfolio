@@ -21,8 +21,8 @@ export default function Projects() {
 
             <section className="  flex flex-col m-auto gap-12 pt-6">
                {/* CARD 1 */}
-               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md w-cover max-w-[450px]">
-                  <article className="flex gap-4 bg-brand-gray200 w-cover rounded-lg">
+               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
+                  <article className="flex gap-4 bg-brand-gray200 rounded-lg">
                      <div className="flex-1 h-48 flex gap-6 justify-center items-end rounded-lg group/card1 overflow-hidden relative hover:opacity-90">
                         <Image
                            src={CardImage}
@@ -63,8 +63,8 @@ export default function Projects() {
                </section>
 
                {/* CARD 2 */}
-               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md w-cover max-w-[450px]">
-                  <article className="flex gap-4 bg-brand-gray200 w-cover rounded-lg">
+               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
+                  <article className="flex gap-4 bg-brand-gray200 rounded-lg">
                      <div className="flex-1 h-48 flex gap-6 justify-center items-end rounded-lg group/card1 overflow-hidden relative hover:opacity-90">
                         <Image
                            src={CardImage}
@@ -106,7 +106,6 @@ export default function Projects() {
                </section>
             </section>
             {/* FOOTER */}
-            {/* w-[90%] flex flex-col m-auto */}
             <aside className="mt-10 flex m-auto justify-between w-full">
                <section className="flex-col gap-2">
                   <article className="flex gap-2">

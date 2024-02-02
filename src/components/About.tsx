@@ -11,7 +11,7 @@ import Instagran from '@/assets/image/contacts/instagran.svg';
 import PolygonLeft from '@/assets/image/about/aboutPolygons.svg';
 import PolygonRight from '@/assets/image/about/aboutPolygons.svg';
 
-export default function About2() {
+export default function About() {
    return (
       <section
          className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-white to-100% flex 

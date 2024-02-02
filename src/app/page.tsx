@@ -5,6 +5,7 @@ import HomeEllipse from '@/assets/image/home/homeEllipse.svg';
 
 import About from '@/components/About';
 import Projects from '@/components/Projects';
+import Skills from '@/components/Skills';
 
 // Adjust in navbar -sticky our fixed
 // Adjust in gradient bg (Home to About/ About to Projects)
@@ -75,6 +76,7 @@ export default function Page() {
             </article>
          </section>
          <About />
+         <Skills />
          <Projects />
       </>
    );
