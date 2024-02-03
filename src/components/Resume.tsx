@@ -30,7 +30,7 @@ export default function Resume() {
           </h1>
         </article>
         {/* PERSONAL INFORMATION */}
-        <section className="p-5 bg-gray-200 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
+        <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
           <article>
             <article className="flex items-center">
               <p className="font-bold pr-2 text-brand-blueTitle">Name:</p>
@@ -79,7 +79,7 @@ export default function Resume() {
           </article>
 
           {/* HARD SKILL - DESIGN */}
-          <section className="p-5 bg-gray-200 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">
+          <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">
             <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle">
               <h2>DESIGN</h2>
 
@@ -116,7 +116,7 @@ export default function Resume() {
               className="absolute"
             />
           </span>
-          <section className="p-5 bg-gray-200 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">
+          <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">
             <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
               <h2 className="">FRONT-END</h2>
               <section className="flex justify-between w-full ">
@@ -205,7 +205,7 @@ export default function Resume() {
               className="absolute left-0 -ml-4 -mt-9"
             />
           </span>
-          <section className="p-5 bg-gray-200 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">
+          <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">
             <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
               <h2>BACK-END & MOBILE</h2>
               <section className="flex justify-center w-full ">
