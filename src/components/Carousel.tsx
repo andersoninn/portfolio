@@ -15,6 +15,7 @@ export default function Carousel() {
          perView: 1,
       },
       initial: 0,
+      
       slideChanged(slider) {
          setCurrentSlide(slider.track.details.rel);
       },

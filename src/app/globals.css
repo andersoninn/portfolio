@@ -25,6 +25,7 @@ html {
   color: #fff;
   font-weight: 500;
   max-height: 100vh;
+  transition: all 0.3s ease-out;
 }
 
 .number-slide1 {
@@ -41,7 +42,6 @@ html {
   border-radius: 8px;
   width: 330px;  
 }
-
 
 .navigation-wrapper {
   position: relative;
@@ -79,7 +79,6 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  /* -webkit-transform: translateY(-50%); */
   fill: #fff;
   cursor: pointer;
 }
