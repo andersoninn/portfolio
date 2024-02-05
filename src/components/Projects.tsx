@@ -16,7 +16,7 @@ export default function Projects() {
          <section className="pt-8 pb-10 w-[90%] flex flex-col m-auto">
             <h2 className="text-brand-blue100 font-bold">Projects</h2>
             <h1 className="text-brand-blueTitle text-4xl font-black">
-               Creative Soluctions
+               Creative Soluctions  
             </h1>
 
             <section className="  flex flex-col m-auto gap-12 pt-6">
