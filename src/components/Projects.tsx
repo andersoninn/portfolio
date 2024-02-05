@@ -63,7 +63,7 @@ export default function Projects() {
                </section>
 
                {/* CARD 2 */}
-               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
+               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
                   <div className="">
                      <Carousel />
                   </div>
