@@ -16,14 +16,16 @@ export default function Projects() {
          <section className="pt-8 pb-10 w-[90%] flex flex-col m-auto">
             <h2 className="text-brand-blue100 font-bold">Projects</h2>
             <h1 className="text-brand-blueTitle text-4xl font-black">
-               Creative Soluctions  
+               Creative Soluctions
             </h1>
 
             <section className="  flex flex-col m-auto gap-12 pt-6">
                {/* CARD 1 */}
                <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
-                  <article className="flex gap-4 bg-brand-gray200 rounded-lg">
-                     <div className="flex-1 h-48 flex gap-6 justify-center items-end rounded-lg group/card1 overflow-hidden relative hover:opacity-90">
+                  <div className="">
+                     <Carousel />
+                  </div>
+                  {/* <div className="flex-1 h-48 flex gap-6 justify-center items-end rounded-lg group/card1 overflow-hidden relative hover:opacity-90">
                         <Image
                            src={CardImage}
                            alt=""
@@ -35,14 +37,9 @@ export default function Projects() {
                         <section className="bg-gray-400/40 w-8 h-8 rounded-lg flex items-center justify-center mb-3 translate-y-12 group-hover/card1:translate-y-0 transition-transform duration-200 ease-in-out hover:bg-gray-300/50">
                            <IoCodeSlash className="text-gray-200 w-5 h-5" />
                         </section>
-                     </div>
-                  </article>
-                  <aside className="m-auto flex gap-4 ">
-                     <article className="w-6 h-2 bg-brand-blueTitle rounded-md shadow"></article>
-                     <article className="w-6 h-2  border-1 border-brand-blueTitle rounded-md shadow"></article>
-                     <article className="w-6 h-2  border-1 border-brand-blueTitle rounded-md shadow"></article>
-                  </aside>
-                  <article className="text-center text-lg">
+                     </div> */}
+
+                  <article className="text-center text-lg -mt-4">
                      <h2 className="text-brand-blueTitle font-bold text-2xl">
                         Relevant and Real Projects <br />
                         NextJS & responsive coding
@@ -64,7 +61,7 @@ export default function Projects() {
 
                {/* CARD 2 */}
                <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
-                  <div className="">
+                  <div>
                      <Carousel />
                   </div>
                   {/* <Image
