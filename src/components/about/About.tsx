@@ -62,28 +62,28 @@ export default function About() {
                   <a
                      className="cursor-pointer rounded-xl hover:shadow-brand-blue100/50 shadow-md shadow-black/30"
                      href="https://www.linkedin.com/in/andersoninn/"
-                     target="blank"
+                     target="_blank"
                   >
                      <Image src={Linkedin} width={40} alt="" />
                   </a>
                   <a
                      className="cursor-pointer rounded-xl hover:shadow-brand-blue100/50 shadow-md shadow-black/30"
                      href="https://github.com/andersoninn"
-                     target="blank"
+                     target="_blank"
                   >
                      <Image src={Github} width={40} alt="" />
                   </a>
                   <a
                      className="cursor-pointer rounded-xl hover:shadow-brand-blue100/50 shadow-md shadow-black/30"
                      href="https://imgb.ifunny.co/images/40011437ff899cc50315b88587abcb53ab727eddcce359da89757af65955af1c_1.jpg"
-                     target="blank"
+                     target="_blank"
                   >
                      <Image src={DownloadCV} width={40} alt="" />
                   </a>
                   <a
                      className="cursor-pointer rounded-xl hover:shadow-brand-blue100/50 shadow-md shadow-black/30"
                      href="https://mailto:andersoninnocencio17@gmail.com/"
-                     target="blank"
+                     target="_blank"
                   >
                      <Image src={Gmail} width={40} alt="" />
                   </a>

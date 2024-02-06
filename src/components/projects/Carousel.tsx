@@ -6,6 +6,8 @@ import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import { useState } from 'react';
 import Link from 'next/link';
+import ProjectModal from './modals/Modal';
+import { Button, useDisclosure } from '@nextui-org/react';
 
 export default function Carousel() {
    const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,7 +17,7 @@ export default function Carousel() {
          perView: 1,
       },
       initial: 0,
-      
+
       slideChanged(slider) {
          setCurrentSlide(slider.track.details.rel);
       },
@@ -28,20 +30,15 @@ export default function Carousel() {
       <>
          <div className="navigation-wrapper">
             <div ref={sliderRef} className="keen-slider">
-               <div className="keen-slider__slide number-slide1">
-                  <Link
-                     href="https://www.google.com/search?q=bom+dia&rlz=1C1RXQR_pt-PTPT1094PT1094&oq=bom+dia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDIzMTlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
-                     target="_blank"
-                  >
-                     <Image src={CardImage} width={330} alt="" />
-                  </Link>
+               <div className="keen-slider__slide number-slide1" >
+                  <ProjectModal project='genesis' />
                </div>
                <div className="keen-slider__slide number-slide2">
                   <Link
                      href="https://www.google.com/search?q=bom+dia&rlz=1C1RXQR_pt-PTPT1094PT1094&oq=bom+dia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDIzMTlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
                      target="_blank"
                   >
-                     <Image src={CardImage} width={330} alt="" />
+                     <ProjectModal project='teste' />
                   </Link>
                </div>
                <div className="keen-slider__slide number-slide3">

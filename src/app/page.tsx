@@ -3,10 +3,10 @@ import { PiChatsTeardropDuotone } from 'react-icons/pi';
 import HomePicture from '@/assets/image/home/homePicture.svg';
 import HomeEllipse from '@/assets/image/home/homeEllipse.svg';
 
-import About from '@/components/About';
-import Projects from '@/components/Projects';
+import About from '@/components/about/About';
+import Projects from '@/components/projects/Projects';
 
-import Resume from '@/components/Resume';
+import Resume from '@/components/resume/Resume';
 
 // Adjust in navbar -sticky our fixed
 // Adjust in gradient bg (Home to About/ About to Projects)
@@ -63,7 +63,7 @@ export default function Page() {
                   >
                      <a
                         href="https://wa.me/351933864893"
-                        target="blank"
+                        target="_blank"
                         className="flex gap-1 justify-center items-center"
                      >
                         <PiChatsTeardropDuotone

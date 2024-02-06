@@ -22,6 +22,7 @@ const config: Config = {
 
         'brand-gray100': '#E8EBEC',
         'brand-gray200': '#D9D9D9',
+        'brand-danger': '#F31260',
 
         'brand-patternBG': '#F5F5F5',
       },
