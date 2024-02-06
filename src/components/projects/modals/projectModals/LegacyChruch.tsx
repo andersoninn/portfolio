@@ -16,14 +16,14 @@ export default function LegacyChurch() {
             </p>
 
             <Link
-               href="https://nextui.org/docs/components/modal"
+               href="https://www.figma.com/file/DuDGRM3FSn1w4y2ueVDV67/Legacy-Church?type=design&node-id=0-1&mode=design&t=fWtZe5R1DoxOODXd-0"
                target="_blank"
                className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
             >
                Design Sistem
             </Link>
             <Link
-               href="https://tailwindcss.com/docs/text-underline-offset"
+               href="https://portfolio-andersoninn.vercel.app/#resume"
                target="_blank"
                className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
             >

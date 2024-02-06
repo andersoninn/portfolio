@@ -14,18 +14,26 @@ import GetAlongLC from './projectModals/GetAlongLC';
 import Image from 'next/image';
 import CardImage from '@/assets/image/projects/iamageCard.svg';
 
+// export default function ProjectModal({ project }: { project: string }) {
+
 export default function ProjectModal({ project }: { project: string }) {
    const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
    return (
       <div className="flex flex-col gap-2">
-         <Button onPress={onOpen} className="h-full w-full">
-            <Image src={CardImage} width={330} alt="" />
+         <Button
+            onPress={onOpen}
+            className="bg-brand-gray100 text-brand-blueTitle font-bold cursor-pointer hover:underline underline-offset-2"
+         >
+            {project === 'genesis' && <span> Visit Genesis Project</span>}
+            {project === 'legacyChurch' && (
+               <span>Visite Legacy Church Project</span>
+            )}
          </Button>
 
          <Modal
             isOpen={isOpen}
-            placement={'center'}
+            placement={'bottom-center'}
             onOpenChange={onOpenChange}
          >
             <ModalContent className="bg-zinc-800 text-brand-gray100">

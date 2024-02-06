@@ -218,7 +218,7 @@ export default function Resume() {
                      src={EllipseLeft}
                      width={100}
                      alt=""
-                     className="absolute left-0 -ml-4 -mt-9"
+                     className="absolute left-0 -ml-4 -mt-10"
                   />
                </span>
                <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">

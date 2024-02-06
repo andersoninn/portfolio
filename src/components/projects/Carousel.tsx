@@ -1,13 +1,12 @@
 import Image from 'next/image';
 
-import CardImage from '@/assets/image/projects/iamageCard.svg';
+import InstGenesisCard from '@/assets/image/projects/carousel/instGenesisCard.svg';
+import LegacyChurchCard from '@/assets/image/projects/carousel/legacyChurchCard.svg';
+import GetAlongLCCard from '@/assets/image/projects/carousel/getAlongCard.svg';
 
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import { useState } from 'react';
-import Link from 'next/link';
-import ProjectModal from './modals/Modal';
-import { Button, useDisclosure } from '@nextui-org/react';
 
 export default function Carousel() {
    const [currentSlide, setCurrentSlide] = useState(0);
@@ -30,24 +29,14 @@ export default function Carousel() {
       <>
          <div className="navigation-wrapper">
             <div ref={sliderRef} className="keen-slider">
-               <div className="keen-slider__slide number-slide1" >
-                  <ProjectModal project='genesis' />
+               <div className="keen-slider__slide number-slide1">
+                  <Image src={InstGenesisCard} width={330} alt="" />
                </div>
                <div className="keen-slider__slide number-slide2">
-                  <Link
-                     href="https://www.google.com/search?q=bom+dia&rlz=1C1RXQR_pt-PTPT1094PT1094&oq=bom+dia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDIzMTlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
-                     target="_blank"
-                  >
-                     <ProjectModal project='teste' />
-                  </Link>
+                  <Image src={LegacyChurchCard} width={330} alt="" />
                </div>
                <div className="keen-slider__slide number-slide3">
-                  <Link
-                     href="https://www.google.com/search?q=bom+dia&rlz=1C1RXQR_pt-PTPT1094PT1094&oq=bom+dia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDIzMTlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
-                     target="_blank"
-                  >
-                     <Image src={CardImage} width={330} alt="" />
-                  </Link>
+                  <Image src={GetAlongLCCard} width={330} alt="" />
                </div>
             </div>
          </div>

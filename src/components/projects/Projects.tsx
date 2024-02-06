@@ -3,13 +3,10 @@ import CompleteProjectsIcon from '@/assets/image/footer/completeProjectsIcon.svg
 import ExperienceIcon from '@/assets/image/footer/experienceIcon.svg';
 import SatisfiedIcon from '@/assets/image/footer/satisfiedIcon.svg';
 
-import CardImage from '@/assets/image/projects/iamageCard.svg';
 import Image from 'next/image';
 
-import { FaRegEye } from 'react-icons/fa';
-import { IoCodeSlash } from 'react-icons/io5';
 import Carousel from './Carousel';
-import ProjectModal from './modals/Modal';
+import ProjectModal from './modals/ProjectModal';
 
 export default function Projects() {
    return (
@@ -40,9 +37,7 @@ export default function Projects() {
                      </p>
                   </article>
                   <aside className="flex justify-end">
-                     <p className="text-brand-blueTitle font-bold text-xs cursor-pointer hover:underline underline-offset-2">
-                        Visit all projects
-                     </p>
+                     <ProjectModal project="genesis" />
                   </aside>
                </section>
 
@@ -67,9 +62,7 @@ export default function Projects() {
                      </p>
                   </article>
                   <aside className="flex justify-end">
-                     <p className="text-brand-blueTitle font-bold text-xs cursor-pointer hover:underline underline-offset-2">
-                        Visit all projects
-                     </p>
+                     <ProjectModal project="legacyChurch" />
                   </aside>
                </section>
             </section>
@@ -118,9 +111,6 @@ export default function Projects() {
             </aside>
          </section>
          <section className="w-full h-16 absolute -top-8" id="projects" />
-
-         
-         
       </section>
    );
 }

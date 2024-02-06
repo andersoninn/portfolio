@@ -1,6 +1,8 @@
 import { ModalBody, ModalHeader } from '@nextui-org/react';
 import Link from 'next/link';
 
+// ADJUST WEBSITE LINKS
+
 export default function GenesisModal() {
    return (
       <>
@@ -16,14 +18,14 @@ export default function GenesisModal() {
             </p>
 
             <Link
-               href="https://nextui.org/docs/components/modal"
+               href="https://www.figma.com/file/mfwvrjKTGQR2WPGWBuSuWi/Instituto-Genesis?type=design&node-id=0%3A1&mode=design&t=z6RyiJQwy60YeVJk-1"
                target="_blank"
                className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
             >
                Design Sistem
             </Link>
             <Link
-               href="https://tailwindcss.com/docs/text-underline-offset"
+               href="https://portfolio-andersoninn.vercel.app/"
                target="_blank"
                className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
             >
