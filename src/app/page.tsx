@@ -26,7 +26,10 @@ export default function Page() {
                   className="-left-20 top-24 absolute"
                />
                <section className="relative">
-                  <h1 className="text-brand-blueTitle text-7xl max-[360px]:text-6xl font-bold flex flex-col text-wrap ">
+                  <h1
+                     className="text-brand-blueTitle text-7xl max-[360px]:text-6xl font-bold flex flex-col text-wrap"
+                     translate="no"
+                  >
                      <span className="w-40">
                         Hey, <br /> I&apos;m a
                      </span>
@@ -36,7 +39,7 @@ export default function Page() {
                   <Image
                      src={HomePicture}
                      alt=""
-                     className="absolute w-80 -top-56 left-32"
+                     className="absolute w-80 -top-60 left-32"
                   />
                </section>
                <p className="pt-4 pl-2 md:text-medium text-lg">

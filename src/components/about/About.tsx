@@ -41,7 +41,7 @@ export default function About() {
                />
             </article>
             <article>
-               <p className="pt-3 text-balance text-center text-lg indent-4">
+               <p className="pt-3 text-center text-lg indent-4">
                   As a former military professional, I excelled as the Secretary
                   to the Director of Aircraft, securing the second position in
                   my class. I made significant contributions in the Special

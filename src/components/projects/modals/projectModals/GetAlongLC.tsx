@@ -8,7 +8,7 @@ export default function GetAlongLC() {
             Get Along Language Course
          </ModalHeader>
          <ModalBody>
-            <h2>Desription of Get Along Language Course.</h2>
+            <h2>Description of Get Along Language Course.</h2>
             <p>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                pulvinar risus non risus hendrerit venenatis. Pellentesque sit

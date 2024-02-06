@@ -8,7 +8,7 @@ export default function LegacyChurch() {
             Legacy Church
          </ModalHeader>
          <ModalBody>
-            <h2>Desription of Legacy Church.</h2>
+            <h2>Description of Legacy Church.</h2>
             <p>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                pulvinar risus non risus hendrerit venenatis. Pellentesque sit

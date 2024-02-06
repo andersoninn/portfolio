@@ -22,7 +22,7 @@ export default function Resume() {
          className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-gray-200 to-100% flex 
       m-auto relative"
       >
-         <section className="w-[90%] m-auto pt-8 pb-10">
+         <section className="w-[90%] pt-8 pb-10 flex flex-col m-auto items-center ">
             <article className="pb-4">
                <h2 className="text-brand-blue100 font-bold">Resume</h2>
                <h1 className="text-brand-blueTitle text-4xl font-black">
@@ -42,7 +42,9 @@ export default function Resume() {
                      <p className="font-bold pr-2 text-brand-blueTitle">
                         E-mail:
                      </p>
-                     <p>andersoninnocencio17@gmail.com</p>
+                     <p className="max-[390px]:text-sm text-medium">
+                        andersoninnocencio17@gmail.com
+                     </p>
                   </article>
                   <article className="flex items-center">
                      <p className="font-bold pr-2 text-brand-blueTitle">
@@ -81,10 +83,11 @@ export default function Resume() {
                   </article>
                </article>
             </section>
+
             <section className="pt-6 flex flex-col gap-6">
                <article>
                   <h1 className="text-brand-blueTitle text-4xl font-black relative">
-                     Hard Skills
+                     Skills
                   </h1>
                   <Image
                      src={EllipseRight}
@@ -123,7 +126,7 @@ export default function Resume() {
                      </section> */}
                </section>
 
-               {/* HARD SKILL - FRONT-END */}
+               {/* SKILL - FRONT-END */}
                <span className="relative flex items-center justify-center">
                   <Image
                      src={EllipseCenter}
@@ -212,13 +215,13 @@ export default function Resume() {
                   </article>
                </section>
 
-               {/* HARD SKILL - BACK-END */}
-               <span className="relative">
+               {/* SKILL - BACK-END */}
+               <span>
                   <Image
                      src={EllipseLeft}
                      width={100}
                      alt=""
-                     className="absolute left-0 -ml-4 -mt-10"
+                     className="absolute left-0 -mt-10"
                   />
                </span>
                <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">

@@ -17,9 +17,9 @@ export default function Projects() {
                Creative Soluctions
             </h1>
 
-            <section className="  flex flex-col m-auto gap-12 pt-6">
+            <section className="  flex flex-col m-auto gap-12 pt-6 max-w-[99%]">
                {/* CARD 1 */}
-               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
+               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden ">
                   <article className="">
                      <Carousel />
                   </article>
@@ -48,7 +48,7 @@ export default function Projects() {
                   </article>
 
                   <article className="text-center text-lg -mt-4">
-                     <h2 className="text-brand-blueTitle font-bold text-xl">
+                     <h2 className="text-brand-blueTitle font-bold text-2xl">
                         Study Projects <br />
                         Full-Stack coding
                      </h2>

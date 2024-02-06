@@ -10,7 +10,7 @@ export default function GenesisModal() {
             Genesis Teaching Institute
          </ModalHeader>
          <ModalBody>
-            <h2>Desription of Institute</h2>
+            <h2>Description of Genesis Teaching Institute </h2>
             <p>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                pulvinar risus non risus hendrerit venenatis. Pellentesque sit
