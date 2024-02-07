@@ -84,14 +84,14 @@ export default function Resume() {
               <h2>UX/UI DESIGN</h2>
               <section className="flex justify-around w-full">
                 <article className="w-1/2  flex items-center">
-                  <div className="w-14 h-14 rounded-lg bg-[#333333] shadow mr-2 flex items-center justify-center">
+                  <div className="w-10 rounded-lg bg-[#333333] shadow mr-2 flex items-center justify-center">
                     <Image src={Figma} width={56} alt="" />
                   </div>
                   <p>Figma</p>
                 </article>
 
                 <article className="w-1/2 flex items-center">
-                  <div className="w-24 h-14 rounded-lg bg-[#011D36] shadow mr-2 flex items-center overflow-hidden">
+                  <div className="w-10 rounded-lg bg-[#011D36] shadow mr-2 flex items-center overflow-hidden">
                     <Image src={Photoshop} width={56} alt="" />
                   </div>
                   <p>Photophop</p>
@@ -119,7 +119,7 @@ export default function Resume() {
               <h2 className="">FRONT-END</h2>
               <section className="flex justify-between w-full ">
                 <article className="w-1/2 flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-10 rounded-lg mr-2">
                     <Image
                       src={Html}
                       width={56}
@@ -130,7 +130,7 @@ export default function Resume() {
                   <p>HTML</p>
                 </article>
                 <article className="w-1/2 flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-20 rounded-lg mr-2">
                     <Image
                       src={JavaScript}
                       width={56}
@@ -144,7 +144,7 @@ export default function Resume() {
 
               <section className="flex justify-between w-full ">
                 <article className="w-1/2  flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-10 rounded-lg mr-2">
                     <Image
                       src={Css}
                       width={56}
@@ -155,7 +155,7 @@ export default function Resume() {
                   <p>CSS</p>
                 </article>
                 <article className="w-1/2 flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-10 rounded-lg mr-2">
                     <Image
                       src={ReactJS}
                       width={56}
@@ -169,7 +169,7 @@ export default function Resume() {
 
               <section className="flex justify-between w-full ">
                 <article className="w-1/2  flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-10 rounded-lg mr-2">
                     <Image
                       src={Tailwind}
                       width={56}
@@ -180,7 +180,7 @@ export default function Resume() {
                   <p>Tailwind</p>
                 </article>
                 <article className="w-1/2 flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-10 rounded-lg mr-2">
                     <Image
                       src={NextJS}
                       width={56}
@@ -209,7 +209,7 @@ export default function Resume() {
               <p className="-mt-4">Learning...</p>
               <section className="flex justify-center w-full ">
                 <article className="w-1/2 flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-10 rounded-lg mr-2">
                     <Image
                       src={ReactNative}
                       width={56}
@@ -223,7 +223,7 @@ export default function Resume() {
 
               <section className="flex justify-between w-full ">
                 <article className="w-1/2  flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-10 rounded-lg mr-2">
                     <Image
                       src={JsNode}
                       width={56}
@@ -234,7 +234,7 @@ export default function Resume() {
                   <p>NodeJS</p>
                 </article>
                 <article className="w-1/2 flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-10 rounded-lg mr-2">
                     <Image
                       src={Express}
                       width={56}
@@ -248,7 +248,7 @@ export default function Resume() {
 
               <section className="flex justify-center w-full ">
                 <article className="w-1/2  flex items-center">
-                  <div className="w-14 h-14 rounded-lg mr-2">
+                  <div className="w-10 rounded-lg mr-2">
                     <Image
                       src={MongoDB}
                       width={56}
