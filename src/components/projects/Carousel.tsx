@@ -9,56 +9,54 @@ import 'keen-slider/keen-slider.min.css';
 import { useState } from 'react';
 
 export default function Carousel() {
-   const [currentSlide, setCurrentSlide] = useState(0);
-   const [loaded, setLoaded] = useState(false);
-   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
-      slides: {
-         perView: 1,
-      },
-      initial: 0,
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+    slides: {
+      perView: 1,
+    },
+    initial: 0,
 
-      slideChanged(slider) {
-         setCurrentSlide(slider.track.details.rel);
-      },
-      created() {
-         setLoaded(true);
-      },
-   });
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    },
+  });
 
-   return (
-      <>
-         <div className="navigation-wrapper">
-            <div ref={sliderRef} className="keen-slider">
-               <div className="keen-slider__slide number-slide1">
-                  <Image src={InstGenesisCard} width={330} alt="" />
-               </div>
-               <div className="keen-slider__slide number-slide2">
-                  <Image src={LegacyChurchCard} width={330} alt="" />
-               </div>
-               <div className="keen-slider__slide number-slide3">
-                  <Image src={GetAlongLCCard} width={330} alt="" />
-               </div>
-            </div>
-         </div>
-         {loaded && instanceRef.current && (
-            <div className="dots">
-               {Object.keys(instanceRef.current.track.details.slides).map(
-                  (idx, i) => (
-                     <button
-                        key={idx}
-                        onClick={() => {
-                           instanceRef.current?.moveToIdx(i);
-                        }}
-                        className={
-                           'dot' + (currentSlide === i ? ' active' : '')
-                        }
-                     ></button>
-                  )
-               )}
-            </div>
-         )}
-      </>
-   );
+  return (
+    <>
+      <div className="navigation-wrapper">
+        <div ref={sliderRef} className="keen-slider">
+          <div className="keen-slider__slide number-slide1">
+            <Image src={InstGenesisCard} width={330} alt="" />
+          </div>
+          <div className="keen-slider__slide number-slide2">
+            <Image src={LegacyChurchCard} width={330} alt="" />
+          </div>
+          <div className="keen-slider__slide number-slide3">
+            <Image src={GetAlongLCCard} width={330} alt="" />
+          </div>
+        </div>
+      </div>
+      {loaded && instanceRef.current && (
+        <div className="dots">
+          {Object.keys(instanceRef.current.track.details.slides).map(
+            (idx, i) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  instanceRef.current?.moveToIdx(i);
+                }}
+                className={'dot' + (currentSlide === i ? ' active' : '')}
+              ></button>
+            )
+          )}
+        </div>
+      )}
+    </>
+  );
 }
 
 // function Arrow(props: {

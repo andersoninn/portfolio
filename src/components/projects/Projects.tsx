@@ -20,7 +20,7 @@ export default function Projects() {
         <section className="  flex flex-col m-auto gap-12 pt-6 max-w-[99%]">
           {/* CARD 1 */}
           <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden ">
-            <article className="">
+            <article className=" flex flex-col items-center">
               <Carousel />
             </article>
             <article className="text-center text-lg -mt-4">
@@ -42,7 +42,7 @@ export default function Projects() {
 
           {/* CARD 2 */}
           <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
-            <article>
+            <article className="flex flex-col items-center">
               <Carousel />
             </article>
 

@@ -77,32 +77,34 @@ export default function Resume() {
           </article>
 
           {/* HARD SKILL - DESIGN */}
-          <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">
-            <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle">
-              <h2 translate="no">DESIGN</h2>
+          <section className="flex justify-center">
+            <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[400px] ">
+              <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle">
+                <h2 translate="no">DESIGN</h2>
 
-              <h2>UX/UI DESIGN</h2>
-              <section className="flex justify-around w-full">
-                <article className="w-1/2  flex items-center">
-                  <div className="w-10 rounded-lg bg-[#333333] shadow mr-2 flex items-center justify-center">
-                    <Image src={Figma} width={56} alt="" />
-                  </div>
-                  <p>Figma</p>
-                </article>
+                <h2>UX/UI DESIGN</h2>
+                <section className="flex justify-around w-full">
+                  <article className="flex items-center">
+                    <div className="w-10 rounded-lg bg-[#333333] shadow mr-2 flex items-center justify-center">
+                      <Image src={Figma} width={56} alt="" />
+                    </div>
+                    <p>Figma</p>
+                  </article>
 
-                <article className="w-1/2 flex items-center">
-                  <div className="w-10 rounded-lg bg-[#011D36] shadow mr-2 flex items-center overflow-hidden">
-                    <Image src={Photoshop} width={56} alt="" />
-                  </div>
-                  <p>Photophop</p>
-                </article>
-              </section>
-            </article>
+                  <article className=" flex items-center">
+                    <div className="w-10 rounded-lg bg-[#011D36] shadow mr-2 flex items-center overflow-hidden">
+                      <Image src={Photoshop} width={56} alt="" />
+                    </div>
+                    <p>Photophop</p>
+                  </article>
+                </section>
+              </article>
 
-            {/* 
+              {/* 
                        
                         
                      </section> */}
+            </section>
           </section>
 
           {/* SKILL - FRONT-END */}
@@ -114,152 +116,155 @@ export default function Resume() {
               className="absolute"
             />
           </span>
-          <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">
-            <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
-              <h2 className="">FRONT-END</h2>
-              <section className="flex justify-between w-full ">
-                <article className="w-1/2 flex items-center">
-                  <div className="w-10 rounded-lg mr-2">
-                    <Image
-                      src={Html}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>HTML</p>
-                </article>
-                <article className="w-1/2 flex items-center">
-                  <div className="w-20 rounded-lg mr-2">
-                    <Image
-                      src={JavaScript}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>JavaScript</p>
-                </article>
-              </section>
+          {/* aqui começa */}
+          <section className="flex flex-col gap-6 md:flex-row">
+            <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px]">
+              <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
+                <h2 className="">FRONT-END</h2>
+                <section className="flex justify-between w-full ">
+                  <article className="w-1/2 flex items-center">
+                    <div className="w-10 rounded-lg mr-2">
+                      <Image
+                        src={Html}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>HTML</p>
+                  </article>
+                  <article className="w-1/2 flex items-center">
+                    <div className="w-20 rounded-lg mr-2">
+                      <Image
+                        src={JavaScript}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>JavaScript</p>
+                  </article>
+                </section>
 
-              <section className="flex justify-between w-full ">
-                <article className="w-1/2  flex items-center">
-                  <div className="w-10 rounded-lg mr-2">
-                    <Image
-                      src={Css}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>CSS</p>
-                </article>
-                <article className="w-1/2 flex items-center">
-                  <div className="w-10 rounded-lg mr-2">
-                    <Image
-                      src={ReactJS}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>ReactJS</p>
-                </article>
-              </section>
+                <section className="flex justify-between w-full ">
+                  <article className="w-1/2  flex items-center">
+                    <div className="w-10 rounded-lg mr-2">
+                      <Image
+                        src={Css}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>CSS</p>
+                  </article>
+                  <article className="w-1/2 flex items-center">
+                    <div className="w-10 rounded-lg mr-2">
+                      <Image
+                        src={ReactJS}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>ReactJS</p>
+                  </article>
+                </section>
 
-              <section className="flex justify-between w-full ">
-                <article className="w-1/2  flex items-center">
-                  <div className="w-10 rounded-lg mr-2">
-                    <Image
-                      src={Tailwind}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>Tailwind</p>
-                </article>
-                <article className="w-1/2 flex items-center">
-                  <div className="w-10 rounded-lg mr-2">
-                    <Image
-                      src={NextJS}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>NextJS</p>
-                </article>
-              </section>
-            </article>
-          </section>
+                <section className="flex justify-between w-full ">
+                  <article className="w-1/2  flex items-center">
+                    <div className="w-10 rounded-lg mr-2">
+                      <Image
+                        src={Tailwind}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>Tailwind</p>
+                  </article>
+                  <article className="w-1/2 flex items-center">
+                    <div className="w-10 rounded-lg mr-2">
+                      <Image
+                        src={NextJS}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>NextJS</p>
+                  </article>
+                </section>
+              </article>
+            </section>
 
-          {/* SKILL - BACK-END */}
-          <span>
-            <Image
-              src={EllipseLeft}
-              width={100}
-              alt=""
-              className="absolute left-0 -mt-10"
-            />
-          </span>
-          <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10">
-            <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
-              <h2>BACK-END & MOBILE</h2>
-              <p className="-mt-4">Learning...</p>
-              <section className="flex justify-center w-full ">
-                <article className="w-1/2 flex items-center">
-                  <div className="w-10 rounded-lg mr-2">
-                    <Image
-                      src={ReactNative}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>ReactNative</p>
-                </article>
-              </section>
+            {/* SKILL - BACK-END */}
+            <span>
+              <Image
+                src={EllipseLeft}
+                width={100}
+                alt=""
+                className="absolute left-0 -mt-10"
+              />
+            </span>
+            <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px]">
+              <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
+                <h2>BACK-END & MOBILE</h2>
+                <p className="-mt-4">Learning...</p>
+                <section className="flex justify-center w-full ">
+                  <article className="flex items-center">
+                    <div className="w-10 rounded-lg mr-2">
+                      <Image
+                        src={ReactNative}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>ReactNative</p>
+                  </article>
+                </section>
 
-              <section className="flex justify-between w-full ">
-                <article className="w-1/2  flex items-center">
-                  <div className="w-10 rounded-lg mr-2">
-                    <Image
-                      src={JsNode}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>NodeJS</p>
-                </article>
-                <article className="w-1/2 flex items-center">
-                  <div className="w-10 rounded-lg mr-2">
-                    <Image
-                      src={Express}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>Express</p>
-                </article>
-              </section>
+                <section className="flex justify-between w-full ">
+                  <article className="flex items-center">
+                    <div className="w-10 rounded-lg mr-2">
+                      <Image
+                        src={JsNode}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>NodeJS</p>
+                  </article>
+                  <article className="flex items-center">
+                    <div className="w-10 rounded-lg mr-2">
+                      <Image
+                        src={Express}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>Express</p>
+                  </article>
+                </section>
 
-              <section className="flex justify-center w-full ">
-                <article className="w-1/2  flex items-center">
-                  <div className="w-10 rounded-lg mr-2">
-                    <Image
-                      src={MongoDB}
-                      width={56}
-                      alt=""
-                      className="drop-shadow-lg"
-                    />
-                  </div>
-                  <p>MongoDB</p>
-                </article>
-              </section>
-            </article>
+                <section className="flex justify-center w-full ">
+                  <article className="flex items-center">
+                    <div className="w-10 rounded-lg mr-2">
+                      <Image
+                        src={MongoDB}
+                        width={56}
+                        alt=""
+                        className="drop-shadow-lg"
+                      />
+                    </div>
+                    <p>MongoDB</p>
+                  </article>
+                </section>
+              </article>
+            </section>
           </section>
         </section>
       </section>
