@@ -20,7 +20,7 @@ export default function Resume() {
    return (
       <section
          className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-gray-200 to-100% flex 
-      m-auto relative"
+      m-auto relative overflow-hidden"
       >
          <section className="w-[90%] pt-8 pb-10  m-auto items-center md:items-start max-w-[1024px]">
             <article className="pb-4">
@@ -100,20 +100,17 @@ export default function Resume() {
                   <h1 className="text-brand-blueTitle text-4xl font-black relative">
                      Skills
                   </h1>
-                  <Image
+                  {/* <Image
                      src={EllipseRight}
                      width={100}
                      alt=""
                      className="absolute right-0 -mt-10"
-                  />
+                  /> */}
                </article>
-
                {/* SKILL - DESIGN */}
-               <section className="flex m-auto">
-                  <section
-                     className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10 
-                  md:w-[450px]"
-                  >
+
+               <section className="flex m-auto bg-red-400 relative">
+                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10                  md:w-[450px]">
                      <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle w-full realtive">
                         <h2 translate="no">DESIGN</h2>
 
@@ -135,6 +132,12 @@ export default function Resume() {
                         </section>
                      </article>
                   </section>
+                  <Image
+                     src={EllipseRight}
+                     width={100}
+                     alt=""
+                     className="absolute right-0 translate-x-1/4 -translate-y-1/2"
+                  />
                </section>
 
                {/* SKILL - FRONT-END */}
@@ -148,7 +151,7 @@ export default function Resume() {
                </span>
                {/* aqui começa */}
                <section className="flex flex-col gap-6 md:flex-row">
-                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px]">
+                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] ">
                      <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
                         <h2 className="">FRONT-END</h2>
                         <section className="flex justify-between w-full ">
