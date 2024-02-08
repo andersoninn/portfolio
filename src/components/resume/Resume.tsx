@@ -22,7 +22,7 @@ export default function Resume() {
          className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-gray-200 to-100% flex 
       m-auto relative"
       >
-         <section className="w-[90%] pt-8 pb-10 flex flex-col m-auto items-center ">
+         <section className="w-[90%] pt-8 pb-10  m-auto items-center md:items-start max-w-[1024px]">
             <article className="pb-4">
                <h2 className="text-brand-blue100 font-bold">Resume</h2>
                <h1 className="text-brand-blueTitle text-4xl font-black">
@@ -30,53 +30,71 @@ export default function Resume() {
                </h1>
             </article>
             {/* PERSONAL INFORMATION */}
-            <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px]">
-               <article>
-                  <article className="flex items-center">
-                     <p className="font-bold pr-2 text-brand-blueTitle">
-                        Name:
-                     </p>
-                     <p>Anderson Innocencio Carvalho</p>
-                  </article>
+            <section className="flex m-auto justify-center items-center">
+               <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md ">
+                  <article>
+                     <section className="flex flex-col md:flex-row md:gap-20">
+                        <article className="flex items-center">
+                           <p className="font-bold pr-2 text-brand-blueTitle">
+                              Name:
+                           </p>
+                           <p>Anderson Innocencio Carvalho</p>
+                        </article>
 
-                  <article className="flex items-center">
-                     <p className="font-bold pr-2 text-brand-blueTitle">
-                        Phone:
-                     </p>
-                     <p>+351 933 864 893</p>
-                  </article>
-                  <article className="flex items-center">
-                     <p className="font-bold pr-2 text-brand-blueTitle">
-                        Languages:
-                     </p>
-                     <p>Portuguese, English</p>
-                  </article>
-                  <article className="items-start">
-                     <p className="font-bold pr-2 text-brand-blueTitle ">
-                        Education:
-                     </p>
-                     <article className="pb-2">
-                        <li className="font-semibold">
-                           Adolpho Bloch State Technical School
-                        </li>
-                        <span className="font-semibold">
-                           (FEB 2009 - NOV 2011)
-                        </span>
-                        <p>Secondary school with technical development.</p>
+                        <article className="flex items-center">
+                           <p className="font-bold pr-2 text-brand-blueTitle">
+                              Languages:
+                           </p>
+                           <p>Portuguese, English</p>
+                        </article>
+                     </section>
+                     <section className="flex flex-col md:flex-row md:gap-12">
+                        <article className="flex items-center">
+                           <p className="font-bold pr-2 text-brand-blueTitle">
+                              Email:
+                           </p>
+                           <p>andersoninnocencio17@gmail.com</p>
+                        </article>
+                        <article className="flex items-center">
+                           <p className="font-bold pr-2 text-brand-blueTitle">
+                              Phone:
+                           </p>
+                           <p>+351 933 864 893</p>
+                        </article>
+                     </section>
+
+                     <article className="items-start">
+                        <p className="font-bold pr-2 text-brand-blueTitle ">
+                           Education:
+                        </p>
+                        <section className="flex flex-col md:flex-row md:gap-6">
+                           <article className="pb-2">
+                              <li className="font-semibold ">
+                                 Adolpho Bloch State Technical School
+                              </li>
+                              <span className="font-semibold">
+                                 (FEB 2009 - NOV 2011)
+                              </span>
+                              <p>
+                                 Secondary school with technical development.
+                              </p>
+                           </article>
+                           <article>
+                              <li className="font-semibold">
+                                 Progression Technical School
+                              </li>
+                              <span className="font-semibold">
+                                 (JAN 2015 - NOV 2015)
+                              </span>
+                              <p>Assembly and maintenance of computers.</p>
+                           </article>
+                        </section>
                      </article>
-                     <article>
-                        <li className="font-semibold">
-                           Progression Technical School
-                        </li>
-                        <span className="font-semibold">
-                           (JAN 2015 - NOV 2015)
-                        </span>
-                        <p>Assembly and maintenance of computers.</p>
-                     </article>
                   </article>
-               </article>
+               </section>
             </section>
 
+            {/* SKILL - TITLE */}
             <section className="pt-6 flex flex-col gap-6">
                <article>
                   <h1 className="text-brand-blueTitle text-4xl font-black relative">
@@ -90,10 +108,13 @@ export default function Resume() {
                   />
                </article>
 
-               {/* HARD SKILL - DESIGN */}
-               <section className="flex justify-center">
-                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md max-w-[450px] z-10 md:w-[400px] ">
-                     <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle w-[300px]">
+               {/* SKILL - DESIGN */}
+               <section className="flex m-auto">
+                  <section
+                     className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10 
+                  md:w-[450px]"
+                  >
+                     <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle w-full realtive">
                         <h2 translate="no">DESIGN</h2>
 
                         <h2>UX/UI DESIGN</h2>
@@ -113,11 +134,6 @@ export default function Resume() {
                            </article>
                         </section>
                      </article>
-
-                     {/* 
-                       
-                        
-                     </section> */}
                   </section>
                </section>
 

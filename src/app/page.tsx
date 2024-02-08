@@ -27,7 +27,7 @@ export default function Page() {
                />
                <section className="relative">
                   <h1
-                     className="text-brand-blueTitle text-7xl max-[360px]:text-6xl font-bold flex flex-col text-wrap lg:ml-[2%]"
+                     className="text-brand-blueTitle text-7xl max-[360px]:text-6xl font-bold flex flex-col text-wrap lg:mx-[2%]"
                      translate="no"
                   >
                      <article className="flex flex-col md:flex-row">
@@ -41,19 +41,17 @@ export default function Page() {
                      src={HomePicture}
                      alt=""
                      className="absolute w-80 -top-60 left-32 
-                     min-[632px]:w-2/4 min-[632px]:-top-10 min-[632px]:left-[50%]
-                     md:-top-44
-                     lg:-top-64                   
-                    "
+                     md:2/4 md:-top-10 md:left-[60%]
+                     lg:w-2/4 lg:lg:-top-64 lg:left-[50%]"
                   />
                </section>
-               <p className="pt-4 pl-2 md:text-medium text-lg lg:ml-[2%]">
+               <p className="pt-4 pl-2 md:text-medium text-lg lg:mx-[2%]">
                   My name is&nbsp;
                   <span className="text-brand-blueTitle hover:text font-bold md:text-medium text-lg">
                      Anderson Carvalho.
                   </span>
                </p>
-               <p className="pl-2 md:text-medium text-lg md:w-3/5 lg:w-3/5 lg:ml-[2%]">
+               <p className="pl-2 md:text-medium text-lg md:w-3/5 lg:w-3/5 lg:mx-[2%]">
                   Former Special Infantry soldier shifting to programming in
                   Portugal. Committed to growth, eager to contribute and enhance
                   my skills with a new team.

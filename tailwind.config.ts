@@ -10,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'md': '640px',
+        'lg': '1024px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -34,3 +38,4 @@ const config: Config = {
   plugins: [nextui()],
 };
 export default config;
+
