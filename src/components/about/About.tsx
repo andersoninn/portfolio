@@ -18,7 +18,7 @@ export default function About() {
       m-auto relative "
       >
          <section className="w-[90%] m-auto pt-8 pb-10 max-w-[1024px]">
-            <section className="lg:mx-[2%]">
+            <section className="">
                <article>
                   <h2 className="text-brand-blue100 font-bold">About Me</h2>
                   <h1 className="text-brand-blueTitle text-4xl font-black text-center md:text-left">
@@ -26,7 +26,7 @@ export default function About() {
                      are the motors of success&rdquo;
                   </h1>
                </article>
-               <article className="mt-3 relative float-left md:-left-12">
+               <article className="mt-3 relative float-left md:-left-12 lg:ml-[2%]">
                   <Image
                      src={AboutPicture}
                      width={450}
@@ -42,7 +42,7 @@ export default function About() {
                   />
                </article>
                <article>
-                  <p className="pt-3 text-center text-lg md:text-left">
+                  <p className="pt-3 text-center text-lg md:text-left lg:mr-[2%]">
                      As a former military professional, I excelled as the
                      Secretary to the Director of Aircraft, securing the second
                      position in my class. I made significant contributions in
