@@ -100,17 +100,11 @@ export default function Resume() {
                   <h1 className="text-brand-blueTitle text-4xl font-black relative">
                      Skills
                   </h1>
-                  {/* <Image
-                     src={EllipseRight}
-                     width={100}
-                     alt=""
-                     className="absolute right-0 -mt-10"
-                  /> */}
                </article>
                {/* SKILL - DESIGN */}
 
-               <section className="flex m-auto bg-red-400 relative">
-                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10                  md:w-[450px]">
+               <section className="flex m-auto relative">
+                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10        md:w-[450px]">
                      <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle w-full realtive">
                         <h2 translate="no">DESIGN</h2>
 
@@ -132,12 +126,14 @@ export default function Resume() {
                         </section>
                      </article>
                   </section>
-                  <Image
-                     src={EllipseRight}
-                     width={100}
-                     alt=""
-                     className="absolute right-0 translate-x-1/4 -translate-y-1/2"
-                  />
+                  <span className="absolute md:w-full -top-[25%] -right-[20%] md:left-0 md:flex md:justify-center">
+                     <Image
+                        src={EllipseRight}
+                        width={100}
+                        alt=""
+                        className=" "
+                     />
+                  </span>
                </section>
 
                {/* SKILL - FRONT-END */}
@@ -150,7 +146,7 @@ export default function Resume() {
                   />
                </span>
                {/* aqui começa */}
-               <section className="flex flex-col gap-6 md:flex-row">
+               <section className="flex flex-col gap-6 md:flex-row m-auto relative ">
                   <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] ">
                      <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
                         <h2 className="">FRONT-END</h2>
@@ -232,15 +228,25 @@ export default function Resume() {
                   </section>
 
                   {/* SKILL - BACK-END */}
-                  <span>
-                     <Image
-                        src={EllipseLeft}
-                        width={100}
-                        alt=""
-                        className="absolute left-0 -mt-10"
-                     />
-                  </span>
-                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px]">
+                  <section>
+                     <span>
+                        <Image
+                           src={EllipseLeft}
+                           width={100}
+                           alt=""
+                           className="absolute -left-[18%] -mt-4 md:-bottom-[15%] md:-left-[9%]"
+                        />
+                     </span>
+                     <span>
+                        <Image
+                           src={EllipseRight}
+                           width={100}
+                           alt=""
+                           className="absolute -right-[18%] -bottom-[7%] md:-bottom-[15%] md:-right-[9%]"
+                        />
+                     </span>
+                  </section>
+                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] ">
                      <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
                         <h2>BACK-END & MOBILE</h2>
                         <p className="-mt-4">Learning...</p>
