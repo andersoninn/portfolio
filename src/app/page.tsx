@@ -16,7 +16,7 @@ export default function Page() {
       <>
          <section
             id="home"
-            className="flex justify-center m-auto pt-80 pb-10 min-h-screen w-full overflow-x-hidden max-w-[1024px]"
+            className="flex justify-center m-auto pt-80 pb-14 w-full overflow-x-hidden max-w-[1024px]"
          >
             <article className="-mt-4 w-[90%] lg:w-full">
                <Image

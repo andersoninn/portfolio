@@ -104,7 +104,7 @@ export default function Resume() {
                {/* SKILL - DESIGN */}
 
                <section className="flex m-auto relative">
-                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10        md:w-[450px]">
+                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10  md:w-[450px]">
                      <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle w-full realtive">
                         <h2 translate="no">DESIGN</h2>
 
@@ -308,7 +308,7 @@ export default function Resume() {
             </section>
          </section>
 
-         <section className="w-full h-16 absolute -top-8" id="resume" />
+         <section className="w-full h-4 absolute -top-8" id="resume" />
       </section>
    );
 }
