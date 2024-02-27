@@ -1,13 +1,9 @@
-import Image from 'next/image';
-
-import InstGenesisCard from '@/assets/image/projects/carousel/instGenesisCard.svg';
-import LegacyChurchCard from '@/assets/image/projects/carousel/legacyChurchCard.svg';
-import GetAlongLCCard from '@/assets/image/projects/carousel/getAlongCard.svg';
-
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import { useEffect, useState } from 'react';
+
 import { useProjects } from '@/store/useProjects';
+import { ImageProject, ImageProjectProps } from '@/context/Projects';
 
 export default function Carousel() {
    const [currentSlide, setCurrentSlide] = useState(0);
@@ -26,25 +22,24 @@ export default function Carousel() {
       },
    });
 
-   const { realProjects } = useProjects();
+   const { realProjects, setActive } = useProjects();
 
    useEffect(() => {
-      console.log(realProjects)
-   }, [realProjects]);
+      setActive(currentSlide);
+   }, [currentSlide]);
 
    return (
       <>
          <div className="navigation-wrapper">
             <div ref={sliderRef} className="keen-slider">
-               <div className="keen-slider__slide number-slide1">
-                  <Image src={InstGenesisCard} width={330} alt="" />
-               </div>
-               <div className="keen-slider__slide number-slide2">
-                  <Image src={LegacyChurchCard} width={330} alt="" />
-               </div>
-               <div className="keen-slider__slide number-slide3">
-                  <Image src={GetAlongLCCard} width={330} alt="" />
-               </div>
+               {realProjects.map((e) => (
+                  <div
+                     className="keen-slider__slide number-slide1"
+                     key={e.image}
+                  >
+                     {ImageProject[e.image as keyof ImageProjectProps]}
+                  </div>
+               ))}
             </div>
          </div>
          {loaded && instanceRef.current && (

@@ -1,18 +1,15 @@
-'use client';
 import Carousel from './Carousel';
-import ProjectModal from './modals/ProjectModal';
+import RealProjectsModal from '@/components/projects/modals/RealProjectsModal';
 import Footer from '../footer/Footer';
 
 export default function Projects() {
    return (
       <section className="bg-gradient-to-t from-white from-0% via-white via-90% to-gray-200 to-100% relative">
-         {/* items-center md:items-start  */}
          <section className="w-[90%] pt-8 pb-10 flex flex-col m-auto max-w-[1024px] ">
             <h2 className="text-brand-blue100 font-bold">Projects</h2>
             <h1 className="text-brand-blueTitle text-4xl font-black">
                Creative Soluctions
             </h1>
-
             <section className="  flex flex-col md:flex-row m-auto gap-12 pt-6 max-w-[99%]">
                {/* CARD 1 */}
                <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden ">
@@ -33,7 +30,7 @@ export default function Projects() {
                      </p>
                   </article>
                   <aside className="flex justify-end">
-                     <ProjectModal project="genesis" />
+                     <RealProjectsModal />
                   </aside>
                </section>
 
@@ -58,7 +55,7 @@ export default function Projects() {
                      </p>
                   </article>
                   <aside className="flex justify-end">
-                     <ProjectModal project="legacyChurch" />
+                     {/* <RealProjectsModal /> */}
                   </aside>
                </section>
             </section>

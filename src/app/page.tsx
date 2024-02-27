@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import { PiChatsTeardropDuotone } from 'react-icons/pi';
 import HomePicture from '@/assets/image/home/homePicture.svg';
@@ -7,9 +8,6 @@ import About from '@/components/about/About';
 import Projects from '@/components/projects/Projects';
 
 import Resume from '@/components/resume/Resume';
-
-// Adjust in navbar -sticky our fixed
-// Adjust in gradient bg (Home to About/ About to Projects)
 
 export default function Page() {
    return (

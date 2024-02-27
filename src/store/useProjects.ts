@@ -1,13 +1,13 @@
 import {create} from 'zustand'
-import { Projects } from '@/context/projects';
+import { Projects } from '@/context/Projects';
 
-interface RProject  {
+interface RealProject {
         id: number;
         name: string;
         description: string;
         image: string;
         designSistemLink: string;
-        websiteLink: string;
+        oficialWebsiteLink: string;
         codeLink: string;
         technologiesUsed: {
             id: string,
@@ -16,18 +16,19 @@ interface RProject  {
                 }[]; 
 }
 
-export interface RealProjectProp {
-
-realProjects: RProject[] 
-
-    
+export interface ProjectProp {
+    active: number
+    realProjects: RealProject[]
+    setActive: (id: number)=> void
 }
 
 
-
-
-export const useProjects = create<RealProjectProp>()(() => ({
-    realProjects: Projects
+export const useProjects = create<ProjectProp>()((set) => ({
+    active: 0,
+    realProjects: Projects,
+    setActive: (id:number)=> {
+        set({active:id})
+        }
     })
-   
 )
+
