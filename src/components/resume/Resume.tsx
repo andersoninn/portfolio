@@ -117,7 +117,7 @@ export default function Resume() {
                               <p>Figma</p>
                            </article>
 
-                           <article className=" flex items-center">
+                           <article className=" flex items-center pl-4">
                               <div className="w-10 rounded-lg bg-[#011D36] shadow mr-2 flex items-center overflow-hidden">
                                  <Image src={Photoshop} width={56} alt="" />
                               </div>
@@ -145,7 +145,7 @@ export default function Resume() {
                      className="absolute"
                   />
                </span>
-               {/* aqui começa */}
+
                <section className="flex flex-col gap-6 md:flex-row m-auto relative ">
                   <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] ">
                      <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
