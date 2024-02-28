@@ -24,6 +24,7 @@ export default function RealProjectsModal() {
          <Button
             onPress={onOpen}
             className="max-w-fit text-brand-blueTitle font-bold bg-brand-gray100"
+            translate="no"
          >
             {realProjects[activeRealProjects].name}
          </Button>
@@ -36,7 +37,10 @@ export default function RealProjectsModal() {
             <ModalContent>
                {(onClose) => (
                   <>
-                     <ModalHeader className="flex flex-col gap-1">
+                     <ModalHeader
+                        className="flex flex-col gap-1"
+                        translate="no"
+                     >
                         {realProjects[activeRealProjects].name}
                      </ModalHeader>
                      <ModalBody>

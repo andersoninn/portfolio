@@ -24,6 +24,7 @@ export default function StudyProjectsModal() {
          <Button
             onPress={onOpen}
             className="max-w-fit text-brand-blueTitle font-bold bg-brand-gray100"
+            translate="no"
          >
             {realProjects[activeStudyProjects].name}
          </Button>
