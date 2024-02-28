@@ -1,7 +1,8 @@
 import {create} from 'zustand'
-import { Projects } from '@/context/DataRealProjects';
+import { DataRealProjects } from '@/context/DataRealProjects';
+import { DataStudyProjects } from '@/context/DataStudyProjects';
 
-interface RealProject {
+interface DataProjectProps {
         id: number;
         name: string;
         description: string;
@@ -17,22 +18,24 @@ interface RealProject {
 }
 
 export interface ProjectProp {
-    realProjects: RealProject[]
+    realProjects: DataProjectProps[]
     activeRealProjects: number
     setActiveRealProjects: (id: number)=> void
 
+    studyProjects: DataProjectProps[]
     activeStudyProjects: number
     setActiveStudyProjects: (id: number)=> void
 }
 
 
 export const useProjects = create<ProjectProp>()((set) => ({
-    realProjects: Projects,
+    realProjects: DataRealProjects,
     activeRealProjects: 0,
     setActiveRealProjects: (id:number)=> {
         set({activeRealProjects:id})
         },
 
+    studyProjects: DataStudyProjects,
     activeStudyProjects: 0,
     setActiveStudyProjects: (id:number)=> {
         set({activeStudyProjects:id})

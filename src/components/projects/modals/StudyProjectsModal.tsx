@@ -17,7 +17,7 @@ import Link from 'next/link';
 export default function StudyProjectsModal() {
    const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-   const { realProjects, activeStudyProjects } = useProjects();
+   const { studyProjects, activeStudyProjects } = useProjects();
 
    return (
       <div className="flex flex-col gap-2">
@@ -26,29 +26,26 @@ export default function StudyProjectsModal() {
             className="max-w-fit text-brand-blueTitle font-bold bg-brand-gray100"
             translate="no"
          >
-            {realProjects[activeStudyProjects].name}
+            {studyProjects[activeStudyProjects].name}
          </Button>
 
          <Modal
             isOpen={isOpen}
             onOpenChange={onOpenChange}
-            className="bg-brand-gray200"
+            className="bg-brand-gray100"
          >
             <ModalContent>
                {(onClose) => (
                   <>
                      <ModalHeader className="flex flex-col gap-1">
-                        {realProjects[activeStudyProjects].name}
+                        {studyProjects[activeStudyProjects].name}
                      </ModalHeader>
                      <ModalBody>
-                        <h2>
-                           Description of{' '}
-                           {realProjects[activeStudyProjects].name}.
-                        </h2>
-                        <p>{realProjects[activeStudyProjects].description}</p>
+                        <h2 className="-mb-2">Description:</h2>
+                        <p>{studyProjects[activeStudyProjects].description}</p>
 
                         <p className="flex gap-2 flex-wrap">
-                           {realProjects[
+                           {studyProjects[
                               activeStudyProjects
                            ].technologiesUsed.map((e) => (
                               <span key={e.id} className="">
@@ -63,7 +60,8 @@ export default function StudyProjectsModal() {
 
                         <Link
                            href={
-                              realProjects[activeStudyProjects].designSistemLink
+                              studyProjects[activeStudyProjects]
+                                 .designSistemLink
                            }
                            target="_blank"
                            className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
@@ -72,7 +70,7 @@ export default function StudyProjectsModal() {
                         </Link>
                         <Link
                            href={
-                              realProjects[activeStudyProjects]
+                              studyProjects[activeStudyProjects]
                                  .oficialWebsiteLink
                            }
                            target="_blank"
@@ -80,9 +78,13 @@ export default function StudyProjectsModal() {
                         >
                            Oficial Website
                         </Link>
-                        <p className="hover:text-brand-danger hover:underline hover:underline-offset-4 w-1/2 select-none">
-                           Code - Private
-                        </p>
+                        <Link
+                           href={studyProjects[activeStudyProjects].codeLink}
+                           target="_blank"
+                           className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
+                        >
+                           Code - Public
+                        </Link>
                      </ModalBody>
                      <ModalFooter>
                         <Button

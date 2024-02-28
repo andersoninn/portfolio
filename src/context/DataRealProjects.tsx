@@ -8,6 +8,7 @@ import Css from '@/assets/image/resume/css3.svg';
 import JavaScript from '@/assets/image/resume/javaScript.svg';
 import ReactJS from '@/assets/image/resume/react.svg';
 import Tailwind from '@/assets/image/resume/tailwind.svg';
+import TypeScript from '@/assets/image/resume/typeScript.svg';
 import NextJS from '@/assets/image/resume/nextJS.svg';
 
 import { ReactNode } from 'react';
@@ -25,6 +26,7 @@ export interface TechnologiesLogoProps {
    reactJS: ReactNode;
    nextJS: ReactNode;
    tailwind: ReactNode;
+   typeScript: ReactNode;
 }
 
 export const ImageProject: ImageProjectProps = {
@@ -40,9 +42,10 @@ export const TechnologiesLogo: TechnologiesLogoProps = {
    reactJS: <Image src={ReactJS} width={30} alt="" />,
    nextJS: <Image src={NextJS} width={30} alt="" />,
    tailwind: <Image src={Tailwind} width={30} alt="" />,
+   typeScript: <Image src={TypeScript} width={30} alt="" />,
 };
 
-export const Projects = [
+export const DataRealProjects = [
    {
       id: 1,
       name: 'Get Along Language Course',
@@ -68,6 +71,11 @@ export const Projects = [
             id: 'JS',
             technologieName: 'Java Script',
             tecnologieImage: 'js',
+         },
+         {
+            id: 'TypeScript',
+            technologieName: 'TypeScript',
+            tecnologieImage: 'typeScript',
          },
          {
             id: 'ReactJS',
@@ -115,6 +123,11 @@ export const Projects = [
             tecnologieImage: 'js',
          },
          {
+            id: 'TypeScript',
+            technologieName: 'TypeScript',
+            tecnologieImage: 'typeScript',
+         },
+         {
             id: 'ReactJS',
             technologieName: 'React JS',
             tecnologieImage: 'reactJS',
@@ -158,6 +171,11 @@ export const Projects = [
             id: 'JS',
             technologieName: 'Java Script',
             tecnologieImage: 'js',
+         },
+         {
+            id: 'TypeScript',
+            technologieName: 'TypeScript',
+            tecnologieImage: 'typeScript',
          },
          {
             id: 'ReactJS',

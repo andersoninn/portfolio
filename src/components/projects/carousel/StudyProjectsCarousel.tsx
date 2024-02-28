@@ -22,7 +22,7 @@ export default function StudyProjectsCarousel() {
       },
    });
 
-   const { realProjects, setActiveStudyProjects } = useProjects();
+   const { studyProjects, setActiveStudyProjects } = useProjects();
 
    useEffect(() => {
       setActiveStudyProjects(currentSlide);
@@ -32,7 +32,7 @@ export default function StudyProjectsCarousel() {
       <>
          <div className="navigation-wrapper">
             <div ref={sliderRef} className="keen-slider">
-               {realProjects.map((e) => (
+               {studyProjects.map((e) => (
                   <div
                      className="keen-slider__slide number-slide1"
                      key={e.image}

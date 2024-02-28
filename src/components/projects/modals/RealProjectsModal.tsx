@@ -32,7 +32,7 @@ export default function RealProjectsModal() {
          <Modal
             isOpen={isOpen}
             onOpenChange={onOpenChange}
-            className="bg-brand-gray200"
+            className="bg-brand-gray100"
          >
             <ModalContent>
                {(onClose) => (
@@ -44,10 +44,7 @@ export default function RealProjectsModal() {
                         {realProjects[activeRealProjects].name}
                      </ModalHeader>
                      <ModalBody>
-                        <h2>
-                           Description of{' '}
-                           {realProjects[activeRealProjects].name}.
-                        </h2>
+                        <h2 className="-mb-2">Description:</h2>
                         <p>{realProjects[activeRealProjects].description}</p>
 
                         <p className="flex gap-2 flex-wrap">

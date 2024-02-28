@@ -127,12 +127,7 @@ export default function Resume() {
                      </article>
                   </section>
                   <span className="absolute md:w-full -top-[25%] -right-[20%] md:left-0 md:flex md:justify-center">
-                     <Image
-                        src={EllipseRight}
-                        width={100}
-                        alt=""
-                        className=" "
-                     />
+                     <Image src={EllipseRight} width={100} alt="" />
                   </span>
                </section>
 

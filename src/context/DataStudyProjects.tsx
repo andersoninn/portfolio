@@ -8,6 +8,7 @@ import Css from '@/assets/image/resume/css3.svg';
 import JavaScript from '@/assets/image/resume/javaScript.svg';
 import ReactJS from '@/assets/image/resume/react.svg';
 import Tailwind from '@/assets/image/resume/tailwind.svg';
+import TypeScript from '@/assets/image/resume/typeScript.svg';
 import NextJS from '@/assets/image/resume/nextJS.svg';
 
 import { ReactNode } from 'react';
@@ -25,6 +26,7 @@ export interface TechnologiesLogoProps {
    reactJS: ReactNode;
    nextJS: ReactNode;
    tailwind: ReactNode;
+   typeScript: ReactNode;
 }
 
 export const ImageProject: ImageProjectProps = {
@@ -40,19 +42,22 @@ export const TechnologiesLogo: TechnologiesLogoProps = {
    reactJS: <Image src={ReactJS} width={30} alt="" />,
    nextJS: <Image src={NextJS} width={30} alt="" />,
    tailwind: <Image src={Tailwind} width={30} alt="" />,
+   typeScript: <Image src={TypeScript} width={30} alt="" />,
 };
 
-export const Projects = [
+export const DataStudyProjects = [
    {
       id: 1,
-      name: 'Get Along Language Course',
+      name: 'Task List in React',
       description:
-         'Description of Get Along Language Course Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor quam.',
+         'Final challenge of module 01 of the React course at Rocktseat, where we were asked to make a Task List, based on a layout and a pre-defined briefing established.',
       image: 'getAlong',
       designSistemLink:
-         'https://www.figma.com/file/XeiCfpJ7bZBUcZ84XSClla/GetAlong-LC?type=design&node-id=0-1&mode=design&t=fWtZe5R1DoxOODXd-0',
-      oficialWebsiteLink: 'https://portfolio-andersoninn.vercel.app/#about',
-      codeLink: '',
+         'https://www.figma.com/file/lXQubaJEmKMkJk4DOFvw1S/ToDo-List-%E2%80%A2-Desafio-React-(Copy)?type=design&node-id=56-96&mode=design&t=PCvIHmUkdyfgupIK-0',
+      oficialWebsiteLink:
+         'https://www.google.com/search?sca_esv=85af15397c77c0f6&rlz=1C1RXQR_pt-PTPT1094PT1094&sxsrf=ACQVn0_kHO2SlyW1NtNXHNmwmduT3UOjQg:1709026977286&q=legacy+church&tbm=isch&source=lnms&sa=X&ved=2ahUKEwij15HPncuEAxURg_0HHRuYCt0Q0pQJegQIDBAB&cshid=1709027037905120&biw=1366&bih=679&dpr=1',
+      codeLink:
+         'https://github.com/andersoninn/Rocketseat_Challenge_01_Task_List_React',
       technologiesUsed: [
          {
             id: 'HTML5',
@@ -73,31 +78,21 @@ export const Projects = [
             id: 'ReactJS',
             technologieName: 'React JS',
             tecnologieImage: 'reactJS',
-         },
-
-         {
-            id: 'NextJS',
-            technologieName: 'NextJS',
-            tecnologieImage: 'nextJS',
-         },
-         {
-            id: 'Tailwind',
-            technologieName: 'Tailwind',
-            tecnologieImage: 'tailwind',
          },
       ],
    },
    {
       id: 2,
-      name: 'Legacy Church',
+      name: 'Coffee Delivery',
       description:
-         'Description of Legacy Church Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor quam.',
+         "Final challenge of module 02 of Rocktseat's React course, where we were asked to make a coffee-by-delivery platform, using React + Type Script, based on a layout and a pre-defined briefing established.",
       image: 'church',
       designSistemLink:
-         'https://www.figma.com/file/DuDGRM3FSn1w4y2ueVDV67/Legacy-Church?type=design&node-id=0-1&mode=design&t=sNwNyxG5S3Cy6zCD-0',
+         'https://www.figma.com/file/XPjHwZ8k5Ye59Tjw8vyAyC/Coffee-Delivery-%E2%80%A2-Desafio-React-(Copy)?type=design&node-id=2-12&mode=design&t=yWsTmONhI6ou8sH0-0',
       oficialWebsiteLink:
          'https://www.google.com/search?sca_esv=85af15397c77c0f6&rlz=1C1RXQR_pt-PTPT1094PT1094&sxsrf=ACQVn0_kHO2SlyW1NtNXHNmwmduT3UOjQg:1709026977286&q=legacy+church&tbm=isch&source=lnms&sa=X&ved=2ahUKEwij15HPncuEAxURg_0HHRuYCt0Q0pQJegQIDBAB&cshid=1709027037905120&biw=1366&bih=679&dpr=1',
-      codeLink: '',
+      codeLink:
+         'https://github.com/andersoninn/Rocketseat_Challenge_02_Coffee_Delivery_React_TS',
       technologiesUsed: [
          {
             id: 'HTML5',
@@ -113,36 +108,31 @@ export const Projects = [
             id: 'JS',
             technologieName: 'Java Script',
             tecnologieImage: 'js',
+         },
+         {
+            id: 'TypeScript',
+            technologieName: 'TypeScript',
+            tecnologieImage: 'typeScript',
          },
          {
             id: 'ReactJS',
             technologieName: 'React JS',
             tecnologieImage: 'reactJS',
          },
-
-         {
-            id: 'NextJS',
-            technologieName: 'NextJS',
-            tecnologieImage: 'nextJS',
-         },
-         {
-            id: 'Tailwind',
-            technologieName: 'Tailwind',
-            tecnologieImage: 'tailwind',
-         },
       ],
    },
    {
       id: 3,
-      name: 'Inst. Genesis',
+      name: 'GitHub Blog',
       description:
-         'Description of Inst. Genesis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor quam.',
+         "Final challenge of module 03 of Rocktseat's React course, where we were asked to make a Blog platform, consuming the GitHub API and using React + Type Script + NextJS, based on a layout and a pre-defined briefing established.",
       image: 'genesis',
       designSistemLink:
-         'https://www.figma.com/file/DuDGRM3FSn1w4y2ueVDV67/Legacy-Church?type=design&node-id=0-1&mode=design&t=sNwNyxG5S3Cy6zCD-0',
+         'https://www.figma.com/file/hv0oEN0fGYb8g3np4PMlCZ/GitHub-Blog-(Community)?type=design&node-id=0-1&mode=design&t=a3oA6PXCfFoBGkIW-0',
       oficialWebsiteLink:
          'https://www.google.com/search?sca_esv=85af15397c77c0f6&rlz=1C1RXQR_pt-PTPT1094PT1094&sxsrf=ACQVn0_kHO2SlyW1NtNXHNmwmduT3UOjQg:1709026977286&q=legacy+church&tbm=isch&source=lnms&sa=X&ved=2ahUKEwij15HPncuEAxURg_0HHRuYCt0Q0pQJegQIDBAB&cshid=1709027037905120&biw=1366&bih=679&dpr=1',
-      codeLink: '',
+      codeLink:
+         'https://github.com/andersoninn/Rocketseat_Challenge_02_Coffee_Delivery_React_TS_Vite',
       technologiesUsed: [
          {
             id: 'HTML5',
@@ -158,6 +148,11 @@ export const Projects = [
             id: 'JS',
             technologieName: 'Java Script',
             tecnologieImage: 'js',
+         },
+         {
+            id: 'TypeScript',
+            technologieName: 'TypeScript',
+            tecnologieImage: 'typeScript',
          },
          {
             id: 'ReactJS',
