@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import InstGenesisCard from '@/assets/image/projects/carousel/instGenesisCard.svg';
-import LegacyChurchCard from '@/assets/image/projects/carousel/legacyChurchCard.svg';
-import GetAlongLCCard from '@/assets/image/projects/carousel/getAlongCard.svg';
+import InstGenesisCard from '@/assets/image/projects/realProjectsImage/instGenesisCard.svg';
+import LegacyChurchCard from '@/assets/image/projects/realProjectsImage/legacyChurchCard.svg';
+import GetAlongLCCard from '@/assets/image/projects/realProjectsImage/getAlongCard.svg';
 
 import Html from '@/assets/image/resume/html5.svg';
 import Css from '@/assets/image/resume/css3.svg';
@@ -13,7 +13,7 @@ import NextJS from '@/assets/image/resume/nextJS.svg';
 
 import { ReactNode } from 'react';
 
-export interface ImageProjectProps {
+export interface ImageRealProjectProps {
    genesis: ReactNode;
    church: ReactNode;
    getAlong: ReactNode;
@@ -29,7 +29,7 @@ export interface TechnologiesLogoProps {
    typeScript: ReactNode;
 }
 
-export const ImageProject: ImageProjectProps = {
+export const ImageRealProject: ImageRealProjectProps = {
    genesis: <Image src={InstGenesisCard} width={330} alt="" />,
    church: <Image src={LegacyChurchCard} width={330} alt="" />,
    getAlong: <Image src={GetAlongLCCard} width={330} alt="" />,

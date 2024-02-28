@@ -3,7 +3,10 @@ import 'keen-slider/keen-slider.min.css';
 import { useEffect, useState } from 'react';
 
 import { useProjects } from '@/store/useProjects';
-import { ImageProject, ImageProjectProps } from '@/context/DataRealProjects';
+import {
+   ImageRealProject,
+   ImageRealProjectProps,
+} from '@/context/DataRealProjects';
 
 export default function RealProjectsCarousel() {
    const [currentSlide, setCurrentSlide] = useState(0);
@@ -28,7 +31,6 @@ export default function RealProjectsCarousel() {
       setActiveRealProjects(currentSlide);
    }, [currentSlide]);
 
-
    return (
       <>
          <div className="navigation-wrapper">
@@ -38,7 +40,7 @@ export default function RealProjectsCarousel() {
                      className="keen-slider__slide number-slide1"
                      key={e.image}
                   >
-                     {ImageProject[e.image as keyof ImageProjectProps]}
+                     {ImageRealProject[e.image as keyof ImageRealProjectProps]}
                   </div>
                ))}
             </div>

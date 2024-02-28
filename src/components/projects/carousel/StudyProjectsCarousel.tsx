@@ -3,7 +3,10 @@ import 'keen-slider/keen-slider.min.css';
 import { useEffect, useState } from 'react';
 
 import { useProjects } from '@/store/useProjects';
-import { ImageProject, ImageProjectProps } from '@/context/DataRealProjects';
+import {
+   ImageStudyProject,
+   ImageStudyProjectProps,
+} from '@/context/DataStudyProjects';
 
 export default function StudyProjectsCarousel() {
    const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,7 +40,11 @@ export default function StudyProjectsCarousel() {
                      className="keen-slider__slide number-slide1"
                      key={e.image}
                   >
-                     {ImageProject[e.image as keyof ImageProjectProps]}
+                     {
+                        ImageStudyProject[
+                           e.image as keyof ImageStudyProjectProps
+                        ]
+                     }
                   </div>
                ))}
             </div>

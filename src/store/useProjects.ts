@@ -27,7 +27,6 @@ export interface ProjectProp {
     setActiveStudyProjects: (id: number)=> void
 }
 
-
 export const useProjects = create<ProjectProp>()((set) => ({
     realProjects: DataRealProjects,
     activeRealProjects: 0,

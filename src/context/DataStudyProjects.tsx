@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import InstGenesisCard from '@/assets/image/projects/carousel/instGenesisCard.svg';
-import LegacyChurchCard from '@/assets/image/projects/carousel/legacyChurchCard.svg';
-import GetAlongLCCard from '@/assets/image/projects/carousel/getAlongCard.svg';
+import ToDoList from '@/assets/image/projects/studyProjectsImage/toDoList.svg';
+import CoffeeDelivery from '@/assets/image/projects/studyProjectsImage/coffeeDelivery.svg';
+import GitHubBlog from '@/assets/image/projects/studyProjectsImage/gitHubBlog.svg';
 
 import Html from '@/assets/image/resume/html5.svg';
 import Css from '@/assets/image/resume/css3.svg';
@@ -13,10 +13,10 @@ import NextJS from '@/assets/image/resume/nextJS.svg';
 
 import { ReactNode } from 'react';
 
-export interface ImageProjectProps {
-   genesis: ReactNode;
-   church: ReactNode;
-   getAlong: ReactNode;
+export interface ImageStudyProjectProps {
+   toDoList: ReactNode;
+   coffeeDelivery: ReactNode;
+   gitHubBlog: ReactNode;
 }
 
 export interface TechnologiesLogoProps {
@@ -29,10 +29,10 @@ export interface TechnologiesLogoProps {
    typeScript: ReactNode;
 }
 
-export const ImageProject: ImageProjectProps = {
-   genesis: <Image src={InstGenesisCard} width={330} alt="" />,
-   church: <Image src={LegacyChurchCard} width={330} alt="" />,
-   getAlong: <Image src={GetAlongLCCard} width={330} alt="" />,
+export const ImageStudyProject: ImageStudyProjectProps = {
+   toDoList: <Image src={ToDoList} width={330} alt="" />,
+   coffeeDelivery: <Image src={CoffeeDelivery} width={330} alt="" />,
+   gitHubBlog: <Image src={GitHubBlog} width={330} alt="" />,
 };
 
 export const TechnologiesLogo: TechnologiesLogoProps = {
@@ -48,10 +48,10 @@ export const TechnologiesLogo: TechnologiesLogoProps = {
 export const DataStudyProjects = [
    {
       id: 1,
-      name: 'Task List in React',
+      name: 'To Do List',
       description:
          'Final challenge of module 01 of the React course at Rocktseat, where we were asked to make a Task List, based on a layout and a pre-defined briefing established.',
-      image: 'getAlong',
+      image: 'toDoList',
       designSistemLink:
          'https://www.figma.com/file/lXQubaJEmKMkJk4DOFvw1S/ToDo-List-%E2%80%A2-Desafio-React-(Copy)?type=design&node-id=56-96&mode=design&t=PCvIHmUkdyfgupIK-0',
       oficialWebsiteLink:
@@ -86,7 +86,7 @@ export const DataStudyProjects = [
       name: 'Coffee Delivery',
       description:
          "Final challenge of module 02 of Rocktseat's React course, where we were asked to make a coffee-by-delivery platform, using React + Type Script, based on a layout and a pre-defined briefing established.",
-      image: 'church',
+      image: 'coffeeDelivery',
       designSistemLink:
          'https://www.figma.com/file/XPjHwZ8k5Ye59Tjw8vyAyC/Coffee-Delivery-%E2%80%A2-Desafio-React-(Copy)?type=design&node-id=2-12&mode=design&t=yWsTmONhI6ou8sH0-0',
       oficialWebsiteLink:
@@ -126,7 +126,7 @@ export const DataStudyProjects = [
       name: 'GitHub Blog',
       description:
          "Final challenge of module 03 of Rocktseat's React course, where we were asked to make a Blog platform, consuming the GitHub API and using React + Type Script + NextJS, based on a layout and a pre-defined briefing established.",
-      image: 'genesis',
+      image: 'gitHubBlog',
       designSistemLink:
          'https://www.figma.com/file/hv0oEN0fGYb8g3np4PMlCZ/GitHub-Blog-(Community)?type=design&node-id=0-1&mode=design&t=a3oA6PXCfFoBGkIW-0',
       oficialWebsiteLink:
