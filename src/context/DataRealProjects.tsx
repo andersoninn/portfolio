@@ -34,12 +34,12 @@ export const ImageProject: ImageProjectProps = {
 };
 
 export const TechnologiesLogo: TechnologiesLogoProps = {
-   html5: <Image src={Html} width={56} alt="" />,
-   css3: <Image src={Css} width={56} alt="" />,
-   js: <Image src={JavaScript} width={56} alt="" />,
-   reactJS: <Image src={ReactJS} width={56} alt="" />,
-   nextJS: <Image src={NextJS} width={56} alt="" />,
-   tailwind: <Image src={Tailwind} width={56} alt="" />,
+   html5: <Image src={Html} width={30} alt="" />,
+   css3: <Image src={Css} width={30} alt="" />,
+   js: <Image src={JavaScript} width={30} alt="" />,
+   reactJS: <Image src={ReactJS} width={30} alt="" />,
+   nextJS: <Image src={NextJS} width={30} alt="" />,
+   tailwind: <Image src={Tailwind} width={30} alt="" />,
 };
 
 export const Projects = [
@@ -57,27 +57,33 @@ export const Projects = [
          {
             id: 'HTML5',
             technologieName: 'HTML',
-            tecnologieImage: 'image HTML5',
+            tecnologieImage: 'html5',
          },
          {
             id: 'CSS3',
             technologieName: 'CSS3',
-            tecnologieImage: 'image CSS3',
+            tecnologieImage: 'css3',
          },
          {
             id: 'JS',
             technologieName: 'Java Script',
-            tecnologieImage: 'image JS',
+            tecnologieImage: 'js',
          },
          {
             id: 'ReactJS',
             technologieName: 'React JS',
-            tecnologieImage: 'image ReactJS',
+            tecnologieImage: 'reactJS',
          },
+
          {
             id: 'NextJS',
             technologieName: 'NextJS',
-            tecnologieImage: 'image NextJS',
+            tecnologieImage: 'nextJS',
+         },
+         {
+            id: 'Tailwind',
+            technologieName: 'Tailwind',
+            tecnologieImage: 'tailwind',
          },
       ],
    },
@@ -96,27 +102,33 @@ export const Projects = [
          {
             id: 'HTML5',
             technologieName: 'HTML',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'html5',
          },
          {
             id: 'CSS3',
             technologieName: 'CSS3',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'css3',
          },
          {
             id: 'JS',
             technologieName: 'Java Script',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'js',
          },
          {
             id: 'ReactJS',
             technologieName: 'React JS',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'reactJS',
          },
+
          {
             id: 'NextJS',
             technologieName: 'NextJS',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'nextJS',
+         },
+         {
+            id: 'Tailwind',
+            technologieName: 'Tailwind',
+            tecnologieImage: 'tailwind',
          },
       ],
    },
@@ -135,27 +147,33 @@ export const Projects = [
          {
             id: 'HTML5',
             technologieName: 'HTML',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'html5',
          },
          {
             id: 'CSS3',
             technologieName: 'CSS3',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'css3',
          },
          {
             id: 'JS',
             technologieName: 'Java Script',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'js',
          },
          {
             id: 'ReactJS',
             technologieName: 'React JS',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'reactJS',
          },
+
          {
             id: 'NextJS',
             technologieName: 'NextJS',
-            tecnologieImage: 'url of technologie image',
+            tecnologieImage: 'nextJS',
+         },
+         {
+            id: 'Tailwind',
+            technologieName: 'Tailwind',
+            tecnologieImage: 'tailwind',
          },
       ],
    },

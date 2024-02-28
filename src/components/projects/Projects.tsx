@@ -1,5 +1,7 @@
-import Carousel from './Carousel';
+import RealProjectsCarousel from './carousel/RealProjectsCarousel';
+import StudyProjectsCarousel from './carousel/StudyProjectsCarousel';
 import RealProjectsModal from '@/components/projects/modals/RealProjectsModal';
+import StudyProjectsModal from './modals/StudyProjectsModal';
 import Footer from '../footer/Footer';
 
 export default function Projects() {
@@ -14,7 +16,7 @@ export default function Projects() {
                {/* CARD 1 */}
                <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden ">
                   <article className=" flex flex-col items-center">
-                     <Carousel />
+                     <RealProjectsCarousel />
                   </article>
                   <article className="text-center text-lg -mt-4">
                      <h2 className="text-brand-blueTitle font-bold text-2xl">
@@ -37,7 +39,7 @@ export default function Projects() {
                {/* CARD 2 */}
                <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
                   <article className="flex flex-col items-center">
-                     <Carousel />
+                     <StudyProjectsCarousel />
                   </article>
 
                   <article className="text-center text-lg -mt-4">
@@ -55,7 +57,7 @@ export default function Projects() {
                      </p>
                   </article>
                   <aside className="flex justify-end">
-                     {/* <RealProjectsModal /> */}
+                     <StudyProjectsModal />
                   </aside>
                </section>
             </section>

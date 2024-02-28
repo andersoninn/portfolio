@@ -3,9 +3,9 @@ import 'keen-slider/keen-slider.min.css';
 import { useEffect, useState } from 'react';
 
 import { useProjects } from '@/store/useProjects';
-import { ImageProject, ImageProjectProps } from '@/context/Projects';
+import { ImageProject, ImageProjectProps } from '@/context/DataRealProjects';
 
-export default function Carousel() {
+export default function RealProjectsCarousel() {
    const [currentSlide, setCurrentSlide] = useState(0);
    const [loaded, setLoaded] = useState(false);
    const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
@@ -22,11 +22,12 @@ export default function Carousel() {
       },
    });
 
-   const { realProjects, setActive } = useProjects();
+   const { realProjects, setActiveRealProjects } = useProjects();
 
    useEffect(() => {
-      setActive(currentSlide);
+      setActiveRealProjects(currentSlide);
    }, [currentSlide]);
+
 
    return (
       <>

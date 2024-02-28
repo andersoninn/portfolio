@@ -1,4 +1,7 @@
-import { TechnologiesLogo } from '@/context/Projects';
+import {
+   TechnologiesLogo,
+   TechnologiesLogoProps,
+} from '@/context/DataRealProjects';
 import { useProjects } from '@/store/useProjects';
 import {
    Modal,
@@ -11,48 +14,66 @@ import {
 } from '@nextui-org/react';
 import Link from 'next/link';
 
-export default function App() {
+export default function RealProjectsModal() {
    const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-   const { realProjects, active } = useProjects();
+   const { realProjects, activeRealProjects } = useProjects();
 
    return (
       <div className="flex flex-col gap-2">
          <Button
             onPress={onOpen}
-            className="max-w-fit text-brand-blueTitle font-bold bg-none"
+            className="max-w-fit text-brand-blueTitle font-bold bg-brand-gray100"
          >
-            {realProjects[active].name}
+            {realProjects[activeRealProjects].name}
          </Button>
 
-         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+         <Modal
+            isOpen={isOpen}
+            onOpenChange={onOpenChange}
+            className="bg-brand-gray200"
+         >
             <ModalContent>
                {(onClose) => (
                   <>
                      <ModalHeader className="flex flex-col gap-1">
-                        {realProjects[active].name}
+                        {realProjects[activeRealProjects].name}
                      </ModalHeader>
                      <ModalBody>
-                        <h2>Description of {realProjects[active].name}.</h2>
-                        <p>{realProjects[active].description}</p>
+                        <h2>
+                           Description of{' '}
+                           {realProjects[activeRealProjects].name}.
+                        </h2>
+                        <p>{realProjects[activeRealProjects].description}</p>
 
-                        <p className="flex gap-2">
-                           {realProjects[active].technologiesUsed.map((e) => (
-                              <span key={e.id} className=" bg-red-300">
-                                 {/* {TechnologiesLogo} */}
+                        <p className="flex gap-2 flex-wrap">
+                           {realProjects[
+                              activeRealProjects
+                           ].technologiesUsed.map((e) => (
+                              <span key={e.id} className="">
+                                 {
+                                    TechnologiesLogo[
+                                       e.tecnologieImage as keyof TechnologiesLogoProps
+                                    ]
+                                 }
                               </span>
                            ))}
                         </p>
 
                         <Link
-                           href={realProjects[active].designSistemLink}
+                           href={
+                              realProjects[activeRealProjects].designSistemLink
+                           }
                            target="_blank"
                            className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
                         >
                            Design Sistem
                         </Link>
                         <Link
-                           href={realProjects[active].oficialWebsiteLink}
+                           href={
+                              realProjects[activeRealProjects]
+                                 .oficialWebsiteLink
+                           }
                            target="_blank"
                            className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
                         >
