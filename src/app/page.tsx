@@ -47,7 +47,7 @@ export default function Page() {
                   <Image
                      src={HomePicture}
                      alt=""
-                     className="absolute w-80 -top-60 left-32 
+                     className="absolute w-80 -top-60 left-36 
                      md:2/4 md:-top-10 md:left-[60%]
                      lg:w-2/4 lg:lg:-top-64 lg:left-[50%]"
                   />
