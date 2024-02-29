@@ -24,16 +24,25 @@ export default function Page() {
                   className="-left-20 top-24 absolute"
                />
                <section className="relative">
+                  {/* <h1 className="text-brand-blueTitle text-7xl max-[360px]:text-6xl font-bold flex flex-col text-wrap lg:mx-[2%]">
+                     <article className="flex flex-col md:flex-row">
+                        <span className="w-40 ">Hey,</span>
+                        <span>I&apos;m</span>
+                     </article>
+                     <span className="text-brand-blue100" translate="no">
+                        Front-End
+                     </span>
+                     <span translate="no">Developer </span>
+                  </h1> */}
                   <h1
                      className="text-brand-blueTitle text-7xl max-[360px]:text-6xl font-bold flex flex-col text-wrap lg:mx-[2%]"
                      translate="no"
                   >
-                     <article className="flex flex-col md:flex-row">
-                        <span className="w-40 ">Hey,</span>
-                        <span>I&apos;m a</span>
+                     <article className="flex flex-col md:flex-row text-brand-blue100">
+                        <span className="pr-4"> Front</span>
+                        <span>End</span>
                      </article>
-                     <span className="text-brand-blue100">Front-End</span>
-                     Developer
+                     <span>Developer </span>
                   </h1>
                   <Image
                      src={HomePicture}
