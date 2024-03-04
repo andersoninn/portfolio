@@ -63,7 +63,7 @@ export default function Page() {
                   Portugal. Committed to growth, eager to contribute and enhance
                   my skills with a new team.
                </p>
-               <aside className="flex justify-around p-2 ">
+               <aside className="flex justify-around p-2 md:w-2/3">
                   <button
                      className="mt-6 text-white bg-brand-blue100 font-bold min-w-40 py-2 rounded-lg shadow
                   shadow-brand-blue200"
