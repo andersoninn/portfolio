@@ -58,7 +58,7 @@ export default function Page() {
                      Anderson Carvalho.
                   </span>
                </p>
-               <p className="pl-2 md:text-medium text-lg md:w-3/5 lg:w-3/5 lg:mx-[2%]">
+               <p className="pl-2 md:text-medium text-lg md:w-3/5 lg:w-3/5 lg:mx-[2%] lg:pr-20">
                   Former Special Infantry soldier shifting to programming in
                   Portugal. Committed to growth, eager to contribute and enhance
                   my skills with a new team.
