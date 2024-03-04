@@ -21,7 +21,6 @@ const config: Config = {
       },
       colors: {
         'brand-blue100': '#0EA5E9',
-        'brand-blue200': '#38BDF8',
         'brand-blueTitle': '#00008B',
 
         'brand-modal': '#18181b',

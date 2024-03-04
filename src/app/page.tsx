@@ -66,13 +66,13 @@ export default function Page() {
                <aside className="flex justify-around p-2 md:w-2/3">
                   <button
                      className="mt-6 text-white bg-brand-blue100 font-bold min-w-40 py-2 rounded-lg shadow
-                  shadow-brand-blue200"
+                  shadow-brand-blue100"
                   >
                      <a href="#resume">Hire Me!</a>
                   </button>
                   <button
                      className="mt-6 text-brand-blue100 font-bold min-w-40 py-2 rounded-lg shadow
-                   shadow-brand-blue200"
+                   shadow-brand-blue100"
                   >
                      <a
                         href="https://wa.me/351933864893"

@@ -66,7 +66,7 @@ export default function RealProjectsModal() {
                               realProjects[activeRealProjects].designSistemLink
                            }
                            target="_blank"
-                           className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
+                           className="hover:text-brand-blue100 hover:underline hover:underline-offset-4 w-1/2"
                         >
                            Design Sistem
                         </Link>
@@ -76,7 +76,7 @@ export default function RealProjectsModal() {
                                  .oficialWebsiteLink
                            }
                            target="_blank"
-                           className="hover:text-brand-blue200 hover:underline hover:underline-offset-4 w-1/2"
+                           className="hover:text-brand-blue100 hover:underline hover:underline-offset-4 w-1/2"
                         >
                            Oficial Website
                         </Link>
