@@ -38,7 +38,7 @@ export default function Resume() {
                            <p className="font-bold pr-2 text-brand-blueTitle">
                               Name:
                            </p>
-                           <p>Anderson Innocencio Carvalho</p>
+                           <p translate="no">Anderson Innocencio Carvalho</p>
                         </article>
 
                         <article className="flex items-center">
@@ -50,7 +50,10 @@ export default function Resume() {
                      </section>
                      <section className="flex flex-col md:flex-row md:gap-12">
                         <article className="flex items-center">
-                           <p className="font-bold pr-2 text-brand-blueTitle">
+                           <p
+                              className="font-bold pr-2 text-brand-blueTitle"
+                              translate="no"
+                           >
                               Email:
                            </p>
                            <p>andersoninnocencio17@gmail.com</p>
