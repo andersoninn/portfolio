@@ -80,9 +80,13 @@ export default function RealProjectsModal() {
                         >
                            Oficial Website
                         </Link>
-                        <p className="hover:text-brand-danger hover:underline hover:underline-offset-4 w-1/2 select-none">
-                           Code - Private
-                        </p>
+                        <Link
+                           href={realProjects[activeRealProjects].codeLink}
+                           target="_blank"
+                           className="hover:text-brand-blue100 hover:underline hover:underline-offset-4 w-1/2"
+                        >
+                           Code - Public
+                        </Link>
                      </ModalBody>
                      <ModalFooter>
                         <Button

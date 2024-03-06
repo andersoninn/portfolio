@@ -30,9 +30,9 @@ export interface TechnologiesLogoProps {
 }
 
 export const ImageStudyProject: ImageStudyProjectProps = {
-   toDoList: <Image src={ToDoList} width={330} alt="" />,
-   coffeeDelivery: <Image src={CoffeeDelivery} width={330} alt="" />,
-   gitHubBlog: <Image src={GitHubBlog} width={330} alt="" />,
+   toDoList: <Image src={ToDoList} height={231} alt="" />,
+   coffeeDelivery: <Image src={CoffeeDelivery} height={231} alt="" />,
+   gitHubBlog: <Image src={GitHubBlog} height={231} alt="" />,
 };
 
 export const TechnologiesLogo: TechnologiesLogoProps = {
