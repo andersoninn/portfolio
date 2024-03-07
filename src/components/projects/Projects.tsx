@@ -14,8 +14,8 @@ export default function Projects() {
             </h1>
             <section className="  flex flex-col md:flex-row m-auto gap-12 pt-6 max-w-[99%]">
                {/* CARD 1 */}
-               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden ">
-                  <article className=" flex flex-col items-center">
+               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
+                  <article className="flex flex-col items-center justify-center overflow-x-hidden">
                      <RealProjectsCarousel />
                   </article>
                   <article className="text-center text-lg -mt-4">
@@ -38,7 +38,7 @@ export default function Projects() {
 
                {/* CARD 2 */}
                <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
-                  <article className="flex flex-col items-center">
+                  <article className="flex flex-col items-center justify-center overflow-x-hidden">
                      <StudyProjectsCarousel />
                   </article>
 

@@ -8,7 +8,7 @@ export default function Footer() {
       <>
          {/*  pt-8 pb-10 flex flex-col m-auto max-w-[1024px] */}
          <aside className="w-[90%] max-w-[1024px] pb-6 mt-10 flex m-auto justify-between ">
-            <section className="flex-col gap-2">
+            <section className="flex flex-col justify-center gap-2">
                <article className="flex gap-2">
                   <Image src={ExperienceIcon} width={48} alt="" />
                   <section>
@@ -26,7 +26,7 @@ export default function Footer() {
                   <br />A FREELANCER
                </p>
             </section>
-            <section className="flex-col gap-2">
+            <section className="flex flex-col justify-center gap-2">
                <article className="flex gap-2">
                   <Image src={SatisfiedIcon} width={42} alt="" />
                   <p className="text-brand-blueTitle font-bold text-2xl">+10</p>
@@ -38,7 +38,7 @@ export default function Footer() {
                   CUSTOMERS
                </p>
             </section>
-            <section className="flex-col gap-2">
+            <section className="flex flex-col justify-center gap-2">
                <article className="flex gap-2">
                   <Image src={CompleteProjectsIcon} width={40} alt="" />
                   <p className="text-brand-blueTitle font-bold text-2xl">+30</p>

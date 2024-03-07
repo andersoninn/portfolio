@@ -6,6 +6,7 @@ import Css from '@/assets/image/resume/css3.svg';
 import JavaScript from '@/assets/image/resume/javaScript.svg';
 import ReactJS from '@/assets/image/resume/react.svg';
 import Tailwind from '@/assets/image/resume/tailwind.svg';
+import TypeScript from '@/assets/image/resume/typeScript.svg';
 import NextJS from '@/assets/image/resume/nextJS.svg';
 import ReactNative from '@/assets/image/resume/reactNative.svg';
 import JsNode from '@/assets/image/resume/nodeJS.svg';
@@ -20,7 +21,7 @@ export default function Resume() {
    return (
       <section
          className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-gray-200 to-100% flex 
-      m-auto relative overflow-hidden"
+      m-auto relative overflow-hidden pb-10"
       >
          <section className="w-[90%] pt-8 pb-10  m-auto items-center md:items-start max-w-[1024px]">
             <article className="pb-4">
@@ -104,11 +105,11 @@ export default function Resume() {
                      Skills
                   </h1>
                </article>
-               {/* SKILL - DESIGN */}
 
-               <section className="flex m-auto relative">
-                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10  md:w-[450px]">
-                     <article className="flex flex-col gap-4 items-center text-xl font-extrabold text-brand-blueTitle w-full realtive">
+               {/* SKILL - DESIGN */}
+               <section className="flex m-auto relative" translate="no">
+                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10 md:w-[450px] w-[320px]">
+                     <article className="flex flex-col gap-4 items-center text-lg font-extrabold text-brand-blueTitle w-full realtive">
                         <h2 translate="no">DESIGN</h2>
 
                         <h2>UX/UI DESIGN</h2>
@@ -124,7 +125,7 @@ export default function Resume() {
                               <div className="w-10 rounded-lg bg-[#011D36] shadow mr-2 flex items-center overflow-hidden">
                                  <Image src={Photoshop} width={56} alt="" />
                               </div>
-                              <p>Photophop</p>
+                              <p>Photoshop</p>
                            </article>
                         </section>
                      </article>
@@ -134,7 +135,6 @@ export default function Resume() {
                   </span>
                </section>
 
-               {/* SKILL - FRONT-END */}
                <span className="relative flex items-center justify-center">
                   <Image
                      src={EllipseCenter}
@@ -144,10 +144,14 @@ export default function Resume() {
                   />
                </span>
 
-               <section className="flex flex-col gap-6 md:flex-row m-auto relative ">
-                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] ">
-                     <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
-                        <h2 className="">FRONT-END</h2>
+               <section className="flex flex-col gap-6 md:flex-row m-auto relative">
+                  <section
+                     className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] w-[320px]"
+                     translate="no"
+                  >
+                     <article className="flex flex-col gap-4 justify-center items-center text-lg font-extrabold text-brand-blueTitle">
+                        {/* SKILL - FRONT-END */}
+                        <h2>FRONT-END</h2>
                         <section className="flex justify-between w-full ">
                            <article className="w-1/2 flex items-center">
                               <div className="w-10 rounded-lg mr-2">
@@ -155,35 +159,10 @@ export default function Resume() {
                                     src={Html}
                                     width={56}
                                     alt=""
-                                    className="drop-shadow-lg"
+                                    className="drop-shadow-lg min-w-10"
                                  />
                               </div>
                               <p>HTML</p>
-                           </article>
-                           <article className="w-1/2 flex items-center">
-                              <div className="w-20 rounded-lg mr-2">
-                                 <Image
-                                    src={JavaScript}
-                                    width={56}
-                                    alt=""
-                                    className="drop-shadow-lg"
-                                 />
-                              </div>
-                              <p>JavaScript</p>
-                           </article>
-                        </section>
-
-                        <section className="flex justify-between w-full ">
-                           <article className="w-1/2  flex items-center">
-                              <div className="w-10 rounded-lg mr-2">
-                                 <Image
-                                    src={Css}
-                                    width={56}
-                                    alt=""
-                                    className="drop-shadow-lg"
-                                 />
-                              </div>
-                              <p>CSS</p>
                            </article>
                            <article className="w-1/2 flex items-center">
                               <div className="w-10 rounded-lg mr-2">
@@ -191,7 +170,7 @@ export default function Resume() {
                                     src={ReactJS}
                                     width={56}
                                     alt=""
-                                    className="drop-shadow-lg"
+                                    className="drop-shadow-lg min-w-10"
                                  />
                               </div>
                               <p>ReactJS</p>
@@ -199,16 +178,44 @@ export default function Resume() {
                         </section>
 
                         <section className="flex justify-between w-full ">
-                           <article className="w-1/2  flex items-center">
+                           <article className="w-1/2 flex items-center">
+                              <div className="w-10 rounded-lg mr-2">
+                                 <Image
+                                    src={Css}
+                                    width={56}
+                                    alt=""
+                                    className="drop-shadow-lg min-w-10"
+                                 />
+                              </div>
+                              <p>CSS</p>
+                           </article>
+                           <article className="w-1/2 flex items-center">
                               <div className="w-10 rounded-lg mr-2">
                                  <Image
                                     src={Tailwind}
                                     width={56}
                                     alt=""
-                                    className="drop-shadow-lg"
+                                    className="drop-shadow-lg min-w-10"
                                  />
                               </div>
                               <p>Tailwind</p>
+                           </article>
+                        </section>
+
+                        <section className="flex justify-between w-full ">
+                           <article className="w-1/2 flex items-center">
+                              <div className="w-10 rounded-lg mr-2">
+                                 <Image
+                                    src={JavaScript}
+                                    width={56}
+                                    alt=""
+                                    className="drop-shadow-lg min-w-10"
+                                 />
+                              </div>
+                              <p className="flex flex-col">
+                                 <span> Java</span>
+                                 <span className="-mt-2">Script</span>
+                              </p>
                            </article>
                            <article className="w-1/2 flex items-center">
                               <div className="w-10 rounded-lg mr-2">
@@ -216,16 +223,27 @@ export default function Resume() {
                                     src={NextJS}
                                     width={56}
                                     alt=""
-                                    className="drop-shadow-lg"
+                                    className="drop-shadow-lg min-w-10"
                                  />
                               </div>
                               <p>NextJS</p>
                            </article>
                         </section>
                      </article>
+                     <section className="flex justify-center w-full text-lg font-extrabold text-brand-blueTitle">
+                        <article className="w-1/2 flex items-center">
+                           <div className="w-10 rounded-lg mr-2">
+                              <Image
+                                 src={TypeScript}
+                                 width={56}
+                                 alt=""
+                                 className="drop-shadow-lg min-w-10"
+                              />
+                           </div>
+                           <p>TypeScript</p>
+                        </article>
+                     </section>
                   </section>
-
-                  {/* SKILL - BACK-END */}
                   <section>
                      <span>
                         <Image
@@ -244,10 +262,16 @@ export default function Resume() {
                         />
                      </span>
                   </section>
-                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] ">
-                     <article className="flex flex-col gap-4 justify-center items-center text-xl font-extrabold text-brand-blueTitle">
+                  {/* SKILL - BACK-END */}
+                  <section
+                     className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] w-[320px] text-lg font-extrabold text-brand-blueTitle"
+                     translate="no"
+                  >
+                     <article className="flex flex-col gap-4 justify-center items-center">
                         <h2>BACK-END & MOBILE</h2>
-                        <p className="-mt-4">Learning...</p>
+                        <p className="-mt-4" translate="yes">
+                           learning...
+                        </p>
                         <section className="flex justify-center w-full ">
                            <article className="flex items-center">
                               <div className="w-10 rounded-lg mr-2">
@@ -255,7 +279,7 @@ export default function Resume() {
                                     src={ReactNative}
                                     width={56}
                                     alt=""
-                                    className="drop-shadow-lg"
+                                    className="drop-shadow-lg min-w-10"
                                  />
                               </div>
                               <p>ReactNative</p>
@@ -269,7 +293,7 @@ export default function Resume() {
                                     src={JsNode}
                                     width={56}
                                     alt=""
-                                    className="drop-shadow-lg"
+                                    className="drop-shadow-lg min-w-10"
                                  />
                               </div>
                               <p>NodeJS</p>
@@ -280,7 +304,7 @@ export default function Resume() {
                                     src={Express}
                                     width={56}
                                     alt=""
-                                    className="drop-shadow-lg"
+                                    className="drop-shadow-lg min-w-10"
                                  />
                               </div>
                               <p>Express</p>
@@ -294,7 +318,7 @@ export default function Resume() {
                                     src={MongoDB}
                                     width={56}
                                     alt=""
-                                    className="drop-shadow-lg"
+                                    className="drop-shadow-lg min-w-10"
                                  />
                               </div>
                               <p>MongoDB</p>
