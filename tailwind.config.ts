@@ -23,8 +23,6 @@ const config: Config = {
         'brand-blue100': '#0EA5E9',
         'brand-blueTitle': '#00008B',
 
-        'brand-modal': '#18181b',
-
         'brand-gray100': '#E8EBEC',
         'brand-gray200': '#D9D9D9',
         'brand-danger': '#F31260',
