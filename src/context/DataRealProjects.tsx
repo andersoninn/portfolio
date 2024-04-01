@@ -100,7 +100,7 @@ export const DataRealProjects = [
     id: 2,
     name: 'Get Along LC',
     description:
-      'Description of Get Along LC Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor quam.',
+      'The "Get Along Language Course" is a language school focused on educational services for French government agencies. Seeking a strong digital presence, its current project includes a Landing Page with redirection to the government platform and a contact chatbot for new students, allowing for the acquisition of new students through various channels.',
     image: 'getAlong',
     designSistemLink:
       'https://www.figma.com/file/XeiCfpJ7bZBUcZ84XSClla/GetAlong-LC?type=design&node-id=417%3A3356&mode=design&t=mDrCNiIS5Xg2ezrh-1',
