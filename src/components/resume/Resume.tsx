@@ -20,7 +20,7 @@ import EllipseCenter from '@/assets/image/resume/ellipses/ellipseCenter.svg';
 export default function Resume() {
    return (
       <section
-         className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-gray-200 to-100% flex 
+         className="bg-gray-100 to-100% flex 
       m-auto relative overflow-hidden pb-10"
       >
          <section className="w-[90%] pt-8 pb-10  m-auto items-center md:items-start max-w-[1024px]">
@@ -32,7 +32,7 @@ export default function Resume() {
             </article>
             {/* PERSONAL INFORMATION */}
             <section className="flex m-auto justify-center items-center">
-               <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md ">
+               <section className="p-5 bg-gray-50 rounded-lg flex flex-col gap-3 shadow-md ">
                   <article>
                      <section className="flex flex-col md:flex-row md:gap-20">
                         <article className="flex items-center">
@@ -108,7 +108,7 @@ export default function Resume() {
 
                {/* SKILL - DESIGN */}
                <section className="flex m-auto relative" translate="no">
-                  <section className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10 md:w-[450px] w-[320px]">
+                  <section className="p-5 bg-gray-50 rounded-lg flex flex-col justify-center items-center gap-3 shadow-md z-10 md:w-[450px] w-[320px]">
                      <article className="flex flex-col gap-4 items-center text-lg font-extrabold text-brand-blueTitle w-full realtive">
                         <h2 translate="no">DESIGN</h2>
 
@@ -146,7 +146,7 @@ export default function Resume() {
 
                <section className="flex flex-col gap-6 md:flex-row m-auto relative">
                   <section
-                     className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] w-[320px]"
+                     className="p-5 bg-gray-50 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] w-[320px]"
                      translate="no"
                   >
                      <article className="flex flex-col gap-4 justify-center items-center text-lg font-extrabold text-brand-blueTitle">
@@ -264,7 +264,7 @@ export default function Resume() {
                   </section>
                   {/* SKILL - BACK-END */}
                   <section
-                     className="p-5 bg-[#e0e1e4] rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] w-[320px] text-lg font-extrabold text-brand-blueTitle"
+                     className="p-5 bg-gray-50 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] z-10 md:w-[300px] w-[320px] text-lg font-extrabold text-brand-blueTitle"
                      translate="no"
                   >
                      <article className="flex flex-col gap-4 justify-center items-center">
