@@ -6,7 +6,7 @@ import Footer from '../footer/Footer';
 
 export default function Projects() {
    return (
-      <section className="bg-gradient-to-t from-white from-0% via-white via-90% to-gray-200 to-100% relative">
+      <section className="bg-gray-100 to-100% relative">
          <section className="w-[90%] pt-8 pb-10 flex flex-col m-auto max-w-[1024px] ">
             <h2 className="text-brand-blue100 font-bold">Projects</h2>
             <h1 className="text-brand-blueTitle text-4xl font-black">
@@ -14,7 +14,7 @@ export default function Projects() {
             </h1>
             <section className="  flex flex-col md:flex-row m-auto gap-12 pt-6 max-w-[99%]">
                {/* CARD 1 */}
-               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
+               <section className="p-5 bg-gray-50 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
                   <article className="flex flex-col items-center justify-center overflow-x-hidden">
                      <RealProjectsCarousel />
                   </article>
@@ -37,7 +37,7 @@ export default function Projects() {
                </section>
 
                {/* CARD 2 */}
-               <section className="p-5 bg-brand-gray100 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
+               <section className="p-5 bg-gray-50 rounded-lg flex flex-col gap-3 shadow-md max-w-[450px] overflow-x-hidden">
                   <article className="flex flex-col items-center justify-center overflow-x-hidden">
                      <StudyProjectsCarousel />
                   </article>

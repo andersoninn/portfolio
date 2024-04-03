@@ -14,7 +14,7 @@ import PolygonRight from '@/assets/image/about/aboutPolygons.svg';
 export default function About() {
    return (
       <section
-         className="bg-gradient-to-t from-gray-200 from-0% via-gray-200 via-90% to-white to-100% flex 
+         className="bg-gradient-to-t from-gray-100 from-0% via-gray-100 via-90% to-white to-100% flex 
       m-auto relative "
       >
          <section className="w-[90%] m-auto pt-8 pb-10 max-w-[1024px]">
