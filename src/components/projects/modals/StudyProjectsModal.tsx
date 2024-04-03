@@ -23,7 +23,7 @@ export default function StudyProjectsModal() {
       <div className="flex flex-col gap-2">
          <Button
             onPress={onOpen}
-            className="max-w-fit text-brand-blueTitle font-bold bg-brand-gray100"
+            className="max-w-fit text-brand-blueTitle font-bold  bg-gray-50 hover:bg-gray-100"
             translate="no"
          >
             {studyProjects[activeStudyProjects].name}
@@ -32,7 +32,7 @@ export default function StudyProjectsModal() {
          <Modal
             isOpen={isOpen}
             onOpenChange={onOpenChange}
-            className="bg-brand-gray100"
+            className="bg-gray-50"
          >
             <ModalContent>
                {(onClose) => (

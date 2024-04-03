@@ -24,7 +24,7 @@ const config: Config = {
         'brand-blueTitle': '#00008B',
 
         'brand-gray100': '#E8EBEC',
-        'brand-gray200': '#D9D9D9',
+        'brand-gray200': '#C5C5C5',
         'brand-danger': '#F31260',
 
         'brand-patternBG': '#F5F5F5',

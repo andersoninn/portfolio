@@ -37,7 +37,7 @@ export default function StudyProjectsCarousel() {
             <div ref={sliderRef} className="keen-slider">
                {studyProjects.map((e) => (
                   <div
-                     className="keen-slider__slide number-slide1"
+                     className="keen-slider__slide number-slide1 !bg-brand-gray200"
                      key={e.image}
                   >
                      {

@@ -34,10 +34,10 @@ export default function RealProjectsCarousel() {
    return (
       <>
          <div className="navigation-wrapper">
-            <div ref={sliderRef} className="keen-slider">
+            <div ref={sliderRef} className="keen-slider  ">
                {realProjects.map((e) => (
                   <div
-                     className="keen-slider__slide number-slide1"
+                     className="keen-slider__slide number-slide1 !bg-brand-gray200"
                      key={e.image}
                   >
                      {ImageRealProject[e.image as keyof ImageRealProjectProps]}
@@ -46,7 +46,7 @@ export default function RealProjectsCarousel() {
             </div>
          </div>
          {loaded && instanceRef.current && (
-            <div className="dots">
+            <div className="dots ">
                {Object.keys(instanceRef.current.track.details.slides).map(
                   (idx, i) => (
                      <button
