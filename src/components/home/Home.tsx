@@ -9,7 +9,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-      <section className="bg-gradient-radial from-[#765599] to-[#41384A]">
+      <section className="bg-gradient-radial from-[#765599] from-10% via-[#5F4876] via-20% to-[#42384B] to-70%">
         <section
           id="home"
           className="flex justify-center m-auto pt-52 pb-52 w-[85%] md:w-[90%] md:pt-28 lg:w-full 
@@ -56,7 +56,7 @@ export default function Home() {
           </article>
         </section>
       </section>
-      <section className=" bg-red-200 w-full h-32">123456789</section>
+      <section className="division1" />
     </>
   );
 }

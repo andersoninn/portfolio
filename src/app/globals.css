@@ -14,8 +14,9 @@ html {
 }
 
 .division1 {
-  background-image: url('../assets//image//home//homeDivision.png');
-  height: 400px;
+  background-image: url('../assets/image/home/homeDivision.png');
+  background-repeat: repeat-x;
+  height: 86px;
   width: 100%;
 }
 
