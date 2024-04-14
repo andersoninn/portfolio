@@ -19,6 +19,18 @@ html {
   height: 86px;
   width: 100%;
 }
+.division2 {
+  background-image: url('../assets/image/projects/projectsDivision.png');
+  background-repeat: repeat-x;
+  height: 86px;
+  width: 100%;
+}
+.shadowImage {
+  border-radius: 8px;
+  -webkit-box-shadow: 10px 10px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 0px 4px rgba(0, 0, 0, 1);
+}
 
 [class^='number-slide'],
 [class*=' number-slide'] {
