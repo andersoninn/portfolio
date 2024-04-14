@@ -9,9 +9,9 @@ export default function Page() {
   return (
     <>
       <Home />
+      <Projects />
       <About />
       <Resume />
-      <Projects />
     </>
   );
 }
