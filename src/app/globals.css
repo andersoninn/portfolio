@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +13,15 @@ html {
   height: screen;
 }
 
+.division1 {
+  background-image: url('../assets//image//home//homeDivision.png');
+  height: 400px;
+  width: 100%;
+}
 
-[class^="number-slide"],
-[class*=" number-slide"] {
-  background: #D9D9D9;
+[class^='number-slide'],
+[class*=' number-slide'] {
+  background: #d9d9d9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,12 +39,12 @@ html {
 
 .number-slide2 {
   border-radius: 8px;
-  width: 330px;  
+  width: 330px;
 }
 
 .number-slide3 {
   border-radius: 8px;
-  width: 330px;  
+  width: 330px;
 }
 
 .navigation-wrapper {
@@ -70,7 +74,7 @@ html {
 }
 
 .dot.active {
-  background: #00008B;
+  background: #00008b;
 }
 
 .arrow {
@@ -95,5 +99,3 @@ html {
 .arrow--disabled {
   fill: rgba(255, 255, 255, 0.5);
 }
-
-
