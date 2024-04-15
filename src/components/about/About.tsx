@@ -4,11 +4,11 @@ import Balance from 'react-wrap-balancer';
 
 import AboutPictureArm from '@/assets/image/about/aboutPictureArm.svg';
 import AboutPictureSocial from '@/assets/image/about/aboutPictureSocial.svg';
-import DownloadCV from '@/assets/image/contacts/downloadCV.svg';
-import Linkedin from '@/assets/image/contacts/linkedin.svg';
-import Github from '@/assets/image/contacts/gitHub.svg';
-import Gmail from '@/assets/image/contacts/gmail.svg';
-import Instagran from '@/assets/image/contacts/instagran.svg';
+import DownloadCV from '@/assets/image/about/downloadCV.svg';
+import Linkedin from '@/assets/image/about/linkedin.svg';
+import Github from '@/assets/image/about/gitHub.svg';
+import Gmail from '@/assets/image/about/gmail.svg';
+import Instagran from '@/assets/image/about/instagran.svg';
 
 export default function About() {
   return (
