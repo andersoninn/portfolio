@@ -46,15 +46,14 @@ export default function Home() {
 
             <h1 className="">DEVELOPER</h1>
             <div className="flex w-full justify-end text-sm font-normal ">
-              <p className="w-[80%] mr-3 md:mr-12 md:text-lg md:max-w-[400px] md:text-end">
-                Tenho 32 anos, sou desenvolvedor frontend com experiência como
+              <p className="w-[80%] mr-5 text-end md:mr-12 md:text-lg md:max-w-[400px] lg:mr-12">
+                Tenho 32 anos, sou desenvolvedor frontend atuando como
                 freelancer.
               </p>
             </div>
           </article>
         </section>
       </section>
-     
     </>
   );
 }
