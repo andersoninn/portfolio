@@ -6,11 +6,8 @@ import StudyProjectsModal from './modals/StudyProjectsModal';
 export default function Projects() {
   return (
     <>
-      <section className="division1" />
       <section className="bg-gradient-to-b from-[#D6C4E2] from-10% via-[#fadd99] via-20% to-[#B8AD94] to-70%">
         <section className="w-full h-96"></section>
-
-        <section className="division2 mb-20" />
 
         <section className="w-full h-16 absolute -top-8" id="projects" />
       </section>

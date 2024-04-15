@@ -11,6 +11,7 @@ export default function Page() {
       <Home />
       <Projects />
       <About />
+
       {/* <Resume /> */}
     </>
   );

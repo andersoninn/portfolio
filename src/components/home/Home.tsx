@@ -54,6 +54,7 @@ export default function Home() {
           </article>
         </section>
       </section>
+      <section className="divisionHome" />
     </>
   );
 }
