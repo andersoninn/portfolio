@@ -21,25 +21,31 @@ export default function Home() {
             </p>
             <div className="flex items-center gap-3 md:gap-6">
               <h1>REACT </h1>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/andersoninn/"
+                target="_blank"
+              >
                 <Image
                   src={HomeLinkedin}
                   alt="icon linkedin"
-                  className=" w-7 h-7 rounded-sm hover:-mt-4 md:w-11 md:h-11 lg:w-14 lg:h-14"
+                  className="cursor-pointer w-7 h-7 rounded-sm hover:-mt-4 md:w-11 md:h-11 lg:w-14 lg:h-14"
                 />
               </a>
-              <a href="#">
+              <a href="https://github.com/andersoninn" target="_blank">
                 <Image
                   src={HomeGitHub}
                   alt="icon github"
-                  className="w-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
+                  className=" cursor-pointerw-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
                 />
               </a>
-              <a href="#">
+              <a
+                href="https://imgb.ifunny.co/images/40011437ff899cc50315b88587abcb53ab727eddcce359da89757af65955af1c_1.jpg"
+                target="_blank"
+              >
                 <Image
                   src={HomeCurriculum}
                   alt="icon curriculum"
-                  className="w-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
+                  className=" cursor-pointerw-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
                 />
               </a>
             </div>
