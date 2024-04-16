@@ -22,7 +22,7 @@ export default function About() {
                 src={AboutPictureArm}
                 width={450}
                 alt=""
-                className="m-auto md:w-80 shadowImage"
+                className="m-auto md:w-80 shadowImage float-right"
               />
               <div className="pt-8">
                 <h1 className="text-brand-blueTitle text-2xl font-black text-center md:text-left">

@@ -35,7 +35,7 @@ export default function Home() {
                 <Image
                   src={HomeGitHub}
                   alt="icon github"
-                  className=" cursor-pointerw-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
+                  className=" cursor-pointer w-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
                 />
               </a>
               <a
@@ -45,7 +45,7 @@ export default function Home() {
                 <Image
                   src={HomeCurriculum}
                   alt="icon curriculum"
-                  className=" cursor-pointerw-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
+                  className=" cursor-pointer w-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
                 />
               </a>
             </div>
