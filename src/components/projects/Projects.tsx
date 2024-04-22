@@ -1,7 +1,7 @@
 import RealProjectsCarousel from './carousel/RealProjectsCarousel';
 import RealProjectsModal from '@/components/projects/modals/RealProjectsModal';
 
-import Mockup from '@/assets/image/projects/mockup.svg';
+import Mockup from '@/assets/image/projects/mockupLeft.svg';
 import iconLink from '@/assets/image/projects/icon link.svg';
 
 import Image from 'next/image';

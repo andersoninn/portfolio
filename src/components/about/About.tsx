@@ -16,25 +16,20 @@ export default function About() {
       <section className="divisionAbout" />
       <section className="relative">
         <section className=" m-auto pt-8 pb-10 max-w-[1240px]">
-          <section className="w-[90%] m-auto md:w-full">
-            <article className="m-auto mt-3 flex flex-col gap-5 md:flex-row-reverse w-[85%]">
-              <Image
-                src={AboutPictureArm}
-                width={450}
-                alt=""
-                className="m-auto md:w-80 shadowImage float-right"
-              />
-              <div className="pt-8">
-                <h1 className="text-brand-blueTitle text-2xl font-black text-center md:text-left">
-                  <span>&ldquo;Disciplina amor e coragem&nbsp;</span>é o lema do
-                  nosso sucesso&rdquo;
-                  <span className="!text-base">
-                    &nbsp;- So George Ayres Borges
-                  </span>
-                </h1>
-
-                <p className="pt-4 text-center text-lg md:text-left lg:mr-[2%]">
-                  <Balance>
+          <section className="w-[90%] m-auto md:w-full bg-red-100">
+            <div className=" m-auto md:w-[85%]">
+              <h1 className="text-brand-blueTitle text-2xl font-black text-center md:text-left md:text-3xl lg:text-4xl">
+                <span>&ldquo;Disciplina, amor e coragem&nbsp;</span>é o lema do
+                nosso sucesso&rdquo;
+                <span className="!text-base md:!text-lg lg:!text-xl">
+                  &nbsp;- So George Ayres Borges
+                </span>
+              </h1>
+            </div>
+            <article className="m-auto mt-3 pt-8 flex flex-col-reverse items-start gap-5 w-[85%] md:flex-row md:gap-10 md:pt-0">
+              <div className=" ">
+                <Balance>
+                  <p className="pt-4 text-center text-lg md:text-left lg:mr-[2%]">
                     Durante anos, servi com dedicação nas fileiras militares do
                     Brasil, onde destaquei-me como Secretário do Diretor de
                     Aeronaves, obtendo a segunda posição em minha classe.
@@ -45,12 +40,18 @@ export default function About() {
                     eficazes. No entanto, uma mudança marcante em minha vida
                     veio com a decisão de imigrar para Portugal em busca de uma
                     existência longe da violência e de novas oportunidades.
-                  </Balance>
-                </p>
+                  </p>
+                </Balance>
               </div>
+              <Image
+                src={AboutPictureArm}
+                width={450}
+                alt=""
+                className="m-auto md:w-80 shadowImage float-right"
+              />
             </article>
             {/* About me - Social */}
-            <article className="m-auto mt-3 pt-8 flex flex-col gap-5 w-[85%] md:flex-row md:gap-10 md:pt-0 ">
+            <article className="m-auto mt-3 pt-8 flex flex-col items-start gap-5 w-[85%] md:flex-row md:gap-10 md:pt-0 ">
               <Image
                 src={AboutPictureSocial}
                 width={450}
