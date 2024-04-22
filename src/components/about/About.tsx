@@ -16,7 +16,7 @@ export default function About() {
       <section className="divisionAbout" />
       <section className="relative">
         <section className=" m-auto pt-8 pb-10 max-w-[1240px]">
-          <section className="w-[90%] m-auto md:w-full bg-red-100">
+          <section className="w-[90%] m-auto md:w-full">
             <div className=" m-auto md:w-[85%]">
               <h1 className="text-brand-blueTitle text-2xl font-black text-center md:text-left md:text-3xl lg:text-4xl">
                 <span>&ldquo;Disciplina, amor e coragem&nbsp;</span>é o lema do
