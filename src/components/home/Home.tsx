@@ -18,7 +18,7 @@ export default function Home() {
           max-w-[1240px]"
         >
           <article className="font-extrabold text-white text-6xl md:text-8xl md:w-[70%] lg:text-[150px]">
-            <p className="text-sm md:text-lg font-normal">
+            <p className="text-medium md:text-lg font-normal">
               {HomeTextes.fistP}
               <span className="px-1">&#128075;</span>
               {HomeTextes.spanP}
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
 
             <h1 className="">{HomeTextes.secondPartH1}</h1>
-            <div className="flex w-full justify-end text-sm font-normal ">
+            <div className="flex w-full justify-end text-medium font-normal ">
               <p className="w-[80%] mr-5 text-end md:mr-12 md:text-lg md:max-w-[400px] lg:mr-12">
                 {HomeTextes.description}
               </p>
