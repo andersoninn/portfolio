@@ -4,7 +4,10 @@ import HomeLinkedin from '@/assets/image/home/homeLinkedin.svg';
 import HomeGitHub from '@/assets/image/home/homeGithub.svg';
 import HomeCurriculum from '@/assets/image/home/homeCurriculum.svg';
 
+import { Texts } from '@/lib/Texts';
+
 export default function Home() {
+  const HomeTextes = Texts.home;
   return (
     <>
       <section className="bg-gradient-radial from-[#765599] from-10% via-[#5F4876] via-20% to-[#42384B] to-70%">
@@ -15,12 +18,12 @@ export default function Home() {
         >
           <article className="font-extrabold text-white text-6xl md:text-8xl md:w-[70%] lg:text-[150px]">
             <p className="text-sm md:text-lg font-normal">
-              Olá!
+              {HomeTextes.fistP}
               <span className="px-1">&#128075;</span>
-              Eu sou o Anderson
+              {HomeTextes.spanP}
             </p>
             <div className="flex items-center gap-3 md:gap-6">
-              <h1>REACT </h1>
+              <h1>{HomeTextes.fistPartH1} </h1>
               <a
                 href="https://www.linkedin.com/in/andersoninn/"
                 target="_blank"
@@ -50,11 +53,10 @@ export default function Home() {
               </a>
             </div>
 
-            <h1 className="">DEVELOPER</h1>
+            <h1 className="">{HomeTextes.secondPartH1}</h1>
             <div className="flex w-full justify-end text-sm font-normal ">
               <p className="w-[80%] mr-5 text-end md:mr-12 md:text-lg md:max-w-[400px] lg:mr-12">
-                Tenho 32 anos, sou desenvolvedor frontend atuando como
-                freelancer.
+                {HomeTextes.description}
               </p>
             </div>
           </article>

@@ -10,7 +10,10 @@ import Github from '@/assets/image/about/gitHub.svg';
 import Gmail from '@/assets/image/about/gmail.svg';
 import Instagran from '@/assets/image/about/instagran.svg';
 
+import { Texts } from '@/lib/Texts';
+
 export default function About() {
+  const AboutTexts = Texts.about;
   return (
     <>
       <section className="divisionAbout" />
@@ -19,10 +22,9 @@ export default function About() {
           <section className="w-[90%] m-auto md:w-full">
             <div className=" m-auto md:w-[85%]">
               <h1 className="text-brand-blueTitle text-2xl font-black text-center md:text-left md:text-3xl lg:text-4xl">
-                <span>&ldquo;Disciplina, amor e coragem&nbsp;</span>é o lema do
-                nosso sucesso&rdquo;
-                <span className="!text-base md:!text-lg lg:!text-xl">
-                  &nbsp;- So George Ayres Borges
+                &ldquo;{AboutTexts.titleH1} &rdquo;
+                <span className="!text-base md:!text-lg lg:!text-xl block md:inline lg:block lg:pt-2">
+                  &nbsp;{AboutTexts.titleSpan}
                 </span>
               </h1>
             </div>
@@ -30,16 +32,7 @@ export default function About() {
               <div className=" ">
                 <Balance>
                   <p className="pt-4 text-center text-lg md:text-left lg:mr-[2%]">
-                    Durante anos, servi com dedicação nas fileiras militares do
-                    Brasil, onde destaquei-me como Secretário do Diretor de
-                    Aeronaves, obtendo a segunda posição em minha classe.
-                    Liderei missões críticas de manutenção da paz no Batalhão de
-                    Infantaria Especial do Galeão, o que me proporcionou
-                    experiências inestimáveis, moldando minha capacidade de
-                    liderança e minha habilidade para implementar operações
-                    eficazes. No entanto, uma mudança marcante em minha vida
-                    veio com a decisão de imigrar para Portugal em busca de uma
-                    existência longe da violência e de novas oportunidades.
+                    {AboutTexts.decriptionFistPart}
                   </p>
                 </Balance>
               </div>
@@ -62,16 +55,7 @@ export default function About() {
               <div className="pt-8">
                 <Balance>
                   <p className=" text-center text-lg md:text-left lg:mr-[2%]">
-                    Essa transição representou um ponto de virada significativo
-                    em minha jornada, marcando o início de uma nova fase fora da
-                    área militar. Comprometido em encontrar meu lugar em uma
-                    nova terra, mergulhei de cabeça no mundo da programação.
-                    Como programador freelancer em Portugal, estou construindo
-                    uma carreira sólida, fundamentada em minha experiência
-                    militar em liderança e resolução de problemas. Cada desafio
-                    superado e cada projeto concluído reafirmam meu compromisso
-                    com o crescimento contínuo e a busca por excelência em minha
-                    nova trajetória profissional.
+                    {AboutTexts.decriptionSecondPart}
                   </p>
                 </Balance>
                 <aside className="flex justify-around items-center mt-6 m-auto ">
