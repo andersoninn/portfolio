@@ -13,9 +13,9 @@ export const Texts = {
   projects: [
     {
       id: 1,
-      nameOfProject: 'Escola de Idiomas Get Along ',
+      nameOfProject: 'Curso de Idiomas Get Along ',
       descriptionOfProject:
-        'Landing page com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento, configurado pela equipe.',
+        'Landing page em 5 idiomas, com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento.',
       oficialWebsite: 'https://get-along-lc.vercel.app/',
       image: getAlongImage,
     },

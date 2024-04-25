@@ -16,10 +16,10 @@ export default function Projects() {
             <section className="flex flex-col md:flex-row flex-wrap">
               {ProjectItens.map((e, i) => (
                 <>
-                  <article className="m-auto flex flex-col items-center text-center gap-1 pb-12 max-w-[500px]">
+                  <article className="m-auto flex flex-col items-center text-center gap-2 pb-12 max-w-[500px]">
                     <Image src={e.image} alt="" width={600} />
-                    <h1>{e.nameOfProject}</h1>
-                    <h2 className="font-bold">{e.descriptionOfProject}</h2>
+                    <h1 className='text-xl font-semibold'>{e.nameOfProject}</h1>
+                    <h2 className=" text-lg">{e.descriptionOfProject}</h2>
                     <a href={e.oficialWebsite} className="flex gap-4 m-auto">
                       <Image src={iconLink} alt="" width={15} />
                       <span className="text-blue-600">Veja mais </span>
