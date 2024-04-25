@@ -11,6 +11,7 @@ import Gmail from '@/assets/image/about/gmail.svg';
 import Instagran from '@/assets/image/about/instagran.svg';
 
 import { Texts } from '@/lib/Texts';
+import Link from 'next/link';
 
 export default function About() {
   const AboutTexts = Texts.about;
@@ -59,41 +60,41 @@ export default function About() {
                   </p>
                 </Balance>
                 <aside className="flex justify-around items-center mt-6 m-auto ">
-                  <a
+                  <Link
                     className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
                     href="https://www.linkedin.com/in/andersoninn/"
                     target="_blank"
                   >
                     <Image src={Linkedin} width={40} alt="" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
                     href="https://github.com/andersoninn"
                     target="_blank"
                   >
                     <Image src={Github} width={40} alt="" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
-                    href="https://imgb.ifunny.co/images/40011437ff899cc50315b88587abcb53ab727eddcce359da89757af65955af1c_1.jpg"
+                    href="https://drive.google.com/file/d/1SDZAkerO1x3os8qLwhNwPwVSK7NkO7b9/view"
                     target="_blank"
                   >
                     <Image src={DownloadCV} width={32} alt="" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
                     href="https://mailto:andersoninnocencio17@gmail.com/"
                     target="_blank"
                   >
                     <Image src={Gmail} width={40} alt="" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
                     href="https://www.instagram.com/anderson.inn/"
                     target="blank"
                   >
                     <Image src={Instagran} width={40} alt="" />
-                  </a>
+                  </Link>
                 </aside>
               </div>
             </article>

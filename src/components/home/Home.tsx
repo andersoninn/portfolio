@@ -5,6 +5,7 @@ import HomeGitHub from '@/assets/image/home/homeGithub.svg';
 import HomeCurriculum from '@/assets/image/home/homeCurriculum.svg';
 
 import { Texts } from '@/lib/Texts';
+import Link from 'next/link';
 
 export default function Home() {
   const HomeTextes = Texts.home;
@@ -24,7 +25,7 @@ export default function Home() {
             </p>
             <div className="flex items-center gap-3 md:gap-6">
               <h1>{HomeTextes.fistPartH1} </h1>
-              <a
+              <Link
                 href="https://www.linkedin.com/in/andersoninn/"
                 target="_blank"
               >
@@ -33,16 +34,16 @@ export default function Home() {
                   alt="icon linkedin"
                   className="cursor-pointer w-7 h-7 rounded-sm hover:-mt-4 md:w-11 md:h-11 lg:w-14 lg:h-14"
                 />
-              </a>
-              <a href="https://github.com/andersoninn" target="_blank">
+              </Link>
+              <Link href="https://github.com/andersoninn" target="_blank">
                 <Image
                   src={HomeGitHub}
                   alt="icon github"
                   className=" cursor-pointer w-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
                 />
-              </a>
-              <a
-                href="https://imgb.ifunny.co/images/40011437ff899cc50315b88587abcb53ab727eddcce359da89757af65955af1c_1.jpg"
+              </Link>
+              <Link
+                href="https://drive.google.com/file/d/1SDZAkerO1x3os8qLwhNwPwVSK7NkO7b9/view"
                 target="_blank"
               >
                 <Image
@@ -50,7 +51,7 @@ export default function Home() {
                   alt="icon curriculum"
                   className=" cursor-pointer w-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
                 />
-              </a>
+              </Link>
             </div>
 
             <h1 className="">{HomeTextes.secondPartH1}</h1>

@@ -18,30 +18,16 @@ export const Texts = {
         'Landing page em 5 idiomas, com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento.',
       oficialWebsite: 'https://get-along-lc.vercel.app/',
       image: getAlongImage,
+      callToAction: 'Veja mais',
     },
     {
       id: 2,
       nameOfProject: 'Instituto de Aperfeiçoamento Gênesis ',
       descriptionOfProject:
-        'Inst Gênesis - Landing page com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento, configurado pela equipe.',
+        'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe.',
       oficialWebsite: 'https://genesis-institute.vercel.app/',
       image: instGenesisImage,
-    },
-    {
-      id: 3,
-      nameOfProject: 'Instituto de Aperfeiçoamento Gênesis ',
-      descriptionOfProject:
-        'Inst Gênesis - Landing page com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento, configurado pela equipe.',
-      oficialWebsite: 'https://genesis-institute.vercel.app/',
-      image: instGenesisImage,
-    },
-    {
-      id: 4,
-      nameOfProject: 'Instituto de Aperfeiçoamento Gênesis ',
-      descriptionOfProject:
-        'Inst Gênesis - Landing page com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento, configurado pela equipe.',
-      oficialWebsite: 'https://genesis-institute.vercel.app/',
-      image: instGenesisImage,
+      callToAction: 'Em produção',
     },
   ],
   about: {
