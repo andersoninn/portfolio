@@ -4,11 +4,11 @@ import instGenesisImage from '@/assets/image/projects/realProjectsImage/instGene
 export const Texts = {
   home: {
     fistP: 'Olá!',
-    spanP: 'Eu sou o Anderson',
+    spanP: 'Eu sou o Anderson,',
     fistPartH1: 'REACT',
     secondPartH1: 'DEVELOPER',
     description:
-      'Tenho 32 anos, sou desenvolvedor frontend atuando como freelancer.',
+      'Tenho 32 anos, sou desenvolvedor front-end atuando como freelancer.',
   },
   projects: [
     {
