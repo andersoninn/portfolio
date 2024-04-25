@@ -10,7 +10,7 @@ export default function Projects() {
   const ProjectItens = Texts.projects;
   return (
     <>
-      <section className="bg-gradient-to-b from-[#D6C4E2] from-10% via-[#fadd99] via-30% to-[#B8AD94] to-70%">
+      <section className="bg-gradient-to-b from-[#D6C4E2] from-10%  via-[#fadd99] to-[#B8AD94] to-120%">
         <section className="w-full">
           <section className="w-[85%] pt-36 md:pt-32 pb-10 flex flex-col m-auto max-w-[1240px]">
             <section className="flex flex-col md:flex-row flex-wrap">
