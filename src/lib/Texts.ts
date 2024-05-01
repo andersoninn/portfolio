@@ -13,18 +13,18 @@ export const Texts = {
   projects: [
     {
       id: 1,
-      nameOfProject: 'Curso de Idiomas Get Along ',
+      nameOfProject: 'Curso de Idiomas Get Along',
       descriptionOfProject:
-        'Landing page em 5 idiomas, com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento.',
+        'Landing page em 5 idiomas, com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento. (Em desenvolvimento)',
       oficialWebsite: 'https://get-along-lc.vercel.app/',
       image: getAlongImage,
       callToAction: 'Veja mais',
     },
     {
       id: 2,
-      nameOfProject: 'Instituto de Aperfeiçoamento Gênesis ',
+      nameOfProject: 'Instituto de Aperfeiçoamento Gênesis',
       descriptionOfProject:
-        'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe.',
+        'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe. (Em desenvolvimento)',
       oficialWebsite: 'https://genesis-institute.vercel.app/',
       image: instGenesisImage,
       callToAction: 'Em produção',

@@ -100,7 +100,7 @@ export default function About() {
             </article>
           </section>
 
-          <section className="w-full h-16 absolute -top-8" id="about" />
+          
         </section>
         <section className="divisionFooter" />
       </section>
