@@ -25,7 +25,7 @@ export const Texts = {
       nameOfProject: 'Instituto de Aperfeiçoamento Gênesis',
       descriptionOfProject:
         'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe. (Em desenvolvimento)',
-      oficialWebsite: 'https://genesis-institute.vercel.app/',
+      oficialWebsite: 'https://instituto-genesis.com/',
       image: instGenesisImage,
       callToAction: 'Em produção',
     },
