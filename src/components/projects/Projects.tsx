@@ -5,6 +5,7 @@ import Image from 'next/image';
 import RealProjectsModal from './modals/RealProjectsModal';
 
 import { Texts } from '@/lib/Texts';
+import Link from 'next/link';
 
 export default function Projects() {
   const ProjectItens = Texts.projects;
@@ -20,10 +21,10 @@ export default function Projects() {
                     <Image src={e.image} alt="" width={600} />
                     <h1 className="text-xl font-semibold">{e.nameOfProject}</h1>
                     <h2 className=" text-lg">{e.descriptionOfProject}</h2>
-                    <a href={e.oficialWebsite} className="flex gap-4 m-auto">
+                    <Link href={e.oficialWebsite} target="_blank" className="flex gap-4 m-auto">
                       <Image src={iconLink} alt="" width={15} />
                       <span className="text-blue-600">{e.callToAction}</span>
-                    </a>
+                    </Link>
                   </article>
                 </>
               ))}
