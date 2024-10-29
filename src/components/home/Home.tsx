@@ -16,7 +16,7 @@ export default function Home() {
           id="home"
           className="flex justify-center m-auto pt-52 pb-52 w-[85%] md:w-[90%] md:pt-28 lg:w-full 
           max-w-[1240px]"
-        >
+        > 
           <article className="font-extrabold text-white text-6xl md:text-8xl md:w-[70%] lg:text-[150px]">
             <p className="text-medium md:text-lg font-normal">
               {HomeTextes.fistP}
@@ -43,7 +43,7 @@ export default function Home() {
                 />
               </Link>
               <Link
-                href="https://drive.google.com/file/d/1SDZAkerO1x3os8qLwhNwPwVSK7NkO7b9/view"
+                href="https://drive.google.com/file/d/1NZzGGHkbfjEaM7Ov-VEAUunsh5xdFqEd/view?usp=sharing"
                 target="_blank"
               >
                 <Image
