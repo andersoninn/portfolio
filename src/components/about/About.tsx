@@ -31,10 +31,8 @@ export default function About() {
             </div>
             <article className="m-auto mt-3 pt-8 flex flex-col-reverse items-start gap-5 w-[85%] md:flex-row md:gap-10 md:pt-0">
               <div className=" ">
-                <Balance>
-                  <p className="pt-4 text-center text-lg md:text-left lg:mr-[2%]">
+                <Balance className="pt-4 text-center text-lg md:text-left lg:mr-[2%]">
                     {AboutTexts.decriptionFistPart}
-                  </p>
                 </Balance>
               </div>
               <Image
@@ -54,10 +52,8 @@ export default function About() {
               />
 
               <div className="pt-8">
-                <Balance>
-                  <p className=" text-center text-lg md:text-left lg:mr-[2%]">
+                <Balance className=" text-center text-lg md:text-left lg:mr-[2%]">
                     {AboutTexts.decriptionSecondPart}
-                  </p>
                 </Balance>
                 <aside className="flex justify-around items-center mt-6 m-auto ">
                   <Link
