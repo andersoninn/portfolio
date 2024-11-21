@@ -1,5 +1,5 @@
 'use client';
-import About from '@/components/about/About';
+import About2 from '@/components/about/About2';
 import Home2 from '@/components/home/Home2';
 import Projects from '@/components/projects/Projects';
 
@@ -9,8 +9,8 @@ export default function Page() {
   return (
     <>
       <Home2 />
+      <About2 />
       <Projects />
-      <About />
     </>
   );
 }
