@@ -18,7 +18,7 @@ export default function About2() {
   return (
     <>
       <section className="relative bg-[#222124]">
-        <section className=" m-auto pt-8 pb-10 max-w-[1240px] h-80">
+        <section className=" m-auto pt-8 pb-10 max-w-[1240px] h-[800px]">
           {/* 
           <section className="w-[90%] m-auto md:w-full">
             <div className=" m-auto md:w-[85%]">

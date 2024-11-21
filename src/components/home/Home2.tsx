@@ -31,7 +31,7 @@ export default function Home2() {
 
 
 
-          <article className="absolute bottom-4 flex w-full justify-center">
+          <article className="absolute bottom-10 flex w-full justify-center">
 
             <span className="animate__animated animate__slideOutDown animate__infinite">
               <IoArrowDown className='text-white w-6 h-6' />
@@ -52,10 +52,11 @@ export default function Home2() {
             <Image src="/Iphone15.png" alt='' width={400} height={400} />
           </section>
         </section>
-        <article className='flex items-center'>
+        <article className='flex items-center justify-center'>
 
           <Image src="/homePolygons.png" alt='' width={700} height={700} className='absolute bottom-0' />
         </article>
+        {/* <section className="divisionHome2 absolute -bottom-20" />*/}
       </section>
     </>
   );

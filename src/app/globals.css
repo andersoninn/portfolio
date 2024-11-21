@@ -19,6 +19,12 @@ html {
   height: 86px;
   width: 100%;
 }
+.divisionHome2 {
+  background-color: #222124;
+  background-repeat: repeat-x;
+  height: 86px;
+  width: 100%;
+}
 .divisionAbout {
   background-image: url('../assets/image/projects/projectsDivision.png');
   background-repeat: repeat-x;
