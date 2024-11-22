@@ -11,7 +11,7 @@ export default function Projects2() {
   const ProjectItens = Texts.projects;
   return (
     <>
-      <section className="h-[840px] relative">
+      <section className="h-[840px] relative container overflow-hidden">
 
         <section className="w-[95%] absolute top-[30%] left-[50%] flex items-center justify-center m-auto">
           {/* full square */}
