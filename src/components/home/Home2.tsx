@@ -12,7 +12,7 @@ export default function Home2() {
   return (
     <>
       <NavbarUI />
-      <section className="bg-gradient-to-b from-[#0f9ffe] from-10% via-[#077AED] via-20% to-[#06283B] to-90% h-screen">
+      <section className="bg-gradient-to-b from-[#0f9ffe] from-30% via-[#077AED] via-45% to-[#06283B] to-95% h-screen md:h-[840px]">
         <section
           id="home"
           className="max-w-[1240px] flex flex-col justify-center items-center  m-auto h-1/2"
@@ -42,7 +42,7 @@ export default function Home2() {
 
 
         <section className='bg-green-500 w-screen h-1\2'>
-          <section className='absolute bottom-10 w-full flex flex-col justify-center'>
+          <section className='absolute bottom-10 w-full flex flex-col justify-center items-center'>
             <article className='relative w-full'>
               <div className='absolute top-24 w-full flex flex-col m-auto items-center justify-center text-white'>
                 <h2 className='text-2xl font-light'>Turning ideais</h2>
