@@ -23,8 +23,11 @@ export default function About2() {
           <Image src="/aboutMacbooks.png" alt='' width={700} height={700} className='absolute -top-[160px]' />
 
           <h2 className='text-white'>ABOUT</h2>
+          <article className='absolute  -bottom-[110px]'>
+            <span className='bg-white w-5 h-5'>carrosel</span>
 
-          <Image src="/polygonFromBack.png" alt='' width={700} height={700} className='absolute  -bottom-[110px]' />
+            <Image src="/polygonFromBack.png" alt='' width={700} height={700} />
+          </article>
           {/* 
           <section className="w-[90%] m-auto md:w-full">
             <div className=" m-auto md:w-[85%]">
