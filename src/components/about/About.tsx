@@ -72,7 +72,7 @@ export default function About() {
                   </Link>
                   <Link
                     className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
-                    href="https://drive.google.com/file/d/1yS6W0_HqifPKIoB1sqmx7ROpZL-_RCbE/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1wttA0BPcDON1vijG78N9UZqr2EDuZKxu/view?usp=sharing"
                     target="_blank"
                   >
                     <Image src={DownloadCV} width={32} alt="" />
