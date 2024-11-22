@@ -20,9 +20,11 @@ export default function About2() {
       <section className="relative bg-[#222124]">
         <section className=" m-auto pt-8 pb-10 max-w-[1240px] h-[800px] flex flex-col justify-center items-center">
 
-        <Image src="/aboutMacbooks.png" alt='' width={700} height={700} className='absolute -top-[160px]' />
-      
-                <h2 className='text-white'>ABOUT</h2>
+          <Image src="/aboutMacbooks.png" alt='' width={700} height={700} className='absolute -top-[160px]' />
+
+          <h2 className='text-white'>ABOUT</h2>
+          
+          <Image src="/polygonFromBack.png" alt='' width={700} height={700} className='absolute  -bottom-32' />
           {/* 
           <section className="w-[90%] m-auto md:w-full">
             <div className=" m-auto md:w-[85%]">
@@ -101,7 +103,7 @@ export default function About2() {
           </section>
         */}
 
-          
+
         </section>
       </section>
     </>
