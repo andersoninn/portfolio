@@ -26,7 +26,7 @@ export default function Home2() {
               </div>
             </article>
 
-            <article className="absolute bottom-10 flex w-full justify-center">
+            <article className="absolute bottom-20 flex w-full justify-center">
               <span className="animate__animated animate__slideOutDown animate__infinite">
                 <IoArrowDown className='text-white w-6 h-6' />
               </span>
