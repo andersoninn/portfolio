@@ -28,11 +28,11 @@ export default function Slider() {
                         <div key={i} className={`keen-slider__slide number-slide${i}  flex-col !min-w-full !max-w-full gap-4`}>
                             <span className="flex">
 
-                                {data.map((e) => <Image src={`/skills/${e}.png`} width={60} height={60} alt={e} />
+                                {data.map((e) => <Image key={i} src={`/skills/${e}.png`} width={60} height={60} alt={e} />
                                 )}
                             </span>
                             <span className="flex">
-                                {data.map((e) => <Image src={`/skills/${e}.png`} width={60} height={60} alt={e} />
+                                {data.map((e) => <Image key={i} src={`/skills/${e}.png`} width={60} height={60} alt={e} />
                                 )}
                             </span>
                         </div>
