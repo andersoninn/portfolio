@@ -13,6 +13,13 @@ html {
   height: screen;
 }
 
+.bgHome{
+  background-image: url('/bgHome.png');
+  background-repeat: repeat;
+  background-size: contain;
+  
+}
+
 .divisionHome {
   background-image: url('../assets/image/home/homeDivision.png');
   background-repeat: repeat-x;
@@ -20,9 +27,9 @@ html {
   width: 100%;
 }
 .divisionHome2 {
-  background-color: #222124;
+  background-image: url('/homePolygons.png');
   background-repeat: repeat-x;
-  height: 86px;
+  height: 120px;
   width: 100%;
 }
 .divisionAbout {

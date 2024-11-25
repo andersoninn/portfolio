@@ -11,7 +11,7 @@ export default function Page() {
     <>
       <Home2 />
       <About2 />
-      <Projects2 />
+     {/*  <Projects2 />*/}
     </>
   );
 }
