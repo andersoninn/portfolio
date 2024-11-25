@@ -55,35 +55,11 @@ html {
 
 [class^='number-slide'],
 [class*=' number-slide'] {
-  background: #d9d9d9;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 50px;
-  color: #fff;
-  font-weight: 500;
-  max-height: 100vh;
   transition: all 0.3s ease-out;
-}
-
-.number-slide1 {
-  border-radius: 8px;
-  width: 330px;
-}
-
-.number-slide2 {
-  border-radius: 8px;
-  width: 330px;
-}
-
-.number-slide3 {
-  border-radius: 8px;
-  width: 330px;
-}
-
-.navigation-wrapper {
-  position: relative;
-  max-width: 330px;
 }
 
 .dots {
@@ -108,28 +84,5 @@ html {
 }
 
 .dot.active {
-  background: #00008b;
-}
-
-.arrow {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: #fff;
-  cursor: pointer;
-}
-
-.arrow--left {
-  left: 5px;
-}
-
-.arrow--right {
-  left: auto;
-  right: 5px;
-}
-
-.arrow--disabled {
-  fill: rgba(255, 255, 255, 0.5);
+  background: #079CFF;
 }

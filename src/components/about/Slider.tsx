@@ -1,10 +1,13 @@
 import React, { useState } from "react"
-import "./styles.css"
+import '@/app/globals.css';
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import Image from "next/image";
 
-export default function App() {
-    const data = ["aaa", "bbb", "ccc"]
+export default function Slider() {
+    const page = [1, 2];
+    const data = ["HTML", "CSS", "JAVA", "JAVASCRIPT", "REACTJS"]
+    const data2 = ["SPRINGBOOT", "TAILWIND", "TYPESCRIPT"]
     const [currentSlide, setCurrentSlide] = React.useState(0)
     const [loaded, setLoaded] = useState(false)
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
@@ -19,75 +22,40 @@ export default function App() {
 
     return (
         <>
-            <div className="navigation-wrapper">
+            <div className="navigation-wrapper relative w-[90%] m-auto">
                 <div ref={sliderRef} className="keen-slider">
-                    {data.map((e, i) => 
-                        <div key={i} className={`keen-slider__slide number-slide${i}`}>{e}</div>
+                    {page.map((e, i) =>
+                        <div key={i} className={`keen-slider__slide number-slide${i}  flex-col !min-w-full !max-w-full gap-4`}>
+                            <span className="flex">
+
+                                {data.map((e) => <Image src={`/skills/${e}.png`} width={60} height={60} alt={e} />
+                                )}
+                            </span>
+                            <span className="flex">
+                                {data.map((e) => <Image src={`/skills/${e}.png`} width={60} height={60} alt={e} />
+                                )}
+                            </span>
+                        </div>
                     )}
                 </div>
-                {loaded && instanceRef.current && (
-                    <>
-                        <Arrow
-                            left
-                            onClick={(e: any) =>
-                                e.stopPropagation() || instanceRef.current?.prev()
-                            }
-                            disabled={currentSlide === 0}
-                        />
-
-                        <Arrow
-                            onClick={(e: any) =>
-                                e.stopPropagation() || instanceRef.current?.next()
-                            }
-                            disabled={
-                                currentSlide ===
-                                instanceRef.current.track.details.slides.length - 1
-                            }
-                        />
-                    </>
-                )}
             </div>
-            {/*
+
             {loaded && instanceRef.current && (
                 <div className="dots">
-                    {Object.keys(instanceRef.current.track.details.slides.length).map((idx) => {
-                        return (
+                    {Object.keys(instanceRef.current.track.details.slides).map(
+                        (_, i) => (
                             <button
-                                key={idx}
+                                key={i}
                                 onClick={() => {
-                                    instanceRef.current?.moveToIdx(idx)
+                                    instanceRef.current?.moveToIdx(i)
                                 }}
-                                className={"dot" + (currentSlide === idx ? " active" : "")}
-                            ></button>
+                                className={"dot" + (currentSlide === i ? " active" : "")}
+                            />
                         )
-                    })}
+                    )}
                 </div>
             )}
-                                */}
-        </>
-    )
-}
 
-function Arrow(props: {
-    disabled: boolean
-    left?: boolean
-    onClick: (e: any) => void
-}) {
-    const disabled = props.disabled ? " arrow--disabled" : ""
-    return (
-        <svg
-            onClick={props.onClick}
-            className={`arrow ${props.left ? "arrow--left" : "arrow--right"
-                } ${disabled}`}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-        >
-            {props.left && (
-                <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
-            )}
-            {!props.left && (
-                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
-            )}
-        </svg>
+        </>
     )
 }
