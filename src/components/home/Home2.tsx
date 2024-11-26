@@ -7,6 +7,8 @@ import { Texts } from '@/lib/Texts';
 import Link from 'next/link';
 import NavbarUI from '../ui/NavbarUI';
 import About2 from '../about/About2';
+import IpnoneComponent from './IpnoneComponent';
+
 
 export default function Home2() {
   const HomeTextes = Texts.home;
@@ -27,28 +29,17 @@ export default function Home2() {
               </div>
             </article>
 
-
             <Link href="#about2" className="animate__animated animate__slideOutDown animate__infinite absolute bottom-20 flex w-full justify-center z-50">
-              <IoArrowDown className='text-white w-6 h-6'/>
+              <IoArrowDown className='text-white w-6 h-6' />
             </Link>
 
           </section>
 
-          <section className='w-full h-1/2 container m-auto'>
-            <section className='mt-36 w-full flex flex-col justify-center items-center relative'>
-              <article className='w-full absolute '>
-                <article className='w-full flex flex-col m-auto items-center justify-center text-white'>
-                  <h2 className='text-2xl font-light'>Turning ideais</h2>
-                  <p className='text-3xl font-normal'>into possibilities</p>
-                </article>
-              </article>
-              <Image src="/Iphone15.png" alt='iphone' className='pt-4' width={300} height={300} />
-            </section>
-          </section>
+          <IpnoneComponent />
         </section>
 
         <article className='flex items-center justify-center container'>
-          <Image src="/homePolygons.png" alt='' width={700} height={700} className='absolute bottom-10' />
+          <Image src="/homePolygons.svg" alt='' width={700} height={700} className='absolute bottom-10' />
         </article>
       </section>
     </>
