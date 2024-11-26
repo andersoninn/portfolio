@@ -26,7 +26,7 @@ export default function Slider() {
                 <div ref={sliderRef} className="keen-slider">
                     {page.map((e, i) =>
                         <div key={i} className={`keen-slider__slide number-slide${i}  flex-col !min-w-full !max-w-full gap-4`}>
-                            <span className="flex">
+                            <span className="flex justify-center items-center">
 
                                 {data.map((e) => <Image key={i} src={`/skills/${e}.png`} width={60} height={60} alt={e} />
                                 )}
@@ -41,7 +41,7 @@ export default function Slider() {
             </div>
 
             {loaded && instanceRef.current && (
-                <div className="dots">
+                <div className="dots ml-1">
                     {Object.keys(instanceRef.current.track.details.slides).map(
                         (_, i) => (
                             <button

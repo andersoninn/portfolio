@@ -39,35 +39,35 @@ export default function Footer() {
                                 href="https://www.linkedin.com/in/andersoninn/"
                                 target="_blank"
                             >
-                                <Image src="/contacts/linkedin.png" height={40} width={40} alt="" />
+                                <Image src="/contacts/linkedin.png" height={50} width={50} alt="" />
                             </Link>
                             <Link
                                 className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
                                 href="https://github.com/andersoninn"
                                 target="_blank"
                             >
-                                <Image src="/contacts/github.png" height={40} width={40} alt="" />
+                                <Image src="/contacts/github.png" height={50} width={50} alt="" />
                             </Link>
                             <Link
                                 className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
                                 href="https://drive.google.com/file/d/1wttA0BPcDON1vijG78N9UZqr2EDuZKxu/view?usp=sharing"
                                 target="_blank"
                             >
-                                <Image src="/contacts/cv.png" height={40} width={40} alt="" />
+                                <Image src="/contacts/cv.png" height={50} width={50} alt="" />
                             </Link>
                             <Link
                                 className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
                                 href="https://mailto:andersoninnocencio17@gmail.com/"
                                 target="_blank"
                             >
-                                <Image src="/contacts/gmail.png" height={40} width={40} alt="" />
+                                <Image src="/contacts/gmail.png" height={50} width={50} alt="" />
                             </Link>
                             <Link
                                 className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
                                 href="https://wa.me/351933864893"
                                 target="blank"
                             >
-                                <Image src="/contacts/whatsapp.png" height={40} width={40} alt="" />
+                                <Image src="/contacts/whatsapp.png" height={50} width={50} alt="" />
                             </Link>
                         </aside>
                     </section>

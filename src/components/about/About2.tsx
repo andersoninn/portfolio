@@ -14,11 +14,11 @@ export default function About2() {
 
           <h2 className='text-white'>ABOUT</h2>
 
-          <article className='absolute  -bottom-[110px]'>
+          <article className='absolute bottom-0 bg-white'>
           
             <Image src="/polygonFromBack.png" alt='' width={700} height={700} />
           </article>
-          <article className='absolute  -bottom-[100px]'>
+          <article className='absolute bottom-0'>
             
           <Slider/>
           </article>

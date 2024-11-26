@@ -8,7 +8,7 @@ import { Texts } from '@/lib/Texts';
 import Link from 'next/link';
 
 export default function Projects2() {
-  const ProjectItens = Texts.projects;
+ 
   return (
     <>
       <section className="h-[840px] relative container overflow-hidden">
