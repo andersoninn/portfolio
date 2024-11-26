@@ -32,15 +32,14 @@ export default function Home2() {
             <Link href="#about2" className="animate__animated animate__slideOutDown animate__infinite absolute bottom-20 flex w-full justify-center z-50">
               <IoArrowDown className='text-white w-6 h-6' />
             </Link>
-
           </section>
 
           <IpnoneComponent />
         </section>
 
-        <article className='flex items-center justify-center container'>
-          <Image src="/homePolygons.svg" alt='' width={700} height={700} className='absolute bottom-10' />
-        </article>
+     
+          
+       
       </section>
     </>
   );
