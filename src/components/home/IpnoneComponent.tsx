@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Iphone from "@/assets/image/home/iPhone15.svg";
 
 export default function IpnoneComponent() {
     return (
@@ -11,7 +12,7 @@ export default function IpnoneComponent() {
                             <p className='text-3xl font-normal'>into possibilities</p>
                         </article>
                     </article>
-                    <Image src="/iphone15.svg" alt='iphone' className='pt-4 ' width={300} height={300} />
+                    <Image src={Iphone} alt='iphone' className='pt-4 ' width={300} height={300} />
                 </section>
             </section>
         </>
