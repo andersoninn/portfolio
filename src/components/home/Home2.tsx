@@ -15,7 +15,7 @@ export default function Home2() {
   return (
     <>
       <NavbarUI />
-      <section className="bg-gradient-to-b from-[#0f9ffe] from-30% via-[#077AED] via-45% to-[#06283B] h-[680px] to-95% relative">
+      <section className="bg-gradient-to-b from-[#0f9ffe] from-30% via-[#077AED] via-45% to-[#06283B] h-[600px] to-95% relative">
         <section className='bgHome'>
 
           <section className='w-full h-1/2 container m-auto'>
@@ -29,17 +29,13 @@ export default function Home2() {
               </div>
             </article>
 
-            <Link href="#about2" className="animate__animated animate__slideOutDown animate__infinite absolute bottom-20 flex w-full justify-center z-50">
+            {/*<Link href="#about2" className="animate__animated animate__slideOutDown animate__infinite absolute bottom-20 flex w-full justify-center z-50">
               <IoArrowDown className='text-white w-6 h-6' />
-            </Link>
+            </Link>*/}
           </section>
-
           <IpnoneComponent />
         </section>
-
-     
-          
-       
+          {/*<Image src="/homePolygons.svg" alt='' width={700} height={700} className='-mt-12' />*/}
       </section>
     </>
   );
