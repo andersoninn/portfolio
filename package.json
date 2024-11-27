@@ -12,6 +12,7 @@
     "@nextui-org/navbar": "^2.0.37",
     "@nextui-org/react": "^2.2.9",
     "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
     "framer-motion": "^10.18.0",
     "keen-slider": "^6.8.6",
     "next": "14.0.4",
