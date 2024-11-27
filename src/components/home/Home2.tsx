@@ -16,7 +16,7 @@ export default function Home2() {
     <>
       <NavbarUI />
       <section className="bg-gradient-to-b from-[#0f9ffe] from-30% via-[#077AED] via-45% to-[#06283B] h-[600px] to-95% relative">
-        <section className='bgHome h-[720px]'>
+        <section className='bgHome min-h-[720px]'>
 
           <section className='w-full h-1/2 container m-auto'>
             <article className="pt-24 font-normal text-center text-white flex flex-col justify-center">
