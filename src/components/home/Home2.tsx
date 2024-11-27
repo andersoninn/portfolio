@@ -1,17 +1,14 @@
 'use client';
 import 'animate.css';
-import Image from 'next/image';
-import { IoArrowDown } from "react-icons/io5";
-
-import { Texts } from '@/lib/Texts';
-import Link from 'next/link';
+import { Texts } from '@/lib/Texts2';
 import NavbarUI from '../ui/NavbarUI';
-import About2 from '../about/About2';
 import IpnoneComponent from './IpnoneComponent';
+import Link from 'next/link';
+import { IoArrowDown } from 'react-icons/io5';
 
 
 export default function Home2() {
-  const HomeTextes = Texts.home;
+  const texts = Texts.home;
   return (
     <>
       <NavbarUI />
@@ -20,22 +17,21 @@ export default function Home2() {
 
           <section className='w-full h-1/2 container m-auto'>
             <article className="pt-24 font-normal text-center text-white flex flex-col justify-center">
-              <h1 className="text-4xl">Anderson Carvalho</h1>
+              <h1 className="text-4xl">{texts.Name}</h1>
               <div className="flex flex-col justify-center w-full font-light text-2xl">
-                <p className="">
-                  Web and Software
+                <p className="px-12 text-wrap">
+                  {texts.subtitle}
                 </p>
-                <p>Developer</p>
               </div>
             </article>
 
-            {/*<Link href="#about2" className="animate__animated animate__slideOutDown animate__infinite absolute bottom-20 flex w-full justify-center z-50">
-              <IoArrowDown className='text-white w-6 h-6' />
-            </Link>*/}
+            <Link href="#about2" className="animate__animated animate__slideOutDown animate__infinite absolute bottom-20 flex w-full justify-center z-50">
+              <IoArrowDown className='text-white w-6 h-6'/>
+            </Link>
           </section>
           <IpnoneComponent />
         </section>
-          {/*<Image src="/homePolygons.svg" alt='' width={700} height={700} className='-mt-12' />*/}
+        {/*<Image src="/homePolygons.svg" alt='' width={700} height={700} className='-mt-12' />*/}
       </section>
     </>
   );
