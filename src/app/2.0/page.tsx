@@ -5,15 +5,16 @@ import Home2 from '@/components/home/Home2';
 import Projects2 from '@/components/projects/Projects2';
 import Resume2 from '@/components/resume/Resume2';
 
-
 export default function Page() {
   return (
     <>
-      <Home2 />
-      <About2 />
-      {/* <Resume2 />
-      <Projects2/>
-      <Footer /> */}
+      <section className="">
+        <Home2 />
+        <About2 />
+        {/* <Resume2 /> */}
+        {/* <Projects2 /> */}
+        <Footer />
+      </section>
     </>
   );
 }
