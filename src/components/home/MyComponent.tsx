@@ -27,6 +27,7 @@ const Trail: React.FC<TrailProps> = ({ open, children }) => {
       ))}
     </div>
   );
+  
 };
 
 export default function MyComponent() {
