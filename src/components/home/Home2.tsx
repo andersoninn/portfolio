@@ -23,7 +23,7 @@ export default function Home2() {
               <p>amet</p>
             </article>
             <article className="max-w-screen animate__animated animate__fadeInRight -ml-[50%]">
-              <div className=" -translate-Y-1/3 rotate-45 min-w-[500px]  min-h-[500px] bg-blue-500 z-0" />
+              <div className=" -translate-Y-1/2 rotate-45 min-w-[500px]  min-h-[500px] bg-blue-500 z-0" />
             </article>
           </section>
         </section>
