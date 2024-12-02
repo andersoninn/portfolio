@@ -2,15 +2,16 @@
 import 'animate.css';
 import { Texts } from '@/lib/Texts2';
 
-import Navbar from '../ui/Navbar';
+
 import MyComponent from './MyComponent';
+import NavbarUI from '../ui/NavbarUI';
 
 export default function Home2() {
   const texts = Texts.home;
   return (
     <>
       <section className="max-w-screen h-full">
-        <Navbar />
+        <NavbarUI />
         <section className="flex justify-center overflow-x-hidden">
           <section className="container w-[90%] min-h-[700px] flex  items-center text-left">
             <article className="z-10">
