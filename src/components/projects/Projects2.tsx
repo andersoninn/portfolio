@@ -1,61 +1,54 @@
-import Mockup from '@/assets/image/projects/mockupLeft.svg';
-import iconLink from '@/assets/image/projects/icon link.svg';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Image from "next/image";
+import Link from "next/link";
 
-import Image from 'next/image';
-import RealProjectsModal from './modals/RealProjectsModal';
-
-import { Texts } from '@/lib/Texts';
-import Link from 'next/link';
-
-export default function Projects2() {
-  const ProjectItens = Texts.projects;
-
+const ProjectItem = ({ item, index }: { item: any; index: number }) => {
+  const { ref, inView } = useInView({ threshold: 0.1 });
 
   return (
-    <>
-      <section className="bgProjects bg-top">
-        <section className="w-full">
-          <section className="w-[85%] pt-36 md:pt-32 flex flex-col m-auto max-w-[1240px] py-52 -mb-2">
-            <section className="flex flex-col md:flex-row flex-wrap">
-              {ProjectItens.map((e, i) => (
-                <article key={i} className={`m-auto flex flex-col items-center text-center gap-2 pb-12 max-w-[500px] animate__animated ${i % 2 == 0 ? 'animate__fadeInLeft' : 'animate__fadeInRight'}`}>
+    <motion.article
+      ref={ref}
+      initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+      animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+      transition={{ duration: 0.5 }}
+      className="m-auto flex flex-col items-center text-center gap-2 pb-12 max-w-[500px]"
+    >
+      <Image src={item.image} alt="" width={600} />
+      <motion.span
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="flex flex-col justify-center"
+      >
+        <h1 className="text-xl font-semibold">{item.nameOfProject}</h1>
+        <h2 className="text-lg">{item.descriptionOfProject}</h2>
+        <Link href={item.oficialWebsite} target="_blank" className="flex gap-4 m-auto">
+          <Image src="/path/to/iconLink.svg" alt="" width={15} />
+          <span className="text-blue-600">{item.callToAction}</span>
+        </Link>
+      </motion.span>
+    </motion.article>
+  );
+};
 
-                  <Image src={e.image} alt="" width={600} />
-                  <span className={`animate__animated ${i % 2 == 0 ? 'animate__fadeInLeft' : 'animate__fadeInRight'} animate__delay-0.2s flex flex-col justify-center`}>
+export default function Projects2() {
+  const ProjectItens = [
+    {
+      image: "/path/to/image.svg",
+      nameOfProject: "Projeto 1",
+      descriptionOfProject: "Descrição do projeto 1",
+      oficialWebsite: "https://example.com",
+      callToAction: "Visitar",
+    },
+    // Outros itens
+  ];
 
-                    <h1 className="text-xl font-semibold">{e.nameOfProject} </h1>
-                    <h2 className=" text-lg">{e.descriptionOfProject}</h2>
-                    <Link href={e.oficialWebsite} target="_blank" className="flex gap-4 m-auto">
-                      <Image src={iconLink} alt="" width={15} />
-                      <span className="text-blue-600">{e.callToAction}</span>
-                    </Link>
-                  </span>
-                </article>
-              ))}
-            </section>
-            <section className="flex flex-col md:flex-row flex-wrap">
-              {ProjectItens.map((e, i) => (
-                <article key={i} className={`m-auto flex flex-col items-center text-center gap-2 pb-12 max-w-[500px] animate__animated ${i % 2 == 0 ? 'animate__fadeInLeft' : 'animate__fadeInRight'}`}>
-
-                  <Image src={e.image} alt="" width={600} />
-                  <span className={`animate__animated ${i % 2 == 0 ? 'animate__fadeInLeft' : 'animate__fadeInRight'} animate__delay-0.2s flex flex-col justify-center`}>
-
-                    <h1 className="text-xl font-semibold">{e.nameOfProject} </h1>
-                    <h2 className=" text-lg">{e.descriptionOfProject}</h2>
-                    <Link href={e.oficialWebsite} target="_blank" className="flex gap-4 m-auto">
-                      <Image src={iconLink} alt="" width={15} />
-                      <span className="text-blue-600">{e.callToAction}</span>
-                    </Link>
-                  </span>
-                </article>
-              ))}
-            </section>
-
-          </section>
-        </section>
-
-        <section className="w-full h-16 absolute -top-8" id="projects" />
-      </section>
-    </>
+  return (
+    <section className="flex flex-col md:flex-row flex-wrap">
+      {ProjectItens.map((item, index) => (
+        <ProjectItem key={index} item={item} index={index} />
+      ))}
+    </section>
   );
 }
