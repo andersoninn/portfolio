@@ -48,11 +48,11 @@ export default function Footer() {
                     href={e.href}
                     target="_blank"
                   >
-                    {e.alt === 'linkedin' && <TfiLinkedin />}
-                    {e.alt === 'github' && <BiLogoGithub />}
-                    {e.alt === 'gmail' && <BiLogoGmail />}
-                    {e.alt === 'whatsapp' && <BiLogoWhatsapp />}
-                    {e.alt === 'curriculum' && <BiSolidDownload className='w-6 h-6' />}
+                    {e.alt === 'linkedin' && <TfiLinkedin className='w-5 h-5'/>}
+                    {e.alt === 'github' && <BiLogoGithub className='w-6 h-6'/>}
+                    {e.alt === 'curriculum' && <BiSolidDownload className='w-6 h-6'/>}
+                    {e.alt === 'gmail' && <BiLogoGmail className='w-5 h-5'/>}
+                    {e.alt === 'whatsapp' && <BiLogoWhatsapp className='w-6 h-6'/>}
 
                     {/* <Image src={e.image} height={40} width={40} alt={e.alt} /> */}
                   </Link>
