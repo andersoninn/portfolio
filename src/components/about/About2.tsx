@@ -7,7 +7,7 @@ export default function About2() {
   const AboutTexts = Texts.about;
   return (
     <>
-      <section className='container m-auto w-[90%] h-[700px] flex justify-center items-center "'>
+      <section className='container m-auto w-[90%] h-[700px] flex justify-center items-center bg-blue-100'>
         About
         {/* <section className=" m-auto bg-[#222124] max-w-[1240px] h-[800px] flex flex-col justify-center items-center">
             <article className='h-24 w-screen absolute ' />

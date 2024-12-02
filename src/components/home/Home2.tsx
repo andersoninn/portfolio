@@ -13,8 +13,15 @@ export default function Home2() {
         <NavbarUI />
         <section className="flex justify-center overflow-x-hidden">
           <section className="container w-[90%] min-h-[700px] flex items-center text-left">
-            <article className="z-10 text-[80px] font-extrabold flex flex-col animate__animated animate__fadeInLeft">
-              <span>
+            <article className="z-10 text-[70px] font-extrabold flex flex-col -space-y-8 animate__animated animate__fadeInLeft">
+              <p>Lorem</p>
+              <p>ipsum sit</p>
+              <p>dolor amet</p>
+              <p>consectetur</p>
+              <p>adipiscing</p>
+              <p>sit elit</p>
+              <p>amet</p>
+              {/* <span>
                 <h2> Anderson</h2>
                 <h2 className='-mt-12'>Carvalho</h2>
               </span>
@@ -24,10 +31,10 @@ export default function Home2() {
               </span>
               <span className='text-4xl text-nowrap'>
                 Software Developer
-              </span>
+              </span> */}
             </article>
             <article className="max-w-screen animate__animated animate__fadeInRight ">
-              <div className=" -translate-Y-1/2 rotate-45 min-w-[500px] min-h-[500px] bg-blue-500 z-0" />
+              <div className=" -translate-Y-1/3 rotate-45 min-w-[500px]  min-h-[500px] bg-blue-500 z-0" />
             </article>
           </section>
         </section>
