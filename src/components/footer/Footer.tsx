@@ -25,10 +25,10 @@ export default function Footer() {
           <h2 className="font-semibold text-2xl">Start a project</h2>
           <p>
             Interested in working together? We should queue up a time to chat.
-            I’ll buy the coffee.
+            I&#8216; ll buy the coffee.
           </p>
           <button className="py-2 px-6 rounded-full border border-cyan-500 text-xl">
-            Let's do this
+            Let&#8216; s do this
           </button>
         </article>
         <section>
@@ -52,7 +52,7 @@ export default function Footer() {
                     {e.alt === 'github' && <BiLogoGithub />}
                     {e.alt === 'gmail' && <BiLogoGmail />}
                     {e.alt === 'whatsapp' && <BiLogoWhatsapp />}
-                    {e.alt === 'curriculum' && <BiSolidDownload className='w-6 h-6'/>}
+                    {e.alt === 'curriculum' && <BiSolidDownload className='w-6 h-6' />}
 
                     {/* <Image src={e.image} height={40} width={40} alt={e.alt} /> */}
                   </Link>
