@@ -11,7 +11,7 @@ export default function Home2() {
     <>
       <section className="max-w-screen h-full">
         <NavbarUI />
-        <section className="flex justify-center overflow-x-hidden">
+        <section className="flex justify-center overflow-x-hidden -mt-12">
           <section className="container w-[90%] min-h-[700px] flex items-center text-left">
             <article className="z-10 text-[60px] font-extrabold flex flex-col -space-y-8 animate__animated animate__fadeInLeft">
               <p>Lorem</p>
