@@ -12,7 +12,7 @@ export default function Page() {
         <Home2 />
         <About2 />
         {/* <Resume2 /> */}
-        {/* <Projects2 /> */}
+        <Projects2 />
         <Footer />
       </section>
     </>

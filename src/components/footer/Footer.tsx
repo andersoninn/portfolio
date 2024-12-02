@@ -1,5 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { TfiLinkedin } from "react-icons/tfi";
+import { BiLogoGithub } from "react-icons/bi";
+import { BiLogoGmail } from "react-icons/bi";
+import { BiLogoWhatsapp } from "react-icons/bi";
+import { BiSolidDownload } from "react-icons/bi";
+
 
 import AboutPictureArm from '@/assets/image/about/aboutPictureArm.svg';
 import AboutPictureSocial from '@/assets/image/about/aboutPictureSocial.svg';
@@ -42,7 +48,12 @@ export default function Footer() {
                     href={e.href}
                     target="_blank"
                   >
-                    {e.alt.slice(0, 3)}
+                    {e.alt === 'linkedin' && <TfiLinkedin />}
+                    {e.alt === 'github' && <BiLogoGithub />}
+                    {e.alt === 'gmail' && <BiLogoGmail />}
+                    {e.alt === 'whatsapp' && <BiLogoWhatsapp />}
+                    {e.alt === 'curriculum' && <BiSolidDownload className='w-6 h-6'/>}
+
                     {/* <Image src={e.image} height={40} width={40} alt={e.alt} /> */}
                   </Link>
                   {/* <Link
