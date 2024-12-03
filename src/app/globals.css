@@ -18,6 +18,11 @@ html {
   background-repeat: repeat;
   background-size: contain;
 }
+.bgAbout{
+  background-image: url('/bgAbout.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bgProjects{
   background-image: url('/bgProjects.png');
   background-repeat: no-repeat;

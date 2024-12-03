@@ -3,8 +3,8 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Link from "next/link";
 import { Texts } from "@/lib/Texts";
+import { PiLinkBold } from "react-icons/pi";
 
-// Componente para renderizar cada projeto
 const ProjectItem = ({ item, index }: { item: any; index: number }) => {
   const { ref, inView } = useInView({ threshold: 0.1 });
 
@@ -26,10 +26,10 @@ const ProjectItem = ({ item, index }: { item: any; index: number }) => {
       >
         <h1 className="text-xl font-semibold">{item.nameOfProject}</h1>
         <h2 className="text-lg">{item.descriptionOfProject}</h2>
-        <Link href={item.oficialWebsite} target="_blank" className="flex gap-4 m-auto">
+        <Link href={item.oficialWebsite} target="_blank" className="flex gap-1 m-auto justify-center items-center text-blue-600">
           {/* Ícone do link */}
-          <Image src="/path/to/iconLink.svg" alt="Ícone de link" width={15} height={15} />
-          <span className="text-blue-600">{item.callToAction}</span>
+          <PiLinkBold className="w-5 h-5 " />
+          <span>{item.callToAction}</span>
         </Link>
       </motion.span>
     </motion.article>
@@ -38,10 +38,10 @@ const ProjectItem = ({ item, index }: { item: any; index: number }) => {
 
 // Componente principal
 export default function Projects2() {
-  const ProjectItens = Texts.projects; // Dados vindos da lib Texts
+  const ProjectItens = Texts.projects;
 
   return (
-    <section className="flex flex-col md:flex-row flex-wrap py-52 bgProjects bg-center -mb-4">
+    <section className="flex flex-col md:flex-row flex-wrap py-52 bgProjects bg-center -mb-4 overflow-hidden">
       {ProjectItens.length === 0 ? (
         <p>Nenhum projeto disponível.</p>
       ) : (
