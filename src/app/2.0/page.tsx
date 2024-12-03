@@ -11,7 +11,7 @@ export default function Page() {
       <section className="">
         <Home2 />
         <About2 />
-        {/* <Resume2 /> */}
+        <Resume2 />
         <Projects2 />
         <Footer />
       </section>

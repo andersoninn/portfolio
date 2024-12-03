@@ -1,29 +1,11 @@
 import Image from 'next/image';
-import Figma from '@/assets/image/resume/figma.svg';
-import Photoshop from '@/assets/image/resume/photoshop.svg';
-import Html from '@/assets/image/resume/html5.svg';
-import Css from '@/assets/image/resume/css3.svg';
-import JavaScript from '@/assets/image/resume/javaScript.svg';
-import ReactJS from '@/assets/image/resume/react.svg';
-import Tailwind from '@/assets/image/resume/tailwind.svg';
-import TypeScript from '@/assets/image/resume/typeScript.svg';
-import NextJS from '@/assets/image/resume/nextJS.svg';
-import ReactNative from '@/assets/image/resume/reactNative.svg';
-import JsNode from '@/assets/image/resume/nodeJS.svg';
-import Express from '@/assets/image/resume/express.svg';
-import MongoDB from '@/assets/image/resume/mogoDB.svg';
-
-import EllipseRight from '@/assets/image/resume/ellipses/ellipseRight.svg';
-import EllipseLeft from '@/assets/image/resume/ellipses/ellipseLeft.svg';
-import EllipseCenter from '@/assets/image/resume/ellipses/ellipseCenter.svg';
-import Slider from '../about/Slider';
 import { Texts } from '@/lib/Texts2';
 
 export default function Resume2() {
   const texts = Texts.resume;
   return (
     <>
-      <section className=" container h-[700px] m-auto flex max-w-[95%] flex-col items-center relative overflow-hidden">
+      <section className=" container -mb-24 h-[600px] m-auto flex max-w-[95%] flex-col items-center relative overflow-hidden">
         <section className="w-[95%] absolute top-[25%] left-[50%] flex items-center justify-center m-auto">
           {/* full square */}
           <section className=" -translate-x-1/2 flex flex-col justify-center items-center">
