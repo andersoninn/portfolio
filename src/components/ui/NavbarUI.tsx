@@ -36,7 +36,7 @@ export default function NavbarUI() {
           </NavbarBrand>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-            className="sm:hidden"
+            className="sm:hidden mr-2"
             icon={
               isMenuOpen ? (
                 <IoCloseSharp className="w-12 h-12 text-gray-800" />

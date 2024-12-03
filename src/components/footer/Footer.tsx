@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { TfiLinkedin } from "react-icons/tfi";
 import { BiLogoGithub } from "react-icons/bi";
@@ -6,21 +5,13 @@ import { BiLogoGmail } from "react-icons/bi";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { BiSolidDownload } from "react-icons/bi";
 
-
-import AboutPictureArm from '@/assets/image/about/aboutPictureArm.svg';
-import AboutPictureSocial from '@/assets/image/about/aboutPictureSocial.svg';
-import DownloadCV from '@/assets/image/about/downloadCV.svg';
-import Linkedin from '@/contacts/linkedin.svg';
-import Github from '@/assets/image/about/gitHub.svg';
-import Gmail from '@/assets/image/about/gmail.svg';
-import Instagran from '@/assets/image/about/instagran.svg';
 import { Texts } from '@/lib/Texts2';
 
 export default function Footer() {
   const texts = Texts.footer;
   return (
     <>
-      <section className="w-full bg-blue-500 flex flex-col justify-center items-center relative">
+      <section className="w-full bg-gradient-to-b from-cyan-500 to-blue-500 flex flex-col justify-center items-center relative">
         <article className="absolute -top-[160px] w-[90%] bg-[#141c3a] h-80 rounded-2xl flex flex-col gap-4 items-center justify-center p-6  text-center text-white ">
           <h2 className="font-semibold text-2xl">Start a project</h2>
           <p>
@@ -48,11 +39,11 @@ export default function Footer() {
                     href={e.href}
                     target="_blank"
                   >
-                    {e.alt === 'linkedin' && <TfiLinkedin className='w-5 h-5'/>}
-                    {e.alt === 'github' && <BiLogoGithub className='w-6 h-6'/>}
-                    {e.alt === 'curriculum' && <BiSolidDownload className='w-6 h-6'/>}
-                    {e.alt === 'gmail' && <BiLogoGmail className='w-5 h-5'/>}
-                    {e.alt === 'whatsapp' && <BiLogoWhatsapp className='w-6 h-6'/>}
+                    {e.alt === 'linkedin' && <TfiLinkedin className='w-5 h-5' />}
+                    {e.alt === 'github' && <BiLogoGithub className='w-6 h-6' />}
+                    {e.alt === 'curriculum' && <BiSolidDownload className='w-6 h-6' />}
+                    {e.alt === 'gmail' && <BiLogoGmail className='w-5 h-5' />}
+                    {e.alt === 'whatsapp' && <BiLogoWhatsapp className='w-6 h-6' />}
 
                     {/* <Image src={e.image} height={40} width={40} alt={e.alt} /> */}
                   </Link>
