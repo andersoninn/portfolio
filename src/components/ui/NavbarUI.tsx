@@ -69,7 +69,7 @@ export default function NavbarUI() {
           ))}
         </span>
       </NavbarContent>
-      <NavbarMenu className="pt-6 gap-4 items-end">
+      <NavbarMenu className="pt-6 gap-4 items-end bg-white">
         <>
           {menuItems.map((item) => (
             <NavbarItem key={item} className={`${item == 'LOGO' && 'hidden'} `}>
