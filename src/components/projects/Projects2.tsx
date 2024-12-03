@@ -22,7 +22,7 @@ const ProjectItem = ({ item, index }: { item: any; index: number }) => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex flex-col justify-center"
+        className="flex flex-col justify-center max-w-[90%]"
       >
         <h1 className="text-xl font-semibold">{item.nameOfProject}</h1>
         <h2 className="text-lg">{item.descriptionOfProject}</h2>
