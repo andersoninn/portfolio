@@ -78,17 +78,17 @@ export default function About2() {
 
           <section className="flex flex-col justify-center items-center mt-4">
             <p className="text-gray-800 text-center text-lg">
-              My name is <strong>Anderson Carvalho</strong> , I'm a full-stack
-              web and software developer with a passion for creating innovations
-              that solve problems, with a special focus on user interactions.
-              I'm ready to bring your ideas to life and add a touch of
-              originality to your online space.
+              My name is <strong>Anderson Carvalho</strong> , I&apos;m a
+              full-stack web and software developer with a passion for creating
+              innovations that solve problems, with a special focus on user
+              interactions. I&apos;m ready to bring your ideas to life and add a
+              touch of originality to your online space.
             </p>
             <article className="w-full flex flex-col justify-end items-end mt-16 relative text-lg">
               <span className="bg-gray-800 absolute -left-4 -translate-x-1/2 translate-y-1/3 w-32 h-32 rounded-full" />
 
               <span>
-                <p className="text-gray-800">Let's make your </p>
+                <p className="text-gray-800">Let&apos;s make your </p>
                 <p className="text-gray-800">project special!</p>
               </span>
             </article>
