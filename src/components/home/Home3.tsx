@@ -8,13 +8,13 @@ import { useInView } from "react-intersection-observer";
 import NavbarUI from '../ui/NavbarUI';
 import Image from 'next/image';
 
-export default function Home2() {
+export default function Home3() {
   const texts = Texts.home;
   const { ref, inView } = useInView({ threshold: 0.1 });
   return (
     <>
       <section className="max-w-screen h-full bg-gradient-to-b from-cyan-500 to-blue-500 relative">
-        <NavbarUI />
+        {/* <NavbarUI /> */}
         <section className="bgHome">
           <section className="container w-[90%] m-auto min-h-[700px] pt-[30%] ">
             <article
