@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,22 +19,21 @@ html {
   height: screen;
 }
 
-.bgHome{
+.bgHome {
   background-image: url('/bgHome.svg');
   background-repeat: repeat;
   background-size: contain;
 }
-.bgAbout{
+.bgAbout {
   background-image: url('/bgAbout.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.bgProjects{
+.bgProjects {
   background-image: url('/bgProjects.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .divisionHome {
   background-image: url('../assets/image/home/homeDivision.png');
@@ -94,9 +99,5 @@ html {
 }
 
 .dot.active {
-  background: #079CFF;
+  background: #079cff;
 }
-
-
-
-
