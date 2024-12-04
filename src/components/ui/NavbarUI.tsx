@@ -31,16 +31,14 @@ export default function NavbarUI() {
       shouldHideOnScroll
       onMenuOpenChange={setIsMenuOpen}
       isBlurred={true}
-      className="bg-white"
+      className="bg-white shadow-xl"
     >
       <NavbarContent
-        className={`w-full flex justify-between items-center ${
-          !isMenuOpen && 'bg-[#2C373D]'
-        }`}
+        className={`w-full flex justify-between items-center}`}
       >
         {/* Logo no lado esquerdo */}
         <NavbarBrand className="text-gray-800">
-          <p className="font-bold text-inherit text-white">LOGO</p>
+          <p className="font-bold text-inherit">LOGO</p>
         </NavbarBrand>
 
         {/* Menu toggle no lado direito (aparece apenas em dispositivos móveis) */}
@@ -122,7 +120,6 @@ export default function NavbarUI() {
         </section>
 
         <section className="flex flex-col items-end justify-end pb-6 text-white bg-green-900/30 w-full h-1/2">
-        
           <span>Local de onde você está acessando</span>
           <span> WEC DEC 04 2024</span>
           <span>16:17</span>
