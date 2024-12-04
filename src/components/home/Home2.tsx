@@ -14,7 +14,7 @@ export default function Home2() {
   return (
     <>
       <section className="max-w-screen h-full bg-gradient-to-b from-cyan-500 to-blue-500 relative">
-        <NavbarUI />
+        {/* <NavbarUI /> */}
         <section className="bgHome">
           <section className="container w-[90%] m-auto min-h-[700px] pt-[30%] ">
             <article
@@ -36,7 +36,7 @@ export default function Home2() {
                 <h2 className='font-semibold text-xl'>{texts.calToAction}</h2>
                 <p>{texts.subtitleCalToAction}</p>
               </span>
-              <Image src="/iphone.png" width={200} height={120} alt="" className='-mt-28' />
+              <Image src="/iphone.png" width={230} height={200} alt="" className='-mt-28' />
 
             </article>
 
