@@ -23,7 +23,7 @@ export default function Home2() {
                   Because there is only one way
                 </p>
                 <p className="text-6xl font-extrabold animate__animated animate__fadeIn">
-                  We'll Make
+                  We&apos;ll Make
                 </p>
                 <p className="text-xl animate__animated animate__fadeIn animate__delay-2s">
                   to make it to the next step
