@@ -84,8 +84,12 @@ export default function About2() {
               <span className="bg-gray-800 absolute -left-4 -translate-x-3/4 -translate-y-1/2 w-32 h-32 rounded-full" />
 
               <span>
-                <p className="text-gray-800 md:text-xl">Let's make your </p>
-                <p className="text-gray-800 md:text-xl mb-12">project special!</p>
+                <p className="text-gray-800 md:text-xl">
+                  Let&apos;s make your{' '}
+                </p>
+                <p className="text-gray-800 md:text-xl mb-12">
+                  project special!
+                </p>
               </span>
             </article>
           </section>
