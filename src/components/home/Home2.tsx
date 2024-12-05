@@ -8,16 +8,18 @@ import { HiArrowDown } from 'react-icons/hi2';
 
 import NavbarUI from '../ui/NavbarUI';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home2() {
   const texts = Texts.home;
   const { ref, inView } = useInView({ threshold: 0.1 });
   return (
     <>
-      <section className="max-w-screen h-full shadow-xl md:pb-52">
+      <section className="max-w-screen h-full shadow-xl">
         <NavbarUI />
         <section className="bgPattern">
-          <section className="container w-[90%] m-auto min-h-[700px] md:min-h-screen pt-[50%]  md:pt-[20%] lg:pt-[10%]">
+          <section className="container w-[90%] my-16 m-auto min-h-[700px] md:min-h-screen flex flex-col items-center justify-around relative md:pb-16">
+            {/* H1 */}
             <article className="flex flex-col justify-center items-center text-black text-center">
               <span>
                 <p className="text-xl md:text-4xl animate__animated animate__fadeIn animate__delay-1s mb-2">
@@ -38,22 +40,27 @@ export default function Home2() {
                   — nailing your mvp —
                 </p>
               </span>
-              <HiArrowDown className="w-6 h-6  lg:w-8 lg:h-8 absolute bottom-20 animate__animated animate__fadeIn animate__delay-4s" />
             </article>
 
-            {/* <article className="absolute -bottom-10 w-[90%] flex flex-col justify-center items-center text-center text-white animate__animated animate__fadeInUp">
-              <span>
-                <h2 className="font-semibold text-xl">{texts.calToAction}</h2>
-                <p>{texts.subtitleCalToAction}</p>
-              </span>
-              <Image
-                src="/iphone.png"
-                width={230}
-                height={200}
-                alt=""
-                className="-mt-28"
-              />
-            </article> */}
+            <Link href='#helloo' className='flex justify-center items-center md:pt-12 lg:pt-0'>
+              <HiArrowDown className="w-6 h-6  lg:w-8 lg:h-8 animate__animated animate__fadeIn animate__delay-4s" />
+
+            </Link>
+            <article>
+              {/* <motion.div
+                initial={{ backgroundColor: '#2d3748' }}
+                whileHover={{
+                  backgroundColor: ['#dfdf65', '#20575d'],
+                  transition: { duration: 0.5, ease: 'easeInOut' },
+                }}
+                animate={{
+                  backgroundColor: '#2d3748',
+                  transition: { duration: 0.5, ease: 'easeInOut' },
+                }}
+                className="bg-[#2d3748] hover:bg-[#20575d] absolute -right-4 bottom-0 translate-x-1/2 translate-y-1/2 w-36 h-36 md:w-72 md:h-72 rounded-full"
+              /> */}
+            </article>
+
           </section>
         </section>
       </section>

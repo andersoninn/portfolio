@@ -7,8 +7,8 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   Link,
+  Divider,
 } from '@nextui-org/react';
-import { AcmeLogo } from './AcmeLogo.jsx';
 import { IoMenuSharp } from 'react-icons/io5';
 import { IoCloseSharp } from 'react-icons/io5';
 import { motion } from 'framer-motion';
@@ -31,7 +31,7 @@ export default function NavbarUI() {
       shouldHideOnScroll
       onMenuOpenChange={setIsMenuOpen}
       isBlurred={true}
-      className="bg-white shadow-xl"
+      className="bg-white shadow-xl !bg-transparent"
     >
       <NavbarContent
         className={`w-full flex justify-between items-center}`}
@@ -71,7 +71,7 @@ export default function NavbarUI() {
       {/* Menu de navegação */}
       <NavbarMenu
         aria-hidden={!isMenuOpen}
-        className="w-full max-h-[600px] pt-6 bg-[#2C373D] items-center  rounded-b-2xl"
+        className="w-full max-h-[550px] pt-6 bg-[#2C373D] items-center  rounded-b-2xl"
       >
         {menuItems.map((item) => (
           <NavbarItem key={item} className="px-4 py-2 font-inter">
@@ -83,14 +83,14 @@ export default function NavbarUI() {
             </Link>
           </NavbarItem>
         ))}
-        <section className="flex flex-col items-center gap-4 mb-12">
-          <p className="text-gray-400">Socials</p>
+        <section className="flex flex-col items-center gap-4 mb-12 ">
+          <p className="text-gray-400">Contacts - info</p>
           <article className="flex gap-4">
             {texts.contacts.map((e, i) => (
               <>
                 <Link
                   key={i}
-                  className="w-12 h-12 rounded-full border border-white flex justify-center items-center text-white hover:border-[#21585E] hover:bg-white hover:text-[#21585E] shadow-md cursor-pointer "
+                  className="w-12 h-12 rounded-full border border-white flex justify-center items-center text-white hover:border-[#21585E] hover:bg-white hover:text-[#21585E] shadow-md cursor-pointer"
                   href={e.href}
                   target="_blank"
                 >
@@ -118,11 +118,26 @@ export default function NavbarUI() {
             ))}
           </article>
         </section>
+        <Divider className='bg-white' />
+        <section className='flex justify-between w-full items-center relative '>
 
-        <section className="flex flex-col items-end justify-end pb-6 text-white bg-green-900/30 w-full h-1/2">
-          <span>Local de onde você está acessando</span>
-          <span> WEC DEC 04 2024</span>
-          <span>16:17</span>
+          <motion.div
+            initial={{ backgroundColor: '#ffffff' }} // Cor inicial (gray-800)
+            whileHover={{
+              backgroundColor: ['#dfdf65', '#20575d'], // Transição de amarelo para verde
+              transition: { duration: 0.5, ease: 'easeInOut' },
+            }}
+            animate={{
+              backgroundColor: '#ffffff', // Retorna para gray-800 após o hover
+              transition: { duration: 0.5, ease: 'easeInOut' },
+            }}
+            className='absolute bottom-0 w-32 h-32 rounded-full -translate-x-1/2 translate-y-1/2' />
+
+          <section className="flex flex-col items-end justify-center  text-white w-full h-1/5 uppercase">
+            <span>Local de onde você está acessando</span>
+            <span> WEC DEC 04 2024</span>
+            <span>16:17</span>
+          </section>
         </section>
       </NavbarMenu>
     </Navbar>

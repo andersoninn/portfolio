@@ -32,6 +32,7 @@ const config: Config = {
       dropShadow: {
         brandShadow: '0 5px 5px rgba(14, 165, 233, 0.25)',
       },
+
     },
   },
   plugins: [nextui()],

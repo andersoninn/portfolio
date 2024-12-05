@@ -34,6 +34,28 @@ html {
   background-size: cover;
 }
 
+.rabisco {
+  position: relative;
+  display: inline-block;
+  text-decoration: none; /* Remove o line-through padrão */
+  color: black; /* Cor do texto */
+}
+
+.rabisco::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.2em; /* Ajuste para alinhar ao texto */
+  height: 0.5em; /* Altura do rabisco */
+  background: linear-gradient(90deg, rgba(255, 255, 0, 0.8), rgba(255, 255, 0, 0.6));
+  transform: rotate(-2deg); /* Inclinação para parecer desenhado */
+  z-index: -1; /* Fica atrás do texto */
+  border-radius: 3px; /* Deixa as bordas suaves */
+  opacity: 0.7; /* Aparência mais suave */
+}
+
+
 .divisionHome {
   background-image: url('../assets/image/home/homeDivision.png');
   background-repeat: repeat-x;
