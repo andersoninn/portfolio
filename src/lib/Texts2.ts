@@ -84,7 +84,7 @@ export const Texts = {
         id: 4,
         image: '/contacts/gmail.svg',
         alt: 'gmail',
-        href: 'https://mailto:andersoninnocencio17@gmail.com/'
+        href: 'mailto:andersoninnocencio17@gmail.com?subject=Olá&body=Escreva sua mensagem aqui'
       },
       {
         id: 5,
