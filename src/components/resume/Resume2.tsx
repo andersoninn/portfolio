@@ -5,7 +5,8 @@ export default function Resume2() {
   const texts = Texts.resume;
   return (
     <>
-      <section className=" container -mb-32 h-[600px] m-auto flex max-w-[95%] flex-col items-center relative overflow-hidden">
+      <section className="container -mb-32 h-[600px] m-auto flex max-w-[95%] flex-col items-center relative overflow-hidden">
+        <h2 className="upercase text-3xl mt-16">More about me</h2>
         <section className="w-[95%] absolute top-[25%] left-[50%] flex items-center justify-center m-auto">
           {/* full square */}
           <section className=" -translate-x-1/2 flex flex-col justify-center items-center">

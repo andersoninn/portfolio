@@ -36,32 +36,25 @@ export default function About2() {
 
   return (
     <>
-      <section className="bgAbout bg-center relative">
-        <section className="container m-auto w-[90%] min-h-[700px] flex justify-center items-center md:py-56 relative">
+      <section className="bgPattern relative shadow-xl">
+        <section className="cointainer m-auto w-[90%] min-h-[700px] flex justify-center items-center md:py-56 relative">
           <motion.div
-            initial={{ backgroundColor: '#2d3748' }} // Cor inicial (gray-800)
+            initial={{ backgroundColor: '#2d3748' }}
             whileHover={{
-              backgroundColor: ['#dfdf65', '#20575d'], // Transição de amarelo para verde
+              backgroundColor: ['#dfdf65', '#20575d'],
               transition: { duration: 0.5, ease: 'easeInOut' },
             }}
             animate={{
-              backgroundColor: '#2d3748', // Retorna para gray-800 após o hover
+              backgroundColor: '#2d3748',
               transition: { duration: 0.5, ease: 'easeInOut' },
             }}
             className="bg-[#2d3748] hover:bg-[#20575d] absolute -right-4 top-0 translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-72 md:h-72 rounded-full"
           />
-          {/* <Image
-            src="/aboutMacbooks.png"
-            width={400}
-            height={400}
-            alt=""
-            className="absolute -top-20 text-center"
-          /> */}
 
           {/* Texto animado */}
           <motion.div
             ref={ref}
-            className="absolute top-20 text-7xl font-bold text-gray-800 flex"
+            className="absolute top-20 text-7xl md:text-[200px] font-bold text-black flex"
           >
             {text.split('').map((letter, index) => (
               <motion.span
@@ -76,8 +69,11 @@ export default function About2() {
             ))}
           </motion.div>
 
-          <section className="flex flex-col justify-center items-center mt-4">
-            <p className="text-gray-800 text-center text-lg">
+          <section className="flex flex-col justify-center items-center mt-4 md:mt-36 max-w-[900px]">
+            <div className="w-[300px] h-[300px] rounded-full mt-[60%] bg-gray-100 flex items-center justify-center">
+              <span>minha foto </span>
+            </div>
+            <p className="mt-16 text-gray-800 text-center text-lg md:text-xl">
               My name is <strong>Anderson Carvalho</strong> , I&apos;m a
               full-stack web and software developer with a passion for creating
               innovations that solve problems, with a special focus on user
@@ -85,11 +81,11 @@ export default function About2() {
               touch of originality to your online space.
             </p>
             <article className="w-full flex flex-col justify-end items-end mt-16 relative text-lg">
-              <span className="bg-gray-800 absolute -left-4 -translate-x-1/2 translate-y-1/3 w-32 h-32 rounded-full" />
+              <span className="bg-gray-800 absolute -left-4 -translate-x-3/4 -translate-y-1/2 w-32 h-32 rounded-full" />
 
               <span>
-                <p className="text-gray-800">Let&apos;s make your </p>
-                <p className="text-gray-800">project special!</p>
+                <p className="text-gray-800 md:text-xl">Let's make your </p>
+                <p className="text-gray-800 md:text-xl mb-12">project special!</p>
               </span>
             </article>
           </section>
