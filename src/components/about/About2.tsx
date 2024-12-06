@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion, useAnimation } from 'framer-motion';
-import { Texts } from '@/lib/Texts';
+import { Texts } from '@/lib/Texts2';
 import Slider from './Slider';
 import { useInView } from 'react-intersection-observer';
 
 export default function About2() {
-  const AboutTexts = Texts.about;
+  const texts = Texts.en.about;
 
   // Configuração para animar o texto
   const controls = useAnimation();
@@ -18,7 +18,7 @@ export default function About2() {
     }
   }, [controls, inView]);
 
-  const text = 'Helloo';
+  const text = texts.title;
 
   // Variantes de animação para o texto
   const variants = {
@@ -63,11 +63,7 @@ export default function About2() {
               <span>minha foto </span>
             </div>
             <p className="mt-12 lg:mt-24 text-gray-800 text-center text-lg md:text-xl">
-              My name is <strong>Anderson Carvalho</strong> , I&apos;m a
-              full-stack web and software developer with a passion for creating
-              innovations that solve problems, with a special focus on user
-              interactions. I&apos;m ready to bring your ideas to life and add a
-              touch of originality to your online space.
+              {texts.decription}
             </p>
             <article className="w-full flex flex-col justify-end items-end mt-16 text-lg">
               <motion.div
@@ -85,10 +81,10 @@ export default function About2() {
 
               <span>
                 <p className="text-gray-800 md:text-xl">
-                  Let&apos;s make your{' '}
+                  {texts.span1}
                 </p>
                 <p className="text-gray-800 md:text-xl mb-12">
-                  project special!
+                  {texts.span2}
                 </p>
               </span>
             </article>

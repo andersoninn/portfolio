@@ -30,14 +30,13 @@ export default function Footer() {
       onMouseMove={handleMouseMove}
     >
       <section>
-        <article className=" py-16 container flex flex-col gap-8 m-auto w-[80%] text-white text-center">
-          <h2 className="font-semibold text-2xl">Start a project</h2>
+        <article className=" py-16 container flex flex-col justify-center items-center gap-8 m-auto w-[80%] text-white text-center">
+          <h2 className="font-semibold text-2xl">{texts.title}</h2>
           <p>
-            Interested in working together? We should queue up a time to chat.
-            I&#8216; ll buy the coffee.
+            {texts.description}
           </p>
-          <button className="py-2 px-6 rounded-full border border-white text-xl">
-            Let&#8216; s do this
+          <button className="py-2 px-6 rounded-full border border-white text-xl ">
+            {texts.button}
           </button>
           <aside className="w-full flex justify-center items-center gap-4 m-auto">
             {texts.contacts.map((e, i) => (
@@ -57,7 +56,8 @@ export default function Footer() {
               </Link>
             ))}
           </aside>
-          <span className="text-white">Handcrafted by me &copy;</span>
+          <span className="text-white"> {texts.copy}&copy;</span>
+          
         </article>
       </section>
     </section>

@@ -6,7 +6,7 @@ import React from 'react';
 import Slider from '../about/Slider';
 
 export default function Resume2() {
-  const texts = Texts.resume;
+  const texts = Texts.en.resume;
 
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
