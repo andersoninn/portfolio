@@ -43,8 +43,11 @@ export const Texts = {
       {
         id: 1,
         nameOfProject: 'Curso de Idiomas Get Along',
+        descritionTitle: "Project Summary:",
         descriptionOfProject:
-          'Landing page em 5 idiomas, com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento. (Em desenvolvimento)',
+          "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
+        techStacksTitle: "Tech stack:",
+        techStacks: "ReactJS, HTML, CSS, JS, Tailwind, Zustand, Figma, NextUIand Mongo- db.",
         oficialWebsite: 'https://get-along-lc.vercel.app/',
         image: getAlongImage,
         callToAction: 'Veja mais',
@@ -53,8 +56,10 @@ export const Texts = {
         id: 2,
         nameOfProject: 'Instituto de Aperfeiçoamento Gênesis',
         descriptionOfProject:
-          'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe. (Em desenvolvimento)',
+          "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
         oficialWebsite: 'https://instituto-genesis.com/',
+        techStacksTitle: "Tech stack:",
+        techStacks: "ReactJS, HTML, CSS, JS, Tailwind, Zustand, Figma, NextUIand Mongo- db.",
         image: instGenesisImage,
         callToAction: 'Em produção',
       },
@@ -63,6 +68,8 @@ export const Texts = {
         nameOfProject: 'Curso de Idiomas Get Along',
         descriptionOfProject:
           'Landing page em 5 idiomas, com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento. (Em desenvolvimento)',
+        techStacksTitle: "Tech stack:",
+        techStacks: "ReactJS, HTML, CSS, JS, Tailwind, Zustand, Figma, NextUIand Mongo- db.",
         oficialWebsite: 'https://get-along-lc.vercel.app/',
         image: getAlongImage,
         callToAction: 'Veja mais',
@@ -70,8 +77,11 @@ export const Texts = {
       {
         id: 4,
         nameOfProject: 'Instituto de Aperfeiçoamento Gênesis',
+        descritionTitle: "Project Summary:",
         descriptionOfProject:
           'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe. (Em desenvolvimento)',
+        techStacksTitle: "Tech stack:",
+        techStacks: "ReactJS, HTML, CSS, JS, Tailwind, Zustand, Figma, NextUIand Mongo- db.",
         oficialWebsite: 'https://instituto-genesis.com/',
         image: instGenesisImage,
         callToAction: 'Em produção',

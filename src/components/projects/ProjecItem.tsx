@@ -9,7 +9,10 @@ interface ProjectItemProps {
   item: {
     image: string;
     nameOfProject: string;
+    descritionTitle: string;
     descriptionOfProject: string;
+    techStacksTitle: string;
+    techStacks: string;
     oficialWebsite: string;
     callToAction: string;
   };
@@ -45,7 +48,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
         className="flex flex-col justify-center max-w-[90%]"
       >
         <h1 className="text-xl font-semibold">{item.nameOfProject}</h1>
-        <h2 className="text-lg">{item.descriptionOfProject}</h2>
+        <h2 className="text-lg">{item.descritionTitle} {item.descriptionOfProject}</h2>
+        <p className="text-lg">{item.techStacksTitle}</p>
         <Link
           href={item.oficialWebsite}
           target="_blank"

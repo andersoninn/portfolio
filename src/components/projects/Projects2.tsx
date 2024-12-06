@@ -56,14 +56,16 @@ const Projects2: React.FC = () => {
           </motion.div>
         </article>
 
-        {/* Project Items */}
-        {ProjectItens.length === 0 ? (
-          <p>No project available.</p>
-        ) : (
-          ProjectItens.map((item, index) => (
-            <ProjectItem key={index} item={item} index={index} />
-          ))
-        )}
+        <section className='md:flex flex-wrap gap-12'>
+          {/* Project Items */}
+          {ProjectItens.length === 0 ? (
+            <p>No project available.</p>
+          ) : (
+            ProjectItens.map((item, index) => (
+              <ProjectItem key={index} item={item} index={index} />
+            ))
+          )}
+        </section>
       </section>
     </section>
   );
