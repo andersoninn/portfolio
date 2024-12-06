@@ -3,7 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import { Texts } from '@/lib/Texts2';
-import ProjectItem from './modals/ProjecItem';
+import ProjectItem from './ProjecItem';
 
 const Projects2: React.FC = () => {
   const ProjectItens = Texts.en.projects;

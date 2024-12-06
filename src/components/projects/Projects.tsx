@@ -2,7 +2,6 @@ import Mockup from '@/assets/image/projects/mockupLeft.svg';
 import iconLink from '@/assets/image/projects/icon link.svg';
 
 import Image from 'next/image';
-import RealProjectsModal from './modals/RealProjectsModal';
 
 import { Texts } from '@/lib/Texts';
 import Link from 'next/link';
