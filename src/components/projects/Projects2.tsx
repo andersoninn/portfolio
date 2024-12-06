@@ -1,9 +1,11 @@
-import { motion } from 'framer-motion';
+import React from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Texts } from '@/lib/Texts';
 import { PiLinkBold } from 'react-icons/pi';
+
 
 const ProjectItem = ({ item, index }: { item: any; index: number }) => {
   const { ref, inView } = useInView({ threshold: 0.1 });
@@ -53,18 +55,65 @@ const ProjectItem = ({ item, index }: { item: any; index: number }) => {
 export default function Projects2() {
   const ProjectItens = Texts.projects;
 
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
+  const text = 'Recent works';
+
+  // Variantes de animação para o texto
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2,
+        duration: 0.5,
+        ease: 'easeOut',
+      },
+    }),
+  };
+
+
   return (
     <section className="flex flex-col md:flex-row flex-wrap py-52 bgProjects bg-center -mb-4 overflow-hidden">
-      <section className="container m-auto  w-[90%]">
-        <p className="text-3xl font-extrabold uppercase">Recent works</p>
+      <section className="container m-auto w-[90%]">
+        <article className='flex justify-center'>
+          {/* title */}
+          <motion.div
+            id='helloo'
+            ref={ref}
+            className="upercase text-6xl md:text-[200px] my-16 font-extrabold"
+          >
+            {text.split('').map((letter, index) => (
+              <motion.span
+                key={index}
+                custom={index}
+                initial="hidden"
+                animate={controls}
+                variants={variants}
+              >
+                {letter}
+              </motion.span>
+            ))}
+          </motion.div>
+        </article>
+
+        {/* Animate component */}
         {ProjectItens.length === 0 ? (
           <p>Nenhum projeto disponível.</p>
         ) : (
           ProjectItens.map((item, index) => (
-            <>
+            <article className='md:flex'>
               <ProjectItem key={index} item={item} index={index} />
               <ProjectItem key={index} item={item} index={index} />
-            </>
+            </article>
           ))
         )}
       </section>

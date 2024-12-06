@@ -24,7 +24,7 @@ import {
 export default function NavbarUI() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = ['HOME', 'ABOUT', 'PROJECTS', 'CURRICULUM'];
-  const texts = Texts.footer;
+  const texts = Texts.en.footer;
 
   return (
     <Navbar
