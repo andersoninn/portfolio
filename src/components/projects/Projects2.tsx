@@ -33,7 +33,7 @@ const Projects2: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row flex-wrap py-52 bgProjects bg-center -mb-4 overflow-hidden">
+    <section className="flex flex-col md:flex-row flex-wrap py-52 bgPattern bg-center -mb-4 overflow-hidden">
       <section className="container m-auto w-[90%]">
         <article className="flex justify-center">
           {/* Title */}
