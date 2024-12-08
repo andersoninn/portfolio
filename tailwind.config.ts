@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'md': '640px',
-        'lg': '1024px',
+        md: '640px',
+        lg: '1024px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -29,13 +29,8 @@ const config: Config = {
 
         'brand-patternBG': '#F5F5F5',
       },
-      dropShadow: {
-        brandShadow: '0 5px 5px rgba(14, 165, 233, 0.25)',
-      },
-
     },
   },
   plugins: [nextui()],
 };
 export default config;
-

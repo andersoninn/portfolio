@@ -9,7 +9,7 @@ interface ProjectItemProps {
   item: {
     image: string;
     nameOfProject: string;
-    descriptionTitle: string; 
+    descriptionTitle: string;
     descriptionOfProject: string;
     techStacksTitle: string;
     techStacks: string[];
@@ -48,12 +48,19 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
         className="flex flex-col justify-center max-w-[90%]"
       >
         <h1 className="text-xl font-semibold">{item.nameOfProject}</h1>
-        <h2 className="text-lg">{item.descriptionTitle} {item.descriptionOfProject}</h2>
+        <h2 className="text-lg">
+          {item.descriptionTitle} {item.descriptionOfProject}
+        </h2>
         <p className="text-lg">{item.techStacksTitle}</p>
-        <article className='flex flex-wrap gap-2 justify-center'>
-        {item.techStacks.map((e) => (
-          <button key={e} className='min-w-16 py-1 px-4 bg-gray-50 rounded-xl border border-black shadow-xl'>{e}</button>
-        ))}
+        <article className="flex flex-wrap gap-2 justify-center">
+          {item.techStacks.map((e) => (
+            <button
+              key={e}
+              className="min-w-16 py-1 px-4 bg-transparent rounded-xl border border-black shadow-xl"
+            >
+              {e}
+            </button>
+          ))}
         </article>
 
         <Link
