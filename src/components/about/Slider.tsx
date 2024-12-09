@@ -31,8 +31,8 @@ export default function Slider() {
 
                             <span className="flex justify-center items-center flex-wrap">
                                 {data.map((e) =>
-                                    <TooltipUI description={e}>
-                                        <Image key={i} src={`/skills/${e}.svg`} width={60} height={60} alt={e} />
+                                    <TooltipUI description={e} key={i}>
+                                        <Image src={`/skills/${e}.svg`} width={60} height={60} alt={e} />
                                     </TooltipUI>
 
 
