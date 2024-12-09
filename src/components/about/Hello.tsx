@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import { Texts } from "@/lib/Texts2";
 
 
-export default function Helloo() {
+export default function Hello() {
     const texts = Texts.en.about;
 
     // Configuração para animar o texto

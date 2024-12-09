@@ -27,8 +27,8 @@ export default function NavbarUI() {
       isBlurred={true}
       className="bg-white shadow-xl !bg-transparent"
     >
-      <section className="container relative">
-        <NavbarContent className={`w-full flex justify-between items-center}`}>
+      <section className="container m-auto relative">
+        <NavbarContent className={`w-full flex justify-between items-center`}>
           <NavbarBrand className="text-gray-800">
             <p className="font-bold text-inherit">LOGO</p>
           </NavbarBrand>
@@ -39,7 +39,7 @@ export default function NavbarUI() {
               transition: { duration: 0.5, ease: 'easeInOut' },
             }}
             animate={{
-              backgroundColor: '#2d3748',
+              backgroundColor: '#222124',
               transition: { duration: 0.5, ease: 'easeInOut' },
             }}
             className="w-12 h-12 rounded-full text-white flex items-center justify-center"

@@ -17,7 +17,7 @@ export const Texts = {
     },
 
     about: {
-      title: "Helloo",
+      title: "Hello",
       decription:
         "My name is Anderson Carvalho, I'm a full-stack web and software developer with a passion for creating innovations that solve problems, with a special focus on user interactions. I'm ready to bring your ideas to life and add a touch of originality to your online space.",
       span1: "Let's make your project special!",

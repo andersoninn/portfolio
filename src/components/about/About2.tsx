@@ -95,7 +95,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { Texts } from '@/lib/Texts2';
 import Slider from './Slider';
 import { useInView } from 'react-intersection-observer';
-import Helloo from './Helloo';
+import Helloo from './Hello';
 
 export default function About2() {
   const texts = Texts.en.about;
