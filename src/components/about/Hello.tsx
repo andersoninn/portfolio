@@ -41,7 +41,7 @@ export default function Hello() {
                     alt="macbook"
                     width={400}
                     height={400}
-                    className="top-0 animate__animated animate__fadeInUp relative"
+                    className="top-0 animate__animated animate__fadeInUp relative md:w-[1500px] md:h-[1500px]"
                 />
                 <motion.div
                     id="helloo"

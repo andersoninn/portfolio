@@ -36,7 +36,7 @@ export default function Resume2() {
           <motion.div
             id='helloo'
             ref={ref}
-            className="uppercase text-4xl md:text-[200px] my-20 font-extrabold"
+            className="uppercase text-4xl md:text-6xl my-20 font-extrabold"
           >
             {text.split('').map((letter, index) => (
               <motion.span
@@ -50,7 +50,7 @@ export default function Resume2() {
               </motion.span>
             ))}
           </motion.div >
-          <section className="translate-x-1/2 flex items-center justify-center">
+          <section className="flex items-center justify-center">
             {/* full square */}
             <SkillDiamond />
           </section>
