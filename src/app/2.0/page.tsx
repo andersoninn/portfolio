@@ -13,8 +13,7 @@ export default function Page() {
         <MouseDot />
         <Home2 />
         <About2 />
-        {/* <Resume2 /> */}
-        como eu resolvo os problemas
+        <Resume2 />
         <Projects2 />
         <Footer />
       </section>

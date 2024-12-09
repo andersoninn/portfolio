@@ -33,14 +33,14 @@ const Projects2: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row flex-wrap pt-52 pb-24 bgProjects bg-center -mb-4 overflow-hidden">
-      <section className="container m-auto w-[90%]">
-        <article className="flex justify-center">
+    <section className="flex flex-col md:flex-row flex-wrap pb-24 bgProjects bg-center -mb-4 overflow-hidden -mt-80">
+      <section className="container m-auto w-[90%] mt-80">
+        <article className="flex justify-center text-center">
           {/* Title */}
           <motion.div
-            id="helloo"
+            id="recentWorks"
             ref={ref}
-            className="uppercase text-6xl md:text-[200px] my-16 font-extrabold"
+            className="uppercase text-4xl md:text-[200px]  font-extrabold"
           >
             {text.split('').map((letter, index) => (
               <motion.span
@@ -56,7 +56,7 @@ const Projects2: React.FC = () => {
           </motion.div>
         </article>
 
-        <section className="md:flex flex-wrap gap-12">
+        <section className="md:flex flex-wrap gap-12 mt-20">
           {/* Project Items */}
           {ProjectItens.length === 0 ? (
             <p>No project available.</p>
