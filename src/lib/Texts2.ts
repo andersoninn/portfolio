@@ -4,6 +4,10 @@ import instGenesisImage from '@/assets/image/projects/realProjectsImage/instGene
 export const Texts = {
   en:
   {
+    navbar: {
+      menuItems: ['HOME', 'ABOUT', 'PROJECTS', 'CURRICULUM'],
+      subtitle: "Contacts - info"
+    },
     home: {
       title1: "We'll Make",
       title2: "It work",
