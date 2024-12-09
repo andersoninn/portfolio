@@ -9,7 +9,6 @@ import { Texts } from "@/lib/Texts2";
 export default function Hello() {
     const texts = Texts.en.about;
 
-    // Configuração para animar o texto
     const controls = useAnimation();
     const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -21,7 +20,6 @@ export default function Hello() {
 
     const text = texts.title;
 
-    // Variantes de animação para o texto
     const variants = {
         hidden: { opacity: 0, y: 20 },
         visible: (i: number) => ({
@@ -39,7 +37,7 @@ export default function Hello() {
             <section className="flex flex-col items-center relative">
 
                 <Image
-                    src="/macbook.png "
+                    src="/macbook.svg"
                     alt="macbook"
                     width={400}
                     height={400}

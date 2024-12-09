@@ -90,13 +90,9 @@
 //   );
 // }
 import React from 'react';
-import Image from 'next/image';
-import { motion, useAnimation } from 'framer-motion';
 import { Texts } from '@/lib/Texts2';
 import Slider from './Slider';
-import { useInView } from 'react-intersection-observer';
-import Helloo from './Hello';
-
+import Hello from './Hello';
 export default function About2() {
   const texts = Texts.en.about;
 
@@ -104,7 +100,7 @@ export default function About2() {
     <>
       <section className="bgAbout -mt-72 relative overflow-x-hidden">
         <section className="cointainer m-auto w-[90%] min-h-[700px] flex flex-col justify-center items-center md:pt-56 md:pb-12">
-          <Helloo />
+          <Hello />
           <section className="flex -mt-24 flex-col justify-center items-center md:mt-36 max-w-[900px]">
             <div className="w-[250px] h-[250px] rounded-full mt-44 bg-gray-100 flex items-center justify-center md:mt-2">
               <span>minha foto </span>
