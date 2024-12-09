@@ -15,9 +15,8 @@ export const Texts = {
     about: {
       title: "Helloo",
       decription:
-        "My name is Anderson Carvalho, I'm a full-stack web and software developer with a passion for creating innovations that solve problems, with a special focus on user interactions. I'm ready to bring your ideas to life and add a touch of originality to your online space",
-      span1: "Let's make your",
-      span2: " project special!",
+        "My name is Anderson Carvalho, I'm a full-stack web and software developer with a passion for creating innovations that solve problems, with a special focus on user interactions. I'm ready to bring your ideas to life and add a touch of originality to your online space.",
+      span1: "Let's make your project special!",
     },
 
     resume: {
@@ -80,7 +79,7 @@ export const Texts = {
         id: 4,
         nameOfProject: 'Instituto de Aperfeiçoamento Gênesis',
         descriptionTitle: "Project Summary:",
-    
+
         descriptionOfProject:
           'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe. (Em desenvolvimento)',
         techStacksTitle: "Tech stack:",
