@@ -40,7 +40,7 @@ const Projects2: React.FC = () => {
           <motion.div
             id="recentWorks"
             ref={ref}
-            className="uppercase text-4xl md:text-6xl my-20 font-extrabold"
+            className="uppercase text-4xl md:text-6xl mt-20 font-extrabold"
           >
             {text.split('').map((letter, index) => (
               <motion.span

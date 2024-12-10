@@ -32,7 +32,7 @@ export default function Resume2() {
   return (
     <>
       <section className='flex justify-center mt-16'>
-        <section className="container h-[750px] flex max-w-[95%] flex-col items-center relative overflow-hidden">
+        <section className="container h-[700px] md:h-[900px] flex max-w-[95%] flex-col items-center relative overflow-hidden">
           <motion.div
             id='helloo'
             ref={ref}

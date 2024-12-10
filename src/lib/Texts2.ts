@@ -1,5 +1,7 @@
 import getAlongImage from '@/assets/image/projects/realProjectsImage/getAlongCard.svg';
 import instGenesisImage from '@/assets/image/projects/realProjectsImage/instGenesisCard.svg';
+import thisProject from '@/assets/image/projects/thisProject.png';
+import other from '@/assets/image/projects/macbook.png';
 
 export const Texts = {
   en:
@@ -45,26 +47,26 @@ export const Texts = {
     projects: [
       {
         id: 1,
-        nameOfProject: 'Curso de Idiomas Get Along',
+        nameOfProject: 'Portfolio (This)',
         descriptionTitle: "Project Summary:",
         descriptionOfProject:
           "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
         techStacksTitle: "Tech stack:",
-        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUIand", "Mongo- db"],
+        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI"],
         oficialWebsite: 'https://get-along-lc.vercel.app/',
-        image: getAlongImage,
+        image: thisProject,
         callToAction: 'Veja mais',
       },
       {
         id: 2,
-        nameOfProject: 'Instituto de Aperfeiçoamento Gênesis',
+        nameOfProject: 'Other',
         descriptionTitle: "Project Summary:",
         descriptionOfProject:
           "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
         oficialWebsite: 'https://instituto-genesis.com/',
         techStacksTitle: "Tech stack:",
-        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUIand", "Mongo- db"],
-        image: instGenesisImage,
+        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI", "Mongo- db"],
+        image: other,
         callToAction: 'Em produção',
       },
       {
@@ -74,7 +76,7 @@ export const Texts = {
         descriptionOfProject:
           'Landing page em 5 idiomas, com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento. (Em desenvolvimento)',
         techStacksTitle: "Tech stack:",
-        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUIand", "Mongo- db"],
+        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI", "Mongo- db"],
         oficialWebsite: 'https://get-along-lc.vercel.app/',
         image: getAlongImage,
         callToAction: 'Veja mais',
@@ -87,7 +89,7 @@ export const Texts = {
         descriptionOfProject:
           'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe. (Em desenvolvimento)',
         techStacksTitle: "Tech stack:",
-        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUIand", "Mongo- db"],
+        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI", "Mongo- db"],
         oficialWebsite: 'https://instituto-genesis.com/',
         image: instGenesisImage,
         callToAction: 'Em produção',
