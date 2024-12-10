@@ -34,16 +34,23 @@ html {
   background-size: cover;
 }
 
-.bgProjects {
-  background-image: url('/bgProjects.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .bgAbout {
   background-image: url('/bgAbout.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 1024px) {
+  .bgAbout {
+    background-size: 100% 100%;
+  }
+}
+
+.bgProjects {
+  background-image: url('/bgProjects.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rabisco {

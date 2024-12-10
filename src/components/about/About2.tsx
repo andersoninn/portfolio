@@ -98,14 +98,11 @@ export default function About2() {
 
   return (
     <>
-      <section className="bgAbout -mt-72 relative overflow-x-hidden">
-        <section className="cointainer m-auto w-[90%] min-h-[700px] flex flex-col justify-center items-center md:pt-56 md:pb-12 lg:pb-0">
-
-
+      <section className="bgAbout -mt-72 relative overflow-x-hidden md:-mt-[420px]">
+        <section className="container m-auto w-[90%] min-h-[700px] flex flex-col justify-center items-center md:pt-56 md:pb-12 lg:pb-0">
           <Hello />
-
-          <section className="flex -mt-24 flex-col justify-center items-center md:mt-36 max-w-[900px]">
-            <div className="w-[250px] h-[250px] rounded-full mt-44 bg-gray-100 flex items-center justify-center md:mt-2">
+          <section className="flex -mt-24 flex-col justify-center items-center max-w-[900px]">
+            <div className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full mt-44 bg-gray-100 flex items-center justify-center md:-mt-52 lg:mt-12 xl:mt-24">
               <span>minha foto </span>
             </div>
             <p className="mt-24 lg:mt-24 text-white text-center text-lg md:text-xl">

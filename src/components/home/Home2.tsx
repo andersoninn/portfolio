@@ -18,24 +18,24 @@ export default function Home2() {
       <section className="max-w-screen h-full relative bgHome">
         <NavbarUI />
         <section className="">
-          <section className="container w-[90%] my-16 m-auto min-h-[700px] md:min-h-screen flex flex-col items-center justify-around md:pb-16">
+          <section className="container w-[90%] my-16 m-auto min-h-[700px] md:min-h-[1000px] flex flex-col items-center justify-around md:pb-16">
             {/* H1 */}
             <article className="flex flex-col justify-center items-center text-black text-center">
               <span>
-                <p className="text-xl md:text-4xl animate__animated animate__fadeIn animate__delay-1s mb-2">
+                <p className="text-xl md:text-3xl lg:text-4xl animate__animated animate__fadeIn animate__delay-1s mb-2">
                   {texts.subtitle1}
                 </p>
-                <p className="text-6xl md:text-[200px] font-extrabold animate__animated animate__fadeIn">
+                <p className="text-6xl md:text-9xl lg:text-[200px] text-nowrap font-extrabold animate__animated animate__fadeIn">
                   {texts.title1}
                 </p>
-                <p className="text-xl md:text-4xl animate__animated animate__fadeIn animate__delay-2s md:mt-2 md:-mb-2">
+                <p className="text-xl md:text-3xl lg:text-4xl animate__animated animate__fadeIn animate__delay-2s md:mt-2 md:-mb-2">
                   {texts.subtitle2}
                 </p>
-                <p className="text-6xl md:text-[200px] md:text-9xl font-extrabold animate__animated animate__fadeIn">
+                <p className="text-6xl md:text-9xl lg:text-[200px] font-extrabold animate__animated animate__fadeIn">
                   {' '}
                   {texts.title2}
                 </p>
-                <p className="text-xl md:text-4xl animate__animated animate__fadeIn animate__delay-3s">
+                <p className="text-xl md:text-3xl lg:text-4xl animate__animated animate__fadeIn animate__delay-3s">
                   {' '}
                   {texts.subtitle3}
                 </p>
