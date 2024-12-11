@@ -33,18 +33,18 @@ export default function Hello() {
         }),
     };
     return (
-        <section className="flex flex-col items-center relative max-h-[600px] md:-translate-y-1/2 lg:-translate-y-1/3">
+        <section className="flex flex-col items-center relative max-h-[600px]">
             <Image
                 src="/macbook.svg"
                 alt="macbook"
                 width={400}
                 height={400}
-                className="top-0 animate__animated animate__fadeInUp relative md:w-[1200px] md:h-[1200px]"
+                className=" animate__animated animate__fadeInUp relative md:w-[600px] md:h-[600px]"
             />
             <motion.div
                 id="helloo"
                 ref={ref}
-                className="absolute bottom-0 md:inset-y-1/2 flex items-center justify-center text-7xl md:text-9xl lg:text-[200px] font-bold text-white"
+                className="absolute inset-0 flex items-center justify-center text-7xl md:text-9xl lg:text-[150px] font-bold text-white"
             >
                 {text.split("").map((letter, index) => (
                     <motion.span

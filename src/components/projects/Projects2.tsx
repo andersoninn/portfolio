@@ -56,7 +56,7 @@ const Projects2: React.FC = () => {
           </motion.div>
         </article>
 
-        <section className="md:flex flex-wrap gap-12 mt-20">
+        <section className="md:flex flex-wrap gap-12 mt-12">
           {/* Project Items */}
           {ProjectItens.length === 0 ? (
             <p>No project available.</p>

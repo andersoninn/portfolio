@@ -45,7 +45,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex flex-col justify-center max-w-[90%]"
+        className="flex flex-col justify-center items-center max-w-[90%] gap-2"
       >
         <h1 className="text-xl font-semibold">{item.nameOfProject}</h1>
         <h2 className="text-lg">
@@ -66,7 +66,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
         <Link
           href={item.oficialWebsite}
           target="_blank"
-          className="flex gap-1 m-auto justify-center items-center text-blue-600"
+          className="flex gap-1 m-auto justify-center items-center text-blue-600 mt-2"
         >
           <PiLinkBold className="w-5 h-5 " />
           <span>{item.callToAction}</span>

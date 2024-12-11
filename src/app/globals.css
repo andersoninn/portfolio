@@ -37,20 +37,16 @@ html {
 .bgAbout {
   background-image: url('/bgAbout.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
 }
 
-@media (min-width: 1024px) {
-  .bgAbout {
-    background-size: 100% 100%;
-  }
-}
 
 .bgProjects {
   background-image: url('/bgProjects.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 300% 100%;
+  background-position: center;
 }
 
 .rabisco {

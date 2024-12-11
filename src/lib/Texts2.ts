@@ -45,30 +45,30 @@ export const Texts = {
     },
 
     projects: [
-      {
-        id: 1,
-        nameOfProject: 'Portfolio (This)',
-        descriptionTitle: "Project Summary:",
-        descriptionOfProject:
-          "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
-        techStacksTitle: "Tech stack:",
-        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI"],
-        oficialWebsite: 'https://get-along-lc.vercel.app/',
-        image: thisProject,
-        callToAction: 'Veja mais',
-      },
-      {
-        id: 2,
-        nameOfProject: 'Other',
-        descriptionTitle: "Project Summary:",
-        descriptionOfProject:
-          "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
-        oficialWebsite: 'https://instituto-genesis.com/',
-        techStacksTitle: "Tech stack:",
-        techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI", "Mongo- db"],
-        image: other,
-        callToAction: 'Em produção',
-      },
+      // {
+      //   id: 1,
+      //   nameOfProject: 'Portfolio (This)',
+      //   descriptionTitle: "Project Summary:",
+      //   descriptionOfProject:
+      //     "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
+      //   techStacksTitle: "Tech stack:",
+      //   techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI"],
+      //   oficialWebsite: 'https://get-along-lc.vercel.app/',
+      //   image: thisProject,
+      //   callToAction: 'Veja mais',
+      // },
+      // {
+      //   id: 2,
+      //   nameOfProject: 'Other',
+      //   descriptionTitle: "Project Summary:",
+      //   descriptionOfProject:
+      //     "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
+      //   oficialWebsite: 'https://instituto-genesis.com/',
+      //   techStacksTitle: "Tech stack:",
+      //   techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI", "Mongo- db"],
+      //   image: other,
+      //   callToAction: 'Em produção',
+      // },
       {
         id: 3,
         nameOfProject: 'Curso de Idiomas Get Along',
