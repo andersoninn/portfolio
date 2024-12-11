@@ -16,7 +16,7 @@ export default function Footer() {
 
   return (
     <section
-      className="footer w-full flex flex-col justify-center items-center relative bg-[#222124]"
+      className="footer w-full flex flex-col justify-center items-center relative bg-[#222124]" id='footer'
     >
       <section>
         <article className=" py-16 container flex flex-col justify-center items-center gap-8 m-auto w-[80%] text-white text-center">

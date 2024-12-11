@@ -23,6 +23,7 @@ export default function NavbarUI() {
   return (
     <Navbar
       shouldHideOnScroll
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBlurred={true}
       className="bg-white shadow-xl !bg-transparent"
@@ -62,14 +63,23 @@ export default function NavbarUI() {
           aria-hidden={!isMenuOpen}
           className="mx-auto max-w-[980px] max-h-[550px] pt-6 bg-[#222124] items-center rounded-b-2xl justify-center"
         >
-          {texts.menuItems.map((item) => (
-            <NavbarItem key={item} className="px-4 py-2 font-inter">
-              <Link
+          {texts.menuItems.map((item, i) => (
+            <NavbarItem key={i} className="px-4 py-2 font-inter" >
+              {item.name === 'CURRICULO' ? <>  <a
                 className="text-white hover:text-[#21585E] text-4xl font-extrabold"
-                href="#"
+                href={item.link}
+                download="Curriculo-Anderson-Carvalho.pdf"
+                onClick={() => setIsMenuOpen(false)}
               >
-                {item}
-              </Link>
+                {item.name}
+              </a></> : <><Link
+                className="text-white hover:text-[#21585E] text-4xl font-extrabold"
+                href={item.link}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </Link></>}
+
             </NavbarItem>
           ))}
           <section className="flex flex-col items-center gap-4 mb-12 ">

@@ -7,7 +7,7 @@ export const Texts = {
   en:
   {
     navbar: {
-      menuItems: ['HOME', 'ABOUT', 'PROJECTS', 'CURRICULUM'],
+      menuItems: [{ name: 'HOME', link: '/' }, { name: 'ABOUT', link: '#about11' }, { name: 'PROJECTS', link: '#projects' }, { name: 'CURRICULUM', link: '/CV-AndersonCarvalho.pdf' }],
       subtitle: "Contacts - info"
     },
     home: {
@@ -118,7 +118,7 @@ export const Texts = {
           id: 3,
           image: '/contacts/cv.svg',
           alt: 'curriculum',
-          href: 'https://drive.google.com/file/d/1wttA0BPcDON1vijG78N9UZqr2EDuZKxu/view?usp=sharing'
+          href: '/CV-AndersonCarvalho.pdf'
         },
         {
           id: 4,

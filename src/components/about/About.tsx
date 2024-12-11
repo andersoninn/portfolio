@@ -8,7 +8,7 @@ export default function About() {
 
   return (
     <section>
-      <section className="bgAbout -mt-72 overflow-x-hidden md:-mt-[420px] relative">
+      <section className="bgAbout -mt-72 overflow-x-hidden md:-mt-[420px] relative" >
         <section className="container m-auto w-[90%] min-h-[700px] flex flex-col justify-center items-center gap-10">
           <section className="flex flex-col items-center gap-8 min-h-[500px] max-w-[900px] md:-mt-32">
             <Hello />
@@ -18,11 +18,11 @@ export default function About() {
               <span>minha foto </span>
             </article> */}
             {/* DESCRIPTIOPN */}
-            <p className="text-white text-center text-lg md:text-xl md:-mt-32">
+            <p className="text-white text-center text-lg md:text-xl md:-mt-32 lg:max-w-[70%]">
               {texts.decription}
             </p>
             {/*  CALL TO ACTION */}
-            <article className="w-full flex flex-col justify-end items-center text-lg text-white pb-2 ">
+            <article className="w-full flex flex-col justify-end items-center text-lg text-white pb-2">
               <span>
                 <p className="md:text-xl">{texts.span1}</p>
               </span>
@@ -32,6 +32,7 @@ export default function About() {
           </section>
         </section>
       </section>
+      <article className='absolute bottom-40' id='about11' />
     </section>
   );
 }
