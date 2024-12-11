@@ -1,105 +1,37 @@
-import Image from 'next/image';
-
-import Balance from 'react-wrap-balancer';
-
-import AboutPictureArm from '@/assets/image/about/aboutPictureArm.svg';
-import AboutPictureSocial from '@/assets/image/about/aboutPictureSocial.svg';
-import DownloadCV from '@/assets/image/about/downloadCV.svg';
-import Linkedin from '@/assets/image/about/linkedin.svg';
-import Github from '@/assets/image/about/gitHub.svg';
-import Gmail from '@/assets/image/about/gmail.svg';
-import Instagran from '@/assets/image/about/instagran.svg';
-
-import { Texts } from '@/lib/Texts';
-import Link from 'next/link';
+import React from 'react';
+import { Texts } from '@/lib/Texts2';
+import Slider from './Slider';
+import Hello from './Hello';
 
 export default function About() {
-  const AboutTexts = Texts.about;
+  const texts = Texts.en.about;
+
   return (
-    <>
-      <section className="divisionAbout" />
-      <section className="relative">
-        <section className=" m-auto pt-8 pb-10 max-w-[1240px]">
-          <section className="w-[90%] m-auto md:w-full">
-            <div className=" m-auto md:w-[85%]">
-              <h1 className="text-brand-blueTitle text-2xl font-black text-center md:text-left md:text-3xl lg:text-4xl">
-                &ldquo;{AboutTexts.titleH1} &rdquo;
-                <span className="!text-base md:!text-lg lg:!text-xl block md:inline lg:block lg:pt-2">
-                  &nbsp;{AboutTexts.titleSpan}
-                </span>
-              </h1>
-            </div>
-            <article className="m-auto mt-3 pt-8 flex flex-col-reverse items-start gap-5 w-[85%] md:flex-row md:gap-10 md:pt-0">
-              <div className=" ">
-                <Balance className="pt-4 text-center text-lg md:text-left lg:mr-[2%]">
-                    {AboutTexts.decriptionFistPart}
-                </Balance>
-              </div>
-              <Image
-                src={AboutPictureArm}
-                width={450}
-                alt=""
-                className="m-auto md:w-80 shadowImage float-right"
-              />
-            </article>
-            {/* About me - Social */}
-            <article className="m-auto mt-3 pt-8 flex flex-col items-start gap-5 w-[85%] md:flex-row md:gap-10 md:pt-0 ">
-              <Image
-                src={AboutPictureSocial}
-                width={450}
-                alt=""
-                className="m-auto md:w-80 shadowImage"
-              />
+    <section>
+      <section className="bgAbout -mt-72 overflow-x-hidden md:-mt-[420px] relative">
+        <section className="container m-auto w-[90%] min-h-[700px] flex flex-col justify-center items-center gap-10">
+          <section className="flex flex-col items-center gap-8 min-h-[500px] max-w-[900px] md:-mt-32">
+            <Hello />
 
-              <div className="pt-8">
-                <Balance className=" text-center text-lg md:text-left lg:mr-[2%]">
-                    {AboutTexts.decriptionSecondPart}
-                </Balance>
-                <aside className="flex justify-around items-center mt-6 m-auto ">
-                  <Link
-                    className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
-                    href="https://www.linkedin.com/in/andersoninn/"
-                    target="_blank"
-                  >
-                    <Image src={Linkedin} width={40} alt="" />
-                  </Link>
-                  <Link
-                    className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
-                    href="https://github.com/andersoninn"
-                    target="_blank"
-                  >
-                    <Image src={Github} width={40} alt="" />
-                  </Link>
-                  <Link
-                    className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
-                    href="https://drive.google.com/file/d/1wttA0BPcDON1vijG78N9UZqr2EDuZKxu/view?usp=sharing"
-                    target="_blank"
-                  >
-                    <Image src={DownloadCV} width={32} alt="" />
-                  </Link>
-                  <Link
-                    className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
-                    href="https://mailto:andersoninnocencio17@gmail.com/"
-                    target="_blank"
-                  >
-                    <Image src={Gmail} width={40} alt="" />
-                  </Link>
-                  <Link
-                    className="cursor-pointer rounded-xl hover:-mt-2 shadow-md shadow-black/30"
-                    href="https://www.instagram.com/anderson.inn/"
-                    target="blank"
-                  >
-                    <Image src={Instagran} width={40} alt="" />
-                  </Link>
-                </aside>
-              </div>
+            {/* SPAN */}
+            {/* <article className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full mt-44 bg-gray-100 flex items-center justify-center md:-mt-52 lg:mt-12 xl:mt-24">
+              <span>minha foto </span>
+            </article> */}
+            {/* DESCRIPTIOPN */}
+            <p className="text-white text-center text-lg md:text-xl md:-mt-32">
+              {texts.decription}
+            </p>
+            {/*  CALL TO ACTION */}
+            <article className="w-full flex flex-col justify-end items-center text-lg text-white pb-2 ">
+              <span>
+                <p className="md:text-xl">{texts.span1}</p>
+              </span>
             </article>
+            {/* SLIDER */}
+            <Slider />
           </section>
-
-          
         </section>
-        <section className="divisionFooter" />
       </section>
-    </>
+    </section>
   );
 }

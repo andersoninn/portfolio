@@ -40,7 +40,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
         width={600}
         height={400}
       />
-      {/* Detalhes do projeto */}
       <motion.span
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}

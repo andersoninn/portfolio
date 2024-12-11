@@ -1,69 +1,54 @@
 'use client';
-import Image from 'next/image';
-import HomeLinkedin from '@/assets/image/home/homeLinkedin.svg';
-import HomeGitHub from '@/assets/image/home/homeGithub.svg';
-import HomeCurriculum from '@/assets/image/home/homeCurriculum.svg';
+import 'animate.css';
+import { Texts } from '@/lib/Texts2';
+import { useInView } from 'react-intersection-observer';
+import { HiArrowDown } from 'react-icons/hi2';
 
-import { Texts } from '@/lib/Texts';
+import NavbarUI from '../ui/NavbarUI';
 import Link from 'next/link';
 
 export default function Home() {
-  const HomeTextes = Texts.home;
+  const texts = Texts.en.home;
   return (
     <>
-      <section className="bg-gradient-radial from-[#765599] from-10% via-[#5F4876] via-20% to-[#42384B] to-70%">
-        <section
-          id="home"
-          className="flex justify-center m-auto pt-52 pb-52 w-[85%] md:w-[90%] md:pt-28 lg:w-full 
-          max-w-[1240px]"
-        > 
-          <article className="font-extrabold text-white text-6xl md:text-8xl md:w-[70%] lg:text-[150px]">
-            <p className="text-medium md:text-lg font-normal">
-              {HomeTextes.fistP}
-              <span className="px-1">&#128075;</span>
-              {HomeTextes.spanP}
-            </p>
-            <div className="flex items-center gap-3 md:gap-6">
-              <h1>{HomeTextes.fistPartH1} </h1>
-              <Link
-                href="https://www.linkedin.com/in/andersoninn/"
-                target="_blank"
-              >
-                <Image
-                  src={HomeLinkedin}
-                  alt="icon linkedin"
-                  className="cursor-pointer w-7 h-7 rounded-sm hover:-mt-4 md:w-11 md:h-11 lg:w-14 lg:h-14"
-                />
-              </Link>
-              <Link href="https://github.com/andersoninn" target="_blank">
-                <Image
-                  src={HomeGitHub}
-                  alt="icon github"
-                  className=" cursor-pointer w-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
-                />
-              </Link>
-              <Link
-                href="https://drive.google.com/file/d/1yS6W0_HqifPKIoB1sqmx7ROpZL-_RCbE/view?usp=sharing"
-                target="_blank"
-              >
-                <Image
-                  src={HomeCurriculum}
-                  alt="icon curriculum"
-                  className=" cursor-pointer w-8 h-8 rounded-sm hover:-mt-4 md:w-12 md:h-12 lg:w-16 lg:h-16"
-                />
-              </Link>
-            </div>
+      <section className="max-w-screen h-full relative bgHome">
+        <NavbarUI />
+        <section className="">
+          <section className="container w-[90%] my-16 m-auto min-h-[700px] md:min-h-[1000px] flex flex-col items-center justify-around md:pb-16">
+            {/* H1 */}
+            <article className="flex flex-col justify-center items-center text-black text-center">
+              <span>
+                <p className="text-xl md:text-3xl lg:text-4xl animate__animated animate__fadeIn animate__delay-1s mb-2">
+                  {texts.subtitle1}
+                </p>
+                <p className="text-6xl md:text-9xl lg:text-[200px] text-nowrap font-extrabold animate__animated animate__fadeIn">
+                  {texts.title1}
+                </p>
+                <p className="text-xl md:text-3xl lg:text-4xl animate__animated animate__fadeIn animate__delay-2s md:mt-2 md:-mb-2">
+                  {texts.subtitle2}
+                </p>
+                <p className="text-6xl md:text-9xl lg:text-[200px] font-extrabold animate__animated animate__fadeIn">
+                  {' '}
+                  {texts.title2}
+                </p>
+                <p className="text-xl md:text-3xl lg:text-4xl animate__animated animate__fadeIn animate__delay-3s">
+                  {' '}
+                  {texts.subtitle3}
+                </p>
+              </span>
+            </article>
 
-            <h1 className="">{HomeTextes.secondPartH1}</h1>
-            <div className="flex w-full justify-end text-medium font-normal ">
-              <p className="w-[80%] mr-5 text-end md:mr-12 md:text-lg md:max-w-[400px] lg:mr-12">
-                {HomeTextes.description}
-              </p>
-            </div>
-          </article>
+            <Link
+              href="#helloo"
+              className="flex justify-center items-center md:pt-12 lg:pt-0"
+            >
+              <HiArrowDown className="w-6 h-6  lg:w-8 lg:h-8 animate__animated animate__fadeIn animate__delay-4s text-black/0" />
+            </Link>
+            <article className="w-[180px] h-[180px] md:w-[300px] md:h-[300px] overflow-hidden absolute right-0 -bottom-[77px] md:-bottom-[144px]">
+            </article>
+          </section>
         </section>
       </section>
-      <section className="divisionHome" />
     </>
   );
 }

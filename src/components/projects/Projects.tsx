@@ -1,36 +1,75 @@
-import Mockup from '@/assets/image/projects/mockupLeft.svg';
-import iconLink from '@/assets/image/projects/icon link.svg';
+import React from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
-import Image from 'next/image';
+import { Texts } from '@/lib/Texts2';
+import ProjectItem from './ProjecItem';
 
-import { Texts } from '@/lib/Texts';
-import Link from 'next/link';
+
 
 export default function Projects() {
-  const ProjectItens = Texts.projects;
-  return (
-    <>
-      <section className="bg-gradient-to-b from-[#D6C4E2] from-10% via-[#fadd99] to-[#B8AD94] to-120%">
-        <section className="w-full">
-          <section className="w-[85%] pt-36 md:pt-32 pb-10 flex flex-col m-auto max-w-[1240px]">
-            <section className="flex flex-col md:flex-row flex-wrap">
-              {ProjectItens.map((e, i) => (
-                  <article key={i} className="m-auto flex flex-col items-center text-center gap-2 pb-12 max-w-[500px]">
-                    <Image src={e.image} alt="" width={600} />
-                    <h1 className="text-xl font-semibold">{e.nameOfProject}</h1>
-                    <h2 className=" text-lg">{e.descriptionOfProject}</h2>
-                    <Link href={e.oficialWebsite} target="_blank" className="flex gap-4 m-auto">
-                      <Image src={iconLink} alt="" width={15} />
-                      <span className="text-blue-600">{e.callToAction}</span>
-                    </Link>
-                  </article>
-              ))}
-            </section>
-          </section>
-        </section>
 
-        <section className="w-full h-16 absolute -top-8" id="projects" />
+  const ProjectItens = Texts.en.projects;
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
+  const text = 'Recent works';
+
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2,
+        duration: 0.5,
+        ease: 'easeOut',
+      },
+    }),
+  };
+
+  return (
+    <section className="flex flex-col md:flex-row flex-wrap pb-24 bgProjects bg-center -mb-4 overflow-hidden -mt-80">
+      <section className="container m-auto w-[90%] mt-80">
+        <article className="flex justify-center text-center">
+          <motion.div
+            id="recentWorks"
+            ref={ref}
+            className="uppercase text-4xl md:text-6xl mt-20 font-extrabold"
+          >
+            {text.split('').map((letter, index) => (
+              <motion.span
+                key={index}
+                custom={index}
+                initial="hidden"
+                animate={controls}
+                variants={variants}
+              >
+                {letter}
+              </motion.span>
+            ))}
+          </motion.div>
+        </article>
+
+        <section className="md:flex flex-wrap gap-12 mt-12">
+          {ProjectItens.length === 0 ? (
+            <p>No project available.</p>
+          ) : (
+            ProjectItens.map((item, index) => (
+              <ProjectItem key={index} item={item} index={index} />
+            ))
+          )}
+        </section>
       </section>
-    </>
+    </section>
   );
-}
+};
+
+
