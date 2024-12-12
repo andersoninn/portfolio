@@ -13,6 +13,7 @@ export default function Contancts() {
                     key={i}
                     className="w-12 h-12 rounded-full border border-white flex justify-center items-center text-white hover:border-[#222124] hover:bg-white hover:text-[#222124] shadow-md cursor-pointer"
                     href={e.href}
+                    aria-label={e.alt}
                     target="_blank"
                 >
                     {e.alt === 'linkedin' && <TfiLinkedin className="w-5 h-5" />}

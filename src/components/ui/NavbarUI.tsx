@@ -68,11 +68,12 @@ export default function NavbarUI() {
         >
           {texts.menuItems.map((item, i) => (
             <NavbarItem key={i} className="px-4 py-2 font-inter" >
-              {item.name === 'CURRICULO' ? <>  <a
+              {item.name === 'CURRICULUM' ? <>  <a
                 className="text-white hover:text-[#21585E] text-4xl font-extrabold"
                 href={item.link}
-                download="Curriculo-Anderson-Carvalho.pdf"
+                download="cv-Anderson-Carvalho.pdf"
                 onClick={() => setIsMenuOpen(false)}
+                aria-label='downloand curriculum'
               >
                 {item.name}
               </a></> : <><Link
