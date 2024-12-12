@@ -1,16 +1,17 @@
 'use client';
-import About from '@/components/about/About';
-import Footer from '@/components/footer/Footer';
-import Home from '@/components/home/Home';
-import MouseDot from '@/components/MouseDot';
-import Projects from '@/components/projects/Projects';
-import Resume from '@/components/resume/Resume';
+import dynamic from 'next/dynamic';
+
 
 export default function Page() {
+  const Home = dynamic(() => import('@/components/home/Home'));
+  const About = dynamic(() => import('@/components/about/About'));
+  const Resume = dynamic(() => import('@/components/resume/Resume'));
+  const Projects = dynamic(() => import('@/components/projects/Projects'));
+  const Footer = dynamic(() => import('@/components/footer/Footer'));
+
   return (
     <>
       <section className="">
-        {/* <MouseDot /> */}
         <Home />
         <About />
         <Resume />
