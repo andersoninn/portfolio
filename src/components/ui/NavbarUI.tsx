@@ -34,7 +34,7 @@ export default function NavbarUI() {
       <section className="container m-auto relative">
         <NavbarContent className={`w-full flex justify-between items-center`}>
           <NavbarBrand className="text-gray-800">
-            <Image src="/logo.png" width={54} height={54} alt='logo - minimalist oak tree in a circle' className="font-bold text-inherit" />
+            <Image src="/Logo.svg" width={54} height={54} alt='logo - minimalist oak tree in a circle' className="font-bold text-inherit" />
           </NavbarBrand>
           <motion.div
             initial={{ backgroundColor: '#222124' }}
