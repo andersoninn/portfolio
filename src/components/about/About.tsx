@@ -3,8 +3,12 @@ import { Texts } from '@/lib/Texts';
 import Slider from './Slider';
 import Hello from './Hello';
 
+import dynamic from 'next/dynamic';
+
 export default function About() {
   const texts = Texts.en.about;
+  const Slider = dynamic(() => import('./Slider'), { ssr: false });
+  const Hello = dynamic(() => import('./Hello'), { ssr: false });
 
   return (
     <section>
