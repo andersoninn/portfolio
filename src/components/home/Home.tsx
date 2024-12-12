@@ -37,12 +37,11 @@ export default function Home() {
               </span>
             </article>
 
-            <Link
-              href="#helloo"
+            <article
               className="flex justify-center items-center md:pt-12 lg:pt-0"
             >
               <HiArrowDown className="w-6 h-6  lg:w-8 lg:h-8 animate__animated animate__fadeIn animate__delay-4s text-black/0" />
-            </Link>
+            </article>
             <article className="w-[180px] h-[180px] md:w-[300px] md:h-[300px] overflow-hidden absolute right-0 -bottom-[77px] md:-bottom-[144px]">
             </article>
           </section>

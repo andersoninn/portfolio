@@ -48,9 +48,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
       >
         <h1 className="text-xl font-semibold">{item.nameOfProject}</h1>
         <h2 className="text-lg">
-          {item.descriptionTitle} {item.descriptionOfProject}
+          {item.descriptionOfProject}
         </h2>
-        <p className="text-lg">{item.techStacksTitle}</p>
+        <p className="text-lg font-semibold">{item.techStacksTitle}</p>
         <article className="flex flex-wrap gap-2 justify-center">
           {item.techStacks.map((e) => (
             <button
