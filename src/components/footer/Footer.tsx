@@ -8,7 +8,7 @@ import {
   BiLogoWhatsapp,
   BiSolidDownload,
 } from 'react-icons/bi';
-import { Texts } from '@/lib/Texts2';
+import { Texts } from '@/lib/Texts';
 import Contancts from '../Contacts';
 
 export default function Footer() {

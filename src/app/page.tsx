@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <section className="">
-        <MouseDot />
+        {/* <MouseDot /> */}
         <Home />
         <About />
         <Resume />

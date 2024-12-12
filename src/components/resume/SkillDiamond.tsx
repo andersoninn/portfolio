@@ -1,4 +1,4 @@
-import { Texts } from "@/lib/Texts2";
+import { Texts } from "@/lib/Texts";
 import Image from "next/image";
 
 export default function SkillDiamond() {

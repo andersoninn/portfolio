@@ -12,7 +12,7 @@ import {
 import { IoMenuSharp } from 'react-icons/io5';
 import { IoCloseSharp } from 'react-icons/io5';
 import { motion } from 'framer-motion';
-import { Texts } from '@/lib/Texts2';
+import { Texts } from '@/lib/Texts';
 import DateFormat from '../DataFormat';
 import Contancts from '../Contacts';
 

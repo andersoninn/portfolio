@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import { Texts } from "@/lib/Texts2";
+import { Texts } from "@/lib/Texts";
 
 export default function Hello() {
     const texts = Texts.en.about;
@@ -11,7 +11,7 @@ export default function Hello() {
     const controls = useAnimation();
     const [ref, inView] = useInView({
         triggerOnce: true,
-        rootMargin: "1000px 0px 0px 0px", 
+        rootMargin: "1000px 0px 0px 0px",
         threshold: 0.5,
     });
 
@@ -37,8 +37,8 @@ export default function Hello() {
     };
 
     return (
-        <section 
-            ref={ref} 
+        <section
+            ref={ref}
             className={`flex flex-col items-center relative max-h-[600px] `} // Oculta inicialmente
         >
             <Image

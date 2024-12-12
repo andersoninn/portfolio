@@ -1,5 +1,5 @@
 import React from 'react';
-import { Texts } from '@/lib/Texts2';
+import { Texts } from '@/lib/Texts';
 import Slider from './Slider';
 import Hello from './Hello';
 

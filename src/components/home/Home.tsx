@@ -1,7 +1,6 @@
 'use client';
 import 'animate.css';
-import { Texts } from '@/lib/Texts2';
-import { useInView } from 'react-intersection-observer';
+import { Texts } from '@/lib/Texts';
 import { HiArrowDown } from 'react-icons/hi2';
 
 import NavbarUI from '../ui/NavbarUI';

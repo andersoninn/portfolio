@@ -1,4 +1,4 @@
-import { Texts } from "@/lib/Texts2";
+import { Texts } from "@/lib/Texts";
 import Link from "next/link";
 import { BiLogoGithub, BiLogoGmail, BiLogoWhatsapp, BiSolidDownload } from "react-icons/bi";
 import { TfiLinkedin } from "react-icons/tfi";

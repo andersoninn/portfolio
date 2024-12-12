@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import { Texts } from '@/lib/Texts2';
+import { Texts } from '@/lib/Texts';
 import ProjectItem from './ProjecItem';
 
 
