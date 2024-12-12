@@ -16,7 +16,7 @@ import { Texts } from '@/lib/Texts';
 import DateFormat from '../DataFormat';
 import Contancts from '../Contacts';
 import Image from 'next/image';
-import Logo from '@/assets/image/header/logo.svg';
+
 
 
 export default function NavbarUI() {
@@ -34,7 +34,7 @@ export default function NavbarUI() {
       <section className="container m-auto relative">
         <NavbarContent className={`w-full flex justify-between items-center`}>
           <NavbarBrand className="text-gray-800">
-            <Image src={Logo} width={54} height={54} alt='logo - minimalist oak tree in a circle' className="font-bold text-inherit" />
+            <Image src="/logo.svg" width={54} height={54} alt='logo - minimalist oak tree in a circle' className="font-bold text-inherit" />
           </NavbarBrand>
           <motion.div
             initial={{ backgroundColor: '#222124' }}
