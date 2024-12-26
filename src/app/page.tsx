@@ -1,10 +1,9 @@
 'use client';
+import About from '@/components/about/About';
+import Home from '@/components/home/Home';
 import dynamic from 'next/dynamic';
 
-
 export default function Page() {
-  const Home = dynamic(() => import('@/components/home/Home'));
-  const About = dynamic(() => import('@/components/about/About'));
   const Resume = dynamic(() => import('@/components/resume/Resume'));
   const Projects = dynamic(() => import('@/components/projects/Projects'));
   const Footer = dynamic(() => import('@/components/footer/Footer'));
