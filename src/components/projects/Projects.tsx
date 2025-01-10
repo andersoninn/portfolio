@@ -5,10 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { Texts } from '@/lib/Texts';
 import ProjectItem from './ProjecItem';
 
-
-
 export default function Projects() {
-
   const ProjectItens = Texts.en.projects;
 
   const controls = useAnimation();
@@ -28,7 +25,7 @@ export default function Projects() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.2,
+        delay: i * 0.1,
         duration: 0.5,
         ease: 'easeOut',
       },
@@ -70,6 +67,4 @@ export default function Projects() {
       </section>
     </section>
   );
-};
-
-
+}

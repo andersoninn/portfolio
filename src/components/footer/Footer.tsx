@@ -16,17 +16,19 @@ export default function Footer() {
 
   return (
     <section
-      className="footer w-full flex flex-col justify-center items-center relative bg-[#222124]" id='footer'
+      className="footer w-full flex flex-col justify-center items-center relative bg-[#222124]"
+      id="footer"
     >
       <section>
         <article className=" py-16 container flex flex-col justify-center items-center gap-8 m-auto w-[80%] text-white text-center">
           <h2 className="font-semibold text-2xl">{texts.title}</h2>
-          <p>
-            {texts.description}
-          </p>
-          <button className="py-2 px-6 rounded-full border border-white text-xl hover:border-[#222124] hover:bg-white hover:text-[#222124]">
+          <p>{texts.description}</p>
+          <a
+            href="mailto:andersoninnocencio17@gmail.com?subject=Helloo&body=Write your message here"
+            className="py-2 px-6 rounded-full border border-white text-xl hover:border-[#222124] hover:bg-white hover:text-[#222124]"
+          >
             {texts.button}
-          </button>
+          </a>
           <aside className="w-full flex justify-center items-center gap-4 m-auto">
             <Contancts />
           </aside>
