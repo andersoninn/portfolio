@@ -53,7 +53,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
           {item.techStacks.map((e) => (
             <button
               key={e}
-              className="min-w-16 py-1 px-4 bg-transparent rounded-xl shadow-xl outline outline-2 outline-black"
+              className="min-w-16 py-1 px-4 bg-transparent rounded-xl shadow-xl outline outline-2 outline-gray-800"
               disabled
             >
               {e}
