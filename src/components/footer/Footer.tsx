@@ -24,8 +24,9 @@ export default function Footer() {
           <h2 className="font-semibold text-2xl">{texts.title}</h2>
           <p>{texts.description}</p>
           <a
-            href="mailto:andersoninnocencio17@gmail.com?subject=Helloo&body=Write your message here"
+            href="https://wa.me/351933864893"
             className="py-2 px-6 rounded-full border border-white text-xl hover:border-[#222124] hover:bg-white hover:text-[#222124]"
+            target="_blank"
           >
             {texts.button}
           </a>
