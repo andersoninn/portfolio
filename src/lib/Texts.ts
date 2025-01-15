@@ -77,28 +77,6 @@ export const Texts = {
       // },
       {
         id: 3,
-        nameOfProject: 'Get Along Language Course',
-        descriptionTitle: 'Project Summary:',
-        descriptionOfProject:
-          'Landing page developed to serve a global audience, offering support in 5 languages. It includes redirects to another platform and is integrated with a chatbot, providing an efficient and practical self-service experience for users. The solution aims to optimize service and facilitate navigation, ensuring accessibility and agility in the process.',
-        techStacksTitle: 'Tech stack:',
-        techStacks: [
-          'ReactJS',
-          'HTML',
-          'CSS',
-          'JS',
-          'Tailwind',
-          'Zustand',
-          'Figma',
-          'NextUI',
-          'Mongo- db',
-        ],
-        oficialWebsite: 'https://get-along-lc.vercel.app/',
-        image: getAlongImage,
-        callToAction: 'Under production',
-      },
-      {
-        id: 4,
         nameOfProject: 'Genesis Training Institute',
         descriptionTitle: 'Project Summary:',
 
@@ -119,6 +97,28 @@ export const Texts = {
         oficialWebsite: 'https://instituto-genesis.com/',
         image: instGenesisImage,
         callToAction: 'Deployed',
+      },
+      {
+        id: 4,
+        nameOfProject: 'Get Along Language Course',
+        descriptionTitle: 'Project Summary:',
+        descriptionOfProject:
+          'Landing page developed to serve a global audience, offering support in 5 languages. It includes redirects to another platform and is integrated with a chatbot, providing an efficient and practical self-service experience for users. The solution aims to optimize service and facilitate navigation, ensuring accessibility and agility in the process.',
+        techStacksTitle: 'Tech stack:',
+        techStacks: [
+          'ReactJS',
+          'HTML',
+          'CSS',
+          'JS',
+          'Tailwind',
+          'Zustand',
+          'Figma',
+          'NextUI',
+          'Mongo- db',
+        ],
+        oficialWebsite: 'https://get-along-lc.vercel.app/',
+        image: getAlongImage,
+        callToAction: 'Under production',
       },
     ],
 
