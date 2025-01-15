@@ -34,12 +34,6 @@ Este portfólio foi construído utilizando as seguintes tecnologias:
 - **Seções Personalizadas**: O portfólio apresenta seções dedicadas a informações pessoais, projetos, habilidades e contatos.
 - **Interface Moderna**: Design clean e moderno, utilizando componentes e animações para uma experiência visualmente agradável.
 
-## 🚀 Como Usar
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/andersoninn/portfolio.git
-
 ## 📦 Scripts Disponíveis
 
 No diretório do projeto, você pode rodar os seguintes comandos:
