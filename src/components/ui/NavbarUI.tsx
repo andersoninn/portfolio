@@ -17,8 +17,6 @@ import DateFormat from '../DataFormat';
 import Contancts from '../Contacts';
 import Image from 'next/image';
 
-
-
 export default function NavbarUI() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const texts = Texts.en.navbar;
@@ -34,7 +32,13 @@ export default function NavbarUI() {
       <section className="container m-auto relative">
         <NavbarContent className={`w-full flex justify-between items-center`}>
           <NavbarBrand className="text-gray-800">
-            <Image src="/Logo.svg" width={54} height={54} alt='logo - minimalist oak tree in a circle' className="font-bold text-inherit" />
+            <Image
+              src="/Logo.svg"
+              width={54}
+              height={54}
+              alt="logo - minimalist oak tree in a circle"
+              className="font-bold text-inherit"
+            />
           </NavbarBrand>
           <motion.div
             initial={{ backgroundColor: '#222124' }}
@@ -64,26 +68,33 @@ export default function NavbarUI() {
         {/* Menu de navegação */}
         <NavbarMenu
           aria-hidden={!isMenuOpen}
-          className="mx-auto max-w-[980px] max-h-[550px] pt-6 bg-[#222124] items-center rounded-b-2xl justify-center"
+          className="mx-auto max-w-[980px] max-h-[550px] pt-6 bg-[#222124] items-center rounded-b-2xl justify-center !scrollbar-hide shadow-xl"
         >
           {texts.menuItems.map((item, i) => (
-            <NavbarItem key={i} className="px-4 py-2 font-inter" >
-              {item.name === 'CURRICULUM' ? <>  <a
-                className="text-white hover:text-[#21585E] text-4xl font-extrabold"
-                href={item.link}
-                download="cv-Anderson-Carvalho.pdf"
-                onClick={() => setIsMenuOpen(false)}
-                aria-label='downloand curriculum'
-              >
-                {item.name}
-              </a></> : <><Link
-                className="text-white hover:text-[#21585E] text-4xl font-extrabold"
-                href={item.link}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </Link></>}
-
+            <NavbarItem key={i} className="px-4 py-2 font-inter">
+              {item.name === 'CURRICULUM' ? (
+                <>
+                  <Link
+                    className="text-white hover:text-[#21585E] text-4xl font-extrabold"
+                    href={item.link}
+                    download="cv-Anderson-Carvalho.pdf"
+                    onClick={() => setIsMenuOpen(false)}
+                    aria-label="downloand curriculum"
+                  >
+                    {item.name}
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link
+                    className="text-white hover:text-[#21585E] text-4xl font-extrabold"
+                    href={item.link}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                </>
+              )}
             </NavbarItem>
           ))}
           <section className="flex flex-col items-center gap-4 mb-12 ">

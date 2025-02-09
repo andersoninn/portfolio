@@ -7,7 +7,7 @@ export const Texts = {
   en: {
     navbar: {
       menuItems: [
-        { name: 'HOME', link: '/' },
+        { name: 'HOME', link: '#home' },
         { name: 'ABOUT', link: '#about11' },
         { name: 'PROJECTS', link: '#projects' },
         { name: 'CURRICULUM', link: '/CV-AndersonCarvalho.pdf' },
