@@ -1,4 +1,4 @@
-import genesisLogo from '@/assets/customersLogo/instGenesisLogo.svg';
+import genesisLogo from '@/assets/customersLogo/instgenesisLogo.svg';
 import instGenesisImage from '@/assets/projects/(customers)/instGenesis.svg';
 
 import legacyHouseLogo from '@/assets/customersLogo/legacyHouseLogo.svg';
