@@ -8,9 +8,10 @@ import { PiLinkBold } from 'react-icons/pi';
 interface ProjectItemProps {
   item: {
     image: string;
-    nameOfProject: string;
-    descriptionTitle: string;
-    descriptionOfProject: string;
+    logo: string;
+    projectName: string;
+    ProjectDescription: string;
+    solution: string;
     techStacksTitle: string;
     techStacks: string[];
     oficialWebsite: string;
@@ -34,33 +35,47 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
       transition={{ duration: 0.5 }}
       className="m-auto flex flex-col items-center text-center gap-2 pb-12 max-w-[500px]"
     >
-      <Image
-        src={item.image}
-        alt={item.nameOfProject}
-        width={600}
-        height={400}
-      />
+      <Image src={item.image} alt={item.projectName} width={600} height={400} />
       <motion.span
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         className="flex flex-col justify-center items-center max-w-[90%] gap-2"
       >
-        <h1 className="text-xl font-semibold">{item.nameOfProject}</h1>
-        <h2 className="text-lg">{item.descriptionOfProject}</h2>
-        <p className="text-lg font-semibold">{item.techStacksTitle}</p>
-        <article className="flex flex-wrap gap-2 justify-center">
-          {item.techStacks.map((e) => (
-            <button
-              key={e}
-              className="min-w-16 py-1 px-4 bg-transparent rounded-xl shadow-xl outline outline-2 outline-gray-800"
-              disabled
-            >
+        <section className="flex gap-2 text-left mx-4">
+          <article className="w-4/5">
+            <h1 className="text-xl font-semibold">{item.projectName}</h1>
+            <p className=" font-light">{item.ProjectDescription}</p>
+          </article>
+          <article className="w-1/5 px-4 pt-6">
+            <Image
+              src={item.logo}
+              alt={item.projectName}
+              width={100}
+              height={100}
+            />
+          </article>
+        </section>
+        <h2 className="text-lg !text-left mx-4">
+          <span className="font-bold pr-2">Solution:</span>
+          {item.solution.split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
+        </h2>
+        <article className="flex flex-wrap gap-2 mx-4 items-center">
+          <p className="text-lg font-semibold !text-left">
+            {item.techStacksTitle}
+          </p>
+          {item.techStacks.map((e, index) => (
+            <p key={e}>
               {e}
-            </button>
+              {index === item.techStacks.length - 1 ? '.' : ','}
+            </p>
           ))}
         </article>
-
         <Link
           href={item.oficialWebsite}
           target="_blank"

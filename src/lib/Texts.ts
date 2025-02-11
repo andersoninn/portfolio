@@ -1,7 +1,14 @@
-import getAlongImage from '@/assets/image/projects/realProjectsImage/getAlongCard.svg';
-import instGenesisImage from '@/assets/image/projects/realProjectsImage/instGenesisCard.svg';
-import thisProject from '@/assets/image/projects/thisProject.png';
-import other from '@/assets/image/projects/macbook.png';
+import genesisLogo from '@/assets/customersLogo/instGenesisLogo.svg';
+import instGenesisImage from '@/assets/projects/(customers)/instGenesis.svg';
+
+import legacyHouseLogo from '@/assets/customersLogo/legacyHouseLogo.svg';
+import legacyHouse from '@/assets/projects/(customers)/legacyHouse.svg';
+
+import oakAndCodeLogo from '@/assets/customersLogo/oakAndCodeLogo.svg';
+import oakAndCode from '@/assets/projects/(customers)/oakAndCode.svg';
+
+import oakInnLogo from '@/assets/customersLogo/oakInnLogo.svg';
+import oakInn from '@/assets/projects/(customers)/oakInn.svg';
 
 export const Texts = {
   en: {
@@ -51,37 +58,68 @@ export const Texts = {
     },
 
     projects: [
-      // {
-      //   id: 1,
-      //   nameOfProject: 'Portfolio (This)',
-      //   descriptionTitle: "Project Summary:",
-      //   descriptionOfProject:
-      //     "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
-      //   techStacksTitle: "Tech stack:",
-      //   techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI"],
-      //   oficialWebsite: 'https://get-along-lc.vercel.app/',
-      //   image: thisProject,
-      //   callToAction: 'Veja mais',
-      // },
-      // {
-      //   id: 2,
-      //   nameOfProject: 'Other',
-      //   descriptionTitle: "Project Summary:",
-      //   descriptionOfProject:
-      //     "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
-      //   oficialWebsite: 'https://instituto-genesis.com/',
-      //   techStacksTitle: "Tech stack:",
-      //   techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI", "Mongo- db"],
-      //   image: other,
-      //   callToAction: 'Em produção',
-      // },
+      {
+        id: 1,
+        projectName: 'Portfolio (This)',
+        ProjectDescription:
+          'The Genesis Institute is an educational institution focused on the areas of Law, Health, and Theology.',
+
+        solution:
+          'Content Management System (CMS). \n This project provides a complete solution for managing and displaying online courses, with centralized access and direct links to external platforms. Users get personalized accounts, and staff can easily manage courses through an intuitive dashboard, all without technical expertise. A practical platform for everyone.',
+        techStacksTitle: 'Tech stack:',
+        techStacks: [
+          'ReactJS',
+          'Next.js',
+          'Typescript',
+          'JavaScript',
+          'Tailwind CSS',
+          'CSS',
+          'HTML',
+          'Framer Motion',
+          'NextUI',
+          'Zustand',
+          'Figma',
+        ],
+        oficialWebsite: 'https://andersoninn.dev/',
+        image: oakAndCode,
+        logo: oakAndCodeLogo,
+        callToAction: 'Deployed',
+      },
+      {
+        id: 2,
+        projectName: 'Genesis Training Institute',
+        ProjectDescription:
+          'The Genesis Institute is an educational institution focused on the areas of Law, Health, and Theology.',
+
+        solution:
+          'Content Management System (CMS). \n This project provides a complete solution for managing and displaying online courses, with centralized access and direct links to external platforms. Users get personalized accounts, and staff can easily manage courses through an intuitive dashboard, all without technical expertise. A practical platform for everyone.',
+        techStacksTitle: 'Tech stack:',
+        techStacks: [
+          'ReactJS',
+          'Next.js',
+          'Typescript',
+          'JavaScript',
+          'Tailwind CSS',
+          'CSS',
+          'HTML',
+          'Framer Motion',
+          'NextUI',
+          'Zustand',
+          'Figma',
+        ],
+        oficialWebsite: 'https://instituto-genesis.com/',
+        image: instGenesisImage,
+        logo: genesisLogo,
+        callToAction: 'Deployed',
+      },
       {
         id: 3,
-        nameOfProject: 'Genesis Training Institute',
-        descriptionTitle: 'Project Summary:',
+        projectName: 'Legacy House (Volunteer work)',
+        ProjectDescription:
+          'The Genesis Institute is an educational institution focused on the areas of Law, Health, and Theology.',
 
-        descriptionOfProject:
-          'Project that offers a complete solution for managing and displaying online courses. The display is centralized with direct links to external platforms, facilitating access. The registration system allows a personalized area for each user, while an intuitive dashboard enables staff to manage and edit courses easily, without the need for technical intervention. A practical and efficient platform for everyone involved.',
+        solution:
+          'Content Management System (CMS).\n The project offers a complete solution for managing and displaying online courses. The display is centralized with direct links to external platforms, making access easier. The registration system provides a personalized area for each user, while an intuitive dashboard allows staff to manage and edit courses effortlessly, without the need for technical intervention. A practical and efficient platform for everyone involved.',
         techStacksTitle: 'Tech stack:',
         techStacks: [
           'ReactJS',
@@ -94,15 +132,17 @@ export const Texts = {
           'NextUI',
           'Mongo- db',
         ],
-        oficialWebsite: 'https://instituto-genesis.com/',
-        image: instGenesisImage,
+        oficialWebsite: 'https://www.legacyhouse-pt.com/',
+        image: legacyHouse,
+        logo: legacyHouseLogo,
         callToAction: 'Deployed',
       },
       {
         id: 4,
-        nameOfProject: 'Get Along Language Course',
-        descriptionTitle: 'Project Summary:',
-        descriptionOfProject:
+        projectName: 'OAk',
+        ProjectDescription:
+          'The Genesis Institute is an educational institution focused on the areas of Law, Health, and Theology.',
+        solution:
           'Landing page developed to serve a global audience, offering support in 5 languages. It includes redirects to another platform and is integrated with a chatbot, providing an efficient and practical self-service experience for users. The solution aims to optimize service and facilitate navigation, ensuring accessibility and agility in the process.',
         techStacksTitle: 'Tech stack:',
         techStacks: [
@@ -116,8 +156,9 @@ export const Texts = {
           'NextUI',
           'Mongo- db',
         ],
-        oficialWebsite: 'https://get-along-lc.vercel.app/',
-        image: getAlongImage,
+        oficialWebsite: 'https://oak-inn.vercel.app/',
+        image: oakInn,
+        logo: oakInnLogo,
         callToAction: 'Under production',
       },
     ],
@@ -213,7 +254,7 @@ export const Texts = {
       //   id: 1,
       //   nameOfProject: 'Portfolio (This)',
       //   descriptionTitle: "Project Summary:",
-      //   descriptionOfProject:
+      //   solution:
       //     "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
       //   techStacksTitle: "Tech stack:",
       //   techStacks: ["ReactJS", "HTML", "CSS", "JS", "Tailwind", "Zustand", "Figma", "NextUI"],
@@ -225,7 +266,7 @@ export const Texts = {
       //   id: 2,
       //   nameOfProject: 'Other',
       //   descriptionTitle: "Project Summary:",
-      //   descriptionOfProject:
+      //   solution:
       //     "CMS with intuitive UI, customised editor, control panel, blog, API connections.",
       //   oficialWebsite: 'https://instituto-genesis.com/',
       //   techStacksTitle: "Tech stack:",
@@ -233,52 +274,52 @@ export const Texts = {
       //   image: other,
       //   callToAction: 'Em produção',
       // },
-      {
-        id: 3,
-        nameOfProject: 'Curso de Idiomas Get Along',
-        descriptionTitle: 'Project Summary:',
-        descriptionOfProject:
-          'Landing page em 5 idiomas, com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento. (Em desenvolvimento)',
-        techStacksTitle: 'Tech stack:',
-        techStacks: [
-          'ReactJS',
-          'HTML',
-          'CSS',
-          'JS',
-          'Tailwind',
-          'Zustand',
-          'Figma',
-          'NextUI',
-          'Mongo- db',
-        ],
-        oficialWebsite: 'https://get-along-lc.vercel.app/',
-        linkDescription: 'visit the Get Along Language Course website',
-        image: getAlongImage,
-        callToAction: 'under Production',
-      },
-      {
-        id: 4,
-        nameOfProject: 'Instituto de Aperfeiçoamento Gênesis',
-        descriptionTitle: 'Project Summary:',
-        descriptionOfProject:
-          'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe. (Em desenvolvimento)',
-        techStacksTitle: 'Tech stack:',
-        techStacks: [
-          'ReactJS',
-          'HTML',
-          'CSS',
-          'JS',
-          'Tailwind',
-          'Zustand',
-          'Figma',
-          'NextUI',
-          'Mongo- db',
-        ],
-        oficialWebsite: 'https://instituto-genesis.com/',
-        linkDescription: ' visit the Instituto Gênesis website',
-        image: instGenesisImage,
-        callToAction: 'Deployed',
-      },
+      // {
+      //   id: 3,
+      //   nameOfProject: 'Curso de Idiomas Get Along',
+      //   descriptionTitle: 'Project Summary:',
+      //   solution:
+      //     'Landing page em 5 idiomas, com redirecionamento para outra plataforma integrada a um chatboot para auto atendimento. (Em desenvolvimento)',
+      //   techStacksTitle: 'Tech stack:',
+      //   techStacks: [
+      //     'ReactJS',
+      //     'HTML',
+      //     'CSS',
+      //     'JS',
+      //     'Tailwind',
+      //     'Zustand',
+      //     'Figma',
+      //     'NextUI',
+      //     'Mongo- db',
+      //   ],
+      //   oficialWebsite: 'https://get-along-lc.vercel.app/',
+      //   linkDescription: 'visit the Get Along Language Course website',
+      //   image: getAlongImage,
+      //   callToAction: 'under Production',
+      // },
+      // {
+      //   id: 4,
+      //   nameOfProject: 'Instituto de Aperfeiçoamento Gênesis',
+      //   descriptionTitle: 'Project Summary:',
+      //   solution:
+      //     'Site para exposição dos cursos, com redirecionamento para plataformas externas, uma área de cadastro e um dashboard para edição de conteúdo por parte da equipe. (Em desenvolvimento)',
+      //   techStacksTitle: 'Tech stack:',
+      //   techStacks: [
+      //     'ReactJS',
+      //     'HTML',
+      //     'CSS',
+      //     'JS',
+      //     'Tailwind',
+      //     'Zustand',
+      //     'Figma',
+      //     'NextUI',
+      //     'Mongo- db',
+      //   ],
+      //   oficialWebsite: 'https://instituto-genesis.com/',
+      //   linkDescription: ' visit the Instituto Gênesis website',
+      //   image: instGenesisImage,
+      //   callToAction: 'Deployed',
+      // },
     ],
 
     footer: {

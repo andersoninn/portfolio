@@ -19,6 +19,7 @@ import Image from 'next/image';
 
 export default function NavbarUI() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   const texts = Texts.en.navbar;
 
   return (
@@ -32,25 +33,38 @@ export default function NavbarUI() {
       <section className="container m-auto relative">
         <NavbarContent className={`w-full flex justify-between items-center`}>
           <NavbarBrand className="text-gray-800">
-            <Image
-              src="/Logo.svg"
-              width={54}
-              height={54}
-              alt="logo - minimalist oak tree in a circle"
-              className="font-bold text-inherit"
-            />
+            <motion.div
+              initial={{ backgroundColor: '#222124' }}
+              whileHover={{
+                backgroundColor: ['#dfdf65', '#20575d'],
+                transition: { duration: 0.5, ease: 'easeInOut' },
+              }}
+              animate={{
+                backgroundColor: '#222124',
+                transition: { duration: 0.5, ease: 'easeInOut' },
+              }}
+              className="w-12 h-12 rounded-full text-white flex items-center justify-center"
+            >
+              <Image
+                src="/Logo.png"
+                width={54}
+                height={54}
+                alt="logo - Oak and code"
+                className="font-bold text-inherit rounded-xl cursor-pointer"
+              />
+            </motion.div>
           </NavbarBrand>
           <motion.div
-            initial={{ backgroundColor: '#222124' }}
+            initial={{ color: '#222124' }}
             whileHover={{
-              backgroundColor: ['#dfdf65', '#20575d'],
+              color: ['#dfdf65', '#20575d'],
               transition: { duration: 0.5, ease: 'easeInOut' },
             }}
             animate={{
-              backgroundColor: '#222124',
+              color: '#222124',
               transition: { duration: 0.5, ease: 'easeInOut' },
             }}
-            className="w-12 h-12 rounded-full text-white flex items-center justify-center"
+            className="w-12 h-12 rounded-xl text-black flex items-center justify-center  "
           >
             <NavbarMenuToggle
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
