@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { PiLinkBold } from 'react-icons/pi';
 
 interface ProjectItemProps {
   item: {
-    image: string;
-    logo: string;
+    image: string | StaticImageData;
+    logo: string | StaticImageData;
     projectName: string;
     ProjectDescription: string;
     solution: string;
