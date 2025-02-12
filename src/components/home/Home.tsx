@@ -4,13 +4,15 @@ import { Texts } from '@/lib/Texts';
 import { HiArrowDown } from 'react-icons/hi2';
 
 import NavbarUI from '../ui/NavbarUI';
+import NewNavbar from '../ui/NewNavbar';
 
 export default function Home() {
   const texts = Texts.en.home;
   return (
     <>
       <section className="max-w-screen h-full relative bgHome" id="home">
-        <NavbarUI />
+        {/* <NavbarUI /> */}
+        <NewNavbar />
         <section className="">
           <section className="container w-[90%] my-16 m-auto min-h-[700px] md:min-h-[1000px] flex flex-col items-center justify-around md:pb-16">
             {/* H1 */}

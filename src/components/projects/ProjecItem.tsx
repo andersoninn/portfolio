@@ -42,12 +42,12 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="flex flex-col justify-center items-center max-w-[90%] gap-2"
       >
-        <section className="flex gap-2 text-left mx-4">
-          <article className="w-4/5">
+        <section className="flex gap-2 text-left md:mx-4">
+          <article className="w-3/4 md:w-4/5">
             <h1 className="text-xl font-semibold">{item.projectName}</h1>
             <p className=" font-light">{item.ProjectDescription}</p>
           </article>
-          <article className="w-1/5 px-4 pt-6">
+          <article className="w-1/4 md:w-1/5 md:pl-4">
             <Image
               src={item.logo}
               alt={item.projectName}
@@ -56,7 +56,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
             />
           </article>
         </section>
-        <h2 className="text-lg !text-left mx-4">
+        <h2 className="text-lg !text-left md:mx-4">
           <span className="font-bold pr-2">Solution:</span>
           {item.solution.split('\n').map((line, index) => (
             <React.Fragment key={index}>

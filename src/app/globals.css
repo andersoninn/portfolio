@@ -17,6 +17,7 @@
 html {
   background: red;
   height: screen;
+  scroll-behavior: smooth;
 }
 
 .bgPattern {
@@ -47,7 +48,6 @@ html {
   background-size: 300% 100%;
   background-position: center;
 }
-
 
 .shadowImage {
   border-radius: 8px;

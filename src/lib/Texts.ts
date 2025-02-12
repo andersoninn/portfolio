@@ -1,14 +1,14 @@
 import genesisLogo from '@/assets/customersLogo/instgenesisLogo.svg';
-import instGenesisImage from '@/assets/projects/(customers)/instGenesis.svg';
+import instGenesisImage from '@/assets/projects/(customers)/instGenesis.png';
 
 import legacyHouseLogo from '@/assets/customersLogo/legacyHouseLogo.svg';
-import legacyHouse from '@/assets/projects/(customers)/legacyHouse.svg';
+import legacyHouse from '@/assets/projects/(customers)/legacyHouse.png';
 
 import oakAndCodeLogo from '@/assets/customersLogo/oakAndCodeLogo.svg';
-import oakAndCode from '@/assets/projects/(customers)/oakAndCode.svg';
+import oakAndCode from '@/assets/projects/(customers)/oakAndCode.png';
 
 import oakInnLogo from '@/assets/customersLogo/oakInnLogo.svg';
-import oakInn from '@/assets/projects/(customers)/oakInn.svg';
+import oakInn from '@/assets/projects/(customers)/oakInn.png';
 
 export const Texts = {
   en: {
@@ -18,6 +18,7 @@ export const Texts = {
         { name: 'ABOUT', link: '#about11' },
         { name: 'PROJECTS', link: '#projects' },
         { name: 'CURRICULUM', link: '/CV-AndersonCarvalho.pdf' },
+        { name: 'CONTACTS', link: '#footer' },
       ],
       subtitle: 'Contacts - info',
     },
@@ -62,19 +63,19 @@ export const Texts = {
         id: 1,
         projectName: 'Portfolio (This)',
         ProjectDescription:
-          'The Genesis Institute is an educational institution focused on the areas of Law, Health, and Theology.',
+          'My personal website, used to showcase some of my contacts and some client projects.',
 
         solution:
-          'Content Management System (CMS). \n This project provides a complete solution for managing and displaying online courses, with centralized access and direct links to external platforms. Users get personalized accounts, and staff can easily manage courses through an intuitive dashboard, all without technical expertise. A practical platform for everyone.',
+          'A responsive and optimized SPA designed to showcase my portfolio, client projects, and contacts. Built with Next.js for high performance and smooth navigation, ensuring an intuitive and professional experience.',
         techStacksTitle: 'Tech stack:',
         techStacks: [
           'ReactJS',
           'Next.js',
           'Typescript',
-          'JavaScript',
           'Tailwind CSS',
-          'CSS',
           'HTML',
+          'CSS',
+          'JavaScript',
           'Framer Motion',
           'NextUI',
           'Zustand',
@@ -92,20 +93,27 @@ export const Texts = {
           'The Genesis Institute is an educational institution focused on the areas of Law, Health, and Theology.',
 
         solution:
-          'Content Management System (CMS). \n This project provides a complete solution for managing and displaying online courses, with centralized access and direct links to external platforms. Users get personalized accounts, and staff can easily manage courses through an intuitive dashboard, all without technical expertise. A practical platform for everyone.',
+          'Content Management System (CMS). This project provides a complete solution for managing and displaying online courses, with centralized access and direct links to external platforms. Users get personalized accounts, and staff can easily manage courses through an intuitive dashboard, all without technical expertise. A practical platform for everyone. The project was developed in collaboration with João Silva (backend).',
         techStacksTitle: 'Tech stack:',
         techStacks: [
+          'NextJS',
           'ReactJS',
-          'Next.js',
-          'Typescript',
-          'JavaScript',
-          'Tailwind CSS',
-          'CSS',
-          'HTML',
-          'Framer Motion',
-          'NextUI',
+          'TypeScript',
           'Zustand',
-          'Figma',
+          'Tailwind',
+          'Next UI',
+          'Chakra UI',
+          'Uploadthings',
+          'React Hook Form',
+          'Zod',
+          'Express',
+          'TypeScript',
+          'Mongoose',
+          'Nodemailer',
+          'JWT',
+          'Passport',
+          'Express-Validator',
+          'Swagger',
         ],
         oficialWebsite: 'https://instituto-genesis.com/',
         image: instGenesisImage,
@@ -116,21 +124,23 @@ export const Texts = {
         id: 3,
         projectName: 'Legacy House (Volunteer work)',
         ProjectDescription:
-          'The Genesis Institute is an educational institution focused on the areas of Law, Health, and Theology.',
+          'Legacy House is a local Christian church/community focused on transforming the region by serving others and preaching the gospel of Christ.',
 
         solution:
-          'Content Management System (CMS).\n The project offers a complete solution for managing and displaying online courses. The display is centralized with direct links to external platforms, making access easier. The registration system provides a personalized area for each user, while an intuitive dashboard allows staff to manage and edit courses effortlessly, without the need for technical intervention. A practical and efficient platform for everyone involved.',
+          'A simple and efficient web presence solution for the community. The project includes an interactive platform that displays essential details in a clean and accessible format. Users can easily access information about upcoming events, important notices, and get directions using the integrated Google Maps feature. The SPA is designed to be user-friendly and responsive, offering an engaging experience for both mobile and desktop users.',
         techStacksTitle: 'Tech stack:',
         techStacks: [
           'ReactJS',
+          'NextJS',
+          'Typescript',
+          'Tailwind CSS',
           'HTML',
           'CSS',
-          'JS',
-          'Tailwind',
-          'Zustand',
-          'Figma',
+          'JavaScript',
+          'Framer Motion',
           'NextUI',
-          'Mongo- db',
+          'Figma',
+          'Google Maps JavaScript API',
         ],
         oficialWebsite: 'https://www.legacyhouse-pt.com/',
         image: legacyHouse,
@@ -139,22 +149,26 @@ export const Texts = {
       },
       {
         id: 4,
-        projectName: 'OAk',
+        projectName: 'OAK Innovation',
         ProjectDescription:
-          'The Genesis Institute is an educational institution focused on the areas of Law, Health, and Theology.',
+          'Oak Innovation is a company specializing in 3D modeling and printing, as well as multimedia, focused on producing both digital and physical content to meet the full range of client demands.',
         solution:
-          'Landing page developed to serve a global audience, offering support in 5 languages. It includes redirects to another platform and is integrated with a chatbot, providing an efficient and practical self-service experience for users. The solution aims to optimize service and facilitate navigation, ensuring accessibility and agility in the process.',
+          'Custom solution developed to showcase Oak Innovation’s services, offering a comprehensive view of the company’s 3D modeling and printing capabilities. The platform includes a portfolio of digital and physical projects, with easy navigation to help clients understand the various possibilities. It is designed to provide a smooth user experience, enhancing communication and facilitating client interaction with the company’s offerings.',
         techStacksTitle: 'Tech stack:',
         techStacks: [
           'ReactJS',
+          'NextJS',
+          'Typescript',
+          'Tailwind CSS',
           'HTML',
           'CSS',
-          'JS',
-          'Tailwind',
-          'Zustand',
-          'Figma',
+          'JavaScript',
+          'Framer Motion',
+          'React Hook Form',
+          'Zod',
+          'Nodemailer',
           'NextUI',
-          'Mongo- db',
+          'Figma',
         ],
         oficialWebsite: 'https://oak-inn.vercel.app/',
         image: oakInn,
