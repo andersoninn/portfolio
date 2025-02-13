@@ -65,7 +65,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ item, index }) => {
             </React.Fragment>
           ))}
         </h2>
-        <article className="flex flex-wrap gap-2 mx-4 items-center">
+        <article className="flex flex-wrap gap-2 md:mx-4 items-center">
           <p className="text-lg font-semibold !text-left">
             {item.techStacksTitle}
           </p>
